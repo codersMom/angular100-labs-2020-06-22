@@ -1,14 +1,9 @@
-async call setTimer
+## Overview in this lab, you will create an interval timer which makes changes to the array of albums
 
-Show that ngoninit is where to initialize a component
+have some simple data as a property
+how about titleCounter = 1
+on template - use Albums Title # {{titleCounter }}
 
-Setup a timer to show how array can be added to. Do a console.log
+in ngOninit set an interval timer
 
-Show how it's changing but screen isnt
-
-First by doing push, no update to screen
-
-Then by … or concat
-
-Setup the ch4 components so they just display date, milliseconds since epoch so they are different. Not first name, lastname
-
+every 2 seocnds, use this.titleCounter = titleCounter + 1
