@@ -1,5 +1,5 @@
+npm install bootstrap -S
 
+Modify angular-cli.json to add bootstrap
 
-Install Angular Essentials extension by John Papa. 
-If it isn’t, follow the slides to install
-
+Modify appcompoent to have jumbotron etc
