@@ -6,8 +6,8 @@ which is of type Album[]
 
 Add an ngOnInit that contains setting of data and creation of an album.model.ts
 in ngOnInit() set teh albumsArray an array of 3 albums
-ADD CODE HERE:
-should have some data that is boolean - isOnSale
+use data from music-info.json in this folder
+
 price that is a decimal value
 currency USD or EURO
 
