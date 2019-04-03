@@ -9,9 +9,11 @@ Create AlbumCard
 ng g c albums/album-card --flat
 
 in album list hard-code 3 album cards
+```html
 <app-album-card></app-album-card>
 <app-album-card></app-album-card>
 <app-album-card></app-album-card>
+```
 
 in album card just have teh structure used by cards
 can copy array[0] data to the card component ts file
