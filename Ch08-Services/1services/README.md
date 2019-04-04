@@ -1,20 +1,5 @@
+hard code a service t return teh eople
 
-Create PeopleList
-Create Person
+ng g s people
 
-
- peopleArray: string[];
-
-  constructor() { }
-
-  ngOnInit() {
-    this.peopleArray = ['Bob', 'Alice', 'Charlie'];
-  }
-
-
-Create AlbumList
-Create Album
-
-
-
-ng g c person/person-name --flat
+update component to be dependency injected

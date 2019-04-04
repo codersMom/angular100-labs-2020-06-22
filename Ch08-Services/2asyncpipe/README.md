@@ -1,20 +1,11 @@
+install json server
 
-Create PeopleList
-Create Person
+npm i json-server -S
 
+modify package.json scripts
 
- peopleArray: string[];
+modify service to use httpClient
 
-  constructor() { }
+use http client to get the data from json server
 
-  ngOnInit() {
-    this.peopleArray = ['Bob', 'Alice', 'Charlie'];
-  }
-
-
-Create AlbumList
-Create Album
-
-
-
-ng g c person/person-name --flat
+now use async pipe in component
