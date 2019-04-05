@@ -1,4 +1,4 @@
-install json server
+install json server and npm-run-all
 
 npm i json-server -S
 
