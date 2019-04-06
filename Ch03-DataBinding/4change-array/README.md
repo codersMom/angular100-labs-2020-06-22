@@ -1,8 +1,12 @@
 ## Overview in this lab, you will create an interval timer to update the album array
 
-in ngOninit in the interval timer
+in ngOnInit in the interval timer
 
-change the albums array directly to change the prices to increase by ten dollars
+change the albums array directly to change the firts album to increase by ten dollars
+
+Chage the first albu to update by 10 dollars every two seconds
+
+cancel it after 6 seconds
 
 console.log and see its changed but not the screen
 
