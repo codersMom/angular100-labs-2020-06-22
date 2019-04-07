@@ -51,9 +51,7 @@ In this lab you will use this markdown file to complete steps to modify your VSC
 
 1. Find the menu to change your color theme by clicking the gear icon in the bottom left of VSCode, and choosing color theme.
 
-   Now change the color again, by using control-shift-P to bring up the command palette. Start typing color in the menu until you see Preferences: Color Theme.
-
-1.
+1. Now change the color again, by using control-shift-P to bring up the command palette. Start typing color in the menu until you see Preferences: Color Theme. Change the theme again.
 
 ### Part 3: Install VS Code extensions
 
@@ -72,4 +70,6 @@ To install extensions, look on the left side bar menu of VS Code and click on th
 
 ## Bonus
 
-1.
+1. From the Help menu, choose **Welcome** to bring up a screen. Explore the areas under Learn.
+
+1. Another area to explore is frm the Help menu, choose Interactive Playground and explore those examples.
