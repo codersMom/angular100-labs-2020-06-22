@@ -4,7 +4,7 @@ in ngOnInit in the interval timer
 
 change the albums array directly to change the firts album to increase by ten dollars
 
-Chage the first albu to update by 10 dollars every two seconds
+Change the first album to update by 10 dollars every two seconds
 
 cancel it after 6 seconds
 

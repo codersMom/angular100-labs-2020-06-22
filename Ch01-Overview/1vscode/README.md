@@ -13,47 +13,63 @@ In this lab you will use this markdown file to complete steps to modify your VSC
 
 ### Part 1: Working with markdown files:
 
-1. If you are viewing this README from GitHub, make sure you also open this file in your VSCode editor. If you need help finding the repo on your local machine, ask your fellow students and instructor.
+1. If you are viewing this README.md by viewing the repository on GitHub, make sure you also open this file in your VSCode editor. If you need help finding the local repository on your machine, ask your fellow students or instructor.
 
-2. While viewing this README.md file in Edit Mode in VSCode - an icon is visible in the upper right of the VSCode window - which looks like a rectangle with a dark T in the middle and a magnifying glass.
+1. While viewing this README.md file in Edit Mode in VSCode - an icon is visible in the upper right of the VSCode window - which looks like a rectangle with a dark T in the middle and a magnifying glass.
+
    Hover over this icon, it says "Open Preview to the Side". Click this icon.
 
-   Notice that you can now see both source and formatted version side by side. You can choose to click the Explorer icon (by default first one in top of vertical menu) to hide it, giving you more room to compare the open files. Click the icon a coupl fo times and notice it is a toggle button.
+   Notice that you can now see both source and formatted version side by side. You can choose to click the Explorer icon (by default first one in top of vertical menu) to hide it, giving you more room to compare the open files. Click the icon a couple of times and notice it is a toggle button.
 
    With both Edit mode and preview mode open in split panes, notice that if you scroll in one, the other scrolls as well.
 
-3. Compare Edit mode and Preview Mode:
+1. Compare Edit mode and Preview Mode:
 
    - Hash marks (#), are used for formatting headings.
      - A single # is heading "level 1" which is biggest, ## is "level 2", slightly smaller, and so on.
    - An asterisk is used for making a bullet.
      - Tabs are used for indentation of bullets.
-   - Text can be made bold and red by using `backticks` around words.
+   - Text can be made red by using `backticks` around words.
+   - Double **asterix** make text bold.
    - Every item is numbered as 1, when the markdown file is rendered: in preview mode or in browsers - the numbers will increment correctly.
      - This makes it easy to insert new items or re-order items, without needing to take the time to renumber.
 
-4. Close the formatted view by hitting the X for that window.
+1. Close the formatted view by hitting the X for that window.
 
-5. While clicked into the Edit view of this README.md, hit control-shift-V. This will open the preview in a new tab. Close the Preview mode.
+1. While clicked into the Edit view of this README.md, hit control-shift-V. This will open the preview in a new tab. Close the Preview mode.
 
-6. Another way to open the formatted view is by right-clicking the .md file in the Explorer view and choosing Open Preview.
+1. Another way to open the formatted view is by right-clicking the .md file in the Explorer view and choosing Open Preview.
 
    - Bring back the Explorer view pane if you have closed it by clicking the Explorer icon
    - While in Preview mode, if you double-click an area of the file, you will be taken back to the source markdown file for editing.
 
-7. Another way to view README.md files during the course is to visit the course repository on Github and navigate to the appropriate /Labs chapter folder.
+1. Another way to view README.md files during the course is to visit the course repository on Github and navigate to the appropriate /Labs chapter folder.
 
-8. For the rest of this exercise, view this file in Preview mode.
+1. For the rest of this exercise, view this file in Preview mode.
 
-### Part 2: Install VS Code extensions:
+### Part 2: Adjusting VSCode
 
-    To install extensions, look on the left side bar menu of VS Code and click on the **Extensions** icon or use the shortcut (Ctrl + Shift + X). Type into the Extensions Marketplace search field to find **Install Angular Essentials**. When you've found the extension, install it by pressing the green **Install** button. Wait for the install to complete. At times, there may be an additional step of pressing a blue **Reload** button which may appear at the same location where the green **Install** button was located.
+1. Find the menu to change your color theme by clicking the gear icon in the bottom left of VSCode, and choosing color theme.
 
-1.  Open the extensions icon from the VSCode vertical menu on the left of the screen.
+   Now change the color again, by using control-shift-P to bring up the command palette. Start typing color in the menu until you see Preferences: Color Theme.
 
-2.  Search for **Install Angular Essentials** extension by the author John Papa.
-    If it isn’t already installed, click te install button and follow directions within VSCode.
+1.
 
-3.  Follow a similar workflow as explained in Step 1 to download another VS Code Extension called `GitLens - Git supercharged`
+### Part 3: Install VS Code extensions
 
-        GitLens supercharges the Git capabilities built into Visual Studio Code. It helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
+To install extensions, look on the left side bar menu of VS Code and click on the **Extensions** icon or use the shortcut (Ctrl + Shift + X). Type into the Extensions Marketplace search field to find **Install Angular Essentials**. When you've found the extension, install it by pressing the green **Install** button. Wait for the install to complete. At times, there may be an additional step of pressing a blue **Reload** button which may appear at the same location where the green **Install** button was located.
+
+1. Open the extensions icon from the VSCode vertical menu on the left of the screen.
+
+2. Search for **Install Angular Essentials** extension by the author John Papa.
+   If it isn’t already installed, click te install button and follow directions within VSCode.
+
+3. Follow a similar workflow as explained in Step 1 to download another VS Code Extension called **GitLens - Git supercharged**
+
+   GitLens supercharges the Git capabilities built into Visual Studio Code. It helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
+
+4. If you get done before others then mark your work as complete using a name tent card if in class, or using the method described by your instructor.
+
+## Bonus
+
+1.
