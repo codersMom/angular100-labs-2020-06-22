@@ -45,8 +45,16 @@ In this lab you will use create a Github repository and push code to your reposi
 
 1. Update the README with your name and the date. Save the file.
 
-1. In VSCode commit, your changes by clicking the third icon down which looks like a Y. In the source control: git menu, type in the message box - Added name and email. Click the checkmark to commit.
+1. In VSCode commit, your changes by clicking the third icon down which looks like a Y. In the source control: git menu, type in the message box - Added name and email. Click the checkmark to commit. This commits it to your local repository.
 
-1. In VSCode, look at the bottom left where it says "master" to the right of this notice the circular arrows. Click this icSon, which will pull any code form the remote repo, and then push any changes to be committed.
+1. In VSCode, look at the bottom left where it says "master" to the right of this notice the circular arrows. Click this icon, which will pull any code from the remote repo, and then push any changes to be committed.
 
-1. install windows extension
+1. You will be prompted to input your username and password for Github.
+
+1. Once logged in successfully you should be able to check Github and see your changes.
+
+1. Install windows git credential helper:
+
+   git config --global credential.helper wincred
+
+   https://help.github.com/en/articles/caching-your-github-password-in-git
