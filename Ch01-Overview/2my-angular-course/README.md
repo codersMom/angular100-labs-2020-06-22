@@ -7,34 +7,46 @@
 
 ## Overview
 
-In this lab you will use create-react-app to create another project called music-albums - which will be built up over the next couple of chapters.
+In this lab you will use create a Github repository and push code to your repository.
 
 ## Steps
 
+1. Set up your git username and email locally using these commands - replacing John Doe with your name and johndoe@example.com with your email.
+
+   1. git config --global user.name "John Doe"
+   2. git config --global user.email johndoe@example.com
+
 1. Open a command prompt in windows and navigate to c:\
 
-2. Create a new repository call my-angular-course
-
-3. Navigate to C:\ and issue this command
+1. Navigate to C:\ and issue this command
 
    ```bash
    mkdir my-angular-course
    ```
 
-4. Change into this directory using `cd my-angular-course`
+1. Change into this directory using `cd my-angular-course`
 
-5. In your Github account, click the + in the upper right and choose New repo
+1. Log into your Github account, click the + in the upper right and choose New repo
 
-6. Call it my-angular-course
+1. Call it **my-angular-course**. Do not initialize - do not check any boxes. When it creates it will display some setup code which includes **…or create a new repository on the command line**
 
-7. Copy the commands given by Github into your command prompt
+1. Copy the commands given by Github which will look something similar to the following into your command prompt within the **my-angular-albums**
 
-8. Make sure you set up your git username and email
+   ```bash
+   echo "# test1234" >> README.md
+   git init
+   git add README.md
+   git commit -m "first commit"
+   git remote add origin https://github.com/JudyLipinski/test1234.git
+   git push -u origin master
+   ```
 
-9. Open in VSCode with code .
+1. From the prompt, open in VSCode with code .
 
-10. Update the README with your name and the date
+1. Update the README with your name and the date. Save the file.
 
-11. Push, log in
+1. In VSCode commit, your changes by clicking the third icon down which looks like a Y. In the source control: git menu, type in the message box - Added name and email. Click the checkmark to commit.
 
-12. install windows extension
+1. In VSCode, look at the bottom left where it says "master" to the right of this notice the circular arrows. Click this icSon, which will pull any code form the remote repo, and then push any changes to be committed.
+
+1. install windows extension
