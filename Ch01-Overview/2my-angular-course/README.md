@@ -58,3 +58,5 @@ In this lab you will use create a Github repository and push code to your reposi
    git config --global credential.helper wincred
 
    https://help.github.com/en/articles/caching-your-github-password-in-git
+
+   https://agilewarrior.wordpress.com/2017/09/25/how-to-setup-git-credential-store-in-windows/
