@@ -3,11 +3,11 @@
 ## Objectives
 
 - Use ngFor to display all albums
--
 
 ## Steps
 
-now, in AlbumList - use ngFor to have as many albumCard as needed
-add more data if needed form .json
+1. Now, in AlbumList - use ngFor to have as many albumCards created as needed
 
-display all albums in array using ngFor
+1. Copy the array from the data folder to have more than 3 albums
+
+1. Display all albums in array using ngFor

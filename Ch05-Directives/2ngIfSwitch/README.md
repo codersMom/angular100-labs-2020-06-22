@@ -1,5 +1,11 @@
-hi Matt
+# Chapter 5 Directives: ngIf
 
-find a mini sale icon image and save to this folder
+## Objectives
 
-then in the lab solution, use ngIf for the logic that if it is onsale to display the icon.
+- Use ngIf to display a For Sale message if the album is on sale
+
+## Steps
+
+1. Copy the sale icon image form this folder to your projects assets folder
+
+2. In your albumCard template, use ngIf to display the onsale image if on_sale == true

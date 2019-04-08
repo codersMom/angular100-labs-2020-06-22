@@ -6,7 +6,7 @@
 
 ## Steps
 
-1. In the app.component.html file refer to the three albums by using
+1. In the app.component.html file refer to each of the three albums by using
    albumsArray[0]
    albumsArray[1]
    albumsArray[2]

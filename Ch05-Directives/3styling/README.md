@@ -1,8 +1,14 @@
-make it so that when an album is clicked it sends up an event to list - chages teh array
-for the album to toggle selected - form true to false.
+# Chapter 5 Directives: styling methods
 
-data doesnt have sleected - so might need ot update teh data
-or write logic that if it is null or false to set to true,
-i cant think clearly, else make false
+## Objectives
 
-can use code form react albums proket to get styling
+- Use different methods to display data
+
+## Steps
+
+1. Make it so that when an album is clicked it sends up an event to list - and changes the array
+   for the album to toggle a property selected - from true to false.
+
+1. Data doesn't have selected - so might need ot update the data.
+
+1. Write logic that if it is null or false to set to true,
