@@ -7,10 +7,15 @@
 
 ## Steps
 
-1. Define an interface for uses person interface to ensure data initialized in ngont is valid
+1. Define an interface for each album. Create a model file using
 
-create a model using ng g m album <--confirm this and put into a directory called albums
-(might want to add a list of properties for them to add to the model, json data contains more complex model and missing elements)
+   ```
+   ng g m albums\album
+   ```
+
+   "quotemark": false
+
+1. (might want to add a list of properties for them to add to the model, json data contains more complex model and missing elements)
 
 ```console
 ng generate class <dir/file> [options]
@@ -23,6 +28,10 @@ OR
 ng generate interface <dir/file> <type>
 foo@bar:~$ ng g interface albums/album model
 ```
+
+1. 2. 3. 4.
+
+2. interface to ensure data initialized in ngont is valid
 
 in appcompoennt, import he type Album
 In AppComponent create a property called albumsArray
@@ -38,3 +47,26 @@ currency USD or EURO
 use a console.log to print the data
 
 in next section we will add to the screen
+
+export interface Album {
+id: number;
+artist: string;
+album_name: string;
+genre: string;
+price: number;
+currency: string;
+on_sale: boolean;
+year: number;
+release_date: string;
+recording_location: string;
+duration: string;
+url: string;
+tracks: Track[];
+}
+
+export interface Track {
+id: number;
+track_number: number;
+title: string;
+length: string;
+}
