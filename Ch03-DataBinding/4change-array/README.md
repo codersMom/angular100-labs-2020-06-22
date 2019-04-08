@@ -1,14 +1,18 @@
-## Overview in this lab, you will create an interval timer to update the album array
+# Chapter 3 DataBinding: Changing an array
 
-in ngOnInit in the interval timer
+## Objectives
 
-change the albums array directly to change the firts album to increase by ten dollars
+- Overview in this lab, you will practice changing an array
 
-Change the first album to update by 10 dollars every two seconds
+## Steps
 
-cancel it after 6 seconds
+1. in the ngOnInit interval timer, change the albums array directly to change the first album to increase by ten dollars
 
-console.log and see its changed but not the screen
+1. Change the first album to update by 10 dollars every two seconds
 
-then chaneg the code to reaplce the album with a new array with the updated ten dollars
-show how screen reflects changes
+1. cancel it after 6 seconds
+
+1. console.log and see its changed but not the screen
+
+1. then change the code to replace the album with a new array with the updated ten dollars
+   show how screen reflects changes
