@@ -1,3 +1,14 @@
+# Chapter 3: Add data that is type checked to the project
+
+## Objectives
+
+- Add data to the project
+- Define an interface to indicate the type of the data
+
+## Steps
+
+1. Define an interface for uses person interface to ensure data initialized in ngont is valid
+
 create a model using ng g m album <--confirm this and put into a directory called albums
 (might want to add a list of properties for them to add to the model, json data contains more complex model and missing elements)
 
@@ -5,6 +16,7 @@ create a model using ng g m album <--confirm this and put into a directory calle
 ng generate class <dir/file> [options]
 foo@bar:~$ ng g class albums/album --type=model --skipTests=true
 ```
+
 OR
 
 ```console
