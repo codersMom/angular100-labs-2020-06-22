@@ -1,13 +1,19 @@
-in the app.component.html file
-refer to the three albums by using
-albumsArray[0]
-albumsArray[1]
-albumsArray[2]
+# Chapter 3 DataBinding: Display data in the template
+
+## Objectives
+
+- Display data to the screen using interpolation
+
+## Steps
+
+1. In the app.component.html file refer to the three albums by using
+   albumsArray[0]
+   albumsArray[1]
+   albumsArray[2]
 
 and accessing the properties
 
 for each album use this bootstrap styling and structure
-(do it based on the React album project, hard code three of them - then copy the code into here that they shoudl use. or i can copy later )
 
 ```html
 <div class="container">
@@ -45,3 +51,5 @@ for each album use this bootstrap styling and structure
   </div>
 </div>
 ```
+
+1. Load the app you should now see three albums on the screen.
