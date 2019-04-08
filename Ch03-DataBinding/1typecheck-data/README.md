@@ -7,13 +7,15 @@
 
 ## Steps
 
+1.In this folder's README there is a file called **music-info.json**. Copy this to yoru project
+
 1. Define an interface for each album. Create a model file using
 
    ```
    ng g m albums\album
    ```
 
-   "quotemark": false
+1. In Tslint.json add an entry: "quotemark": false
 
 1. (might want to add a list of properties for them to add to the model, json data contains more complex model and missing elements)
 
@@ -26,7 +28,7 @@ OR
 
 ```console
 ng generate interface <dir/file> <type>
-foo@bar:~$ ng g interface albums/album model
+foo@bar:~$ ng g interface albums/album --type=model
 ```
 
 1. 2. 3. 4.
