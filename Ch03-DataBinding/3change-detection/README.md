@@ -21,3 +21,5 @@
    Notice the use of the keyword **this**. It is necessary this.titleCounter = titleCounter + 1
 
 4. You should see the screen get updated every second with the new value
+
+5. Mark your work as complete.

@@ -6,13 +6,16 @@
 
 ## Steps
 
-1. in the ngOnInit interval timer, change the albums array directly to change the first album to increase by ten dollars
+1. In your app.component.ts file, add a variable called numbers: number[];
 
-1. Change the first album to update by 10 dollars every two seconds
+2. Inside of **ngOnInit**, set numbers to [1,2,3]
 
-1. cancel it after 6 seconds
+3. Within app.component.html user interpolation to display the array using {{albumIds}}
+4.
+5. interval timer, change the albumsArray[0] price property to be increased by ten dollars
 
-1. console.log and see its changed but not the screen
+6. Can you see your changes on the screen?
 
-1. then change the code to replace the album with a new array with the updated ten dollars
-   show how screen reflects changes
+7. Console.log and see its changed but not the screen
+
+8. then change the code to replace the album with a new array with the updated ten dollars show how screen reflects changes
