@@ -10,12 +10,30 @@
 
 2. Inside of **ngOnInit**, set numbers to [1,2,3]
 
-3. Within app.component.html user interpolation to display the array using {{albumIds}}
-4.
-5. interval timer, change the albumsArray[0] price property to be increased by ten dollars
+3. Within app.component.html, after the jumbotron use interpolation to display the numbers using:
 
-6. Can you see your changes on the screen?
+   ```html
+   <p>Featured Albums: {{ numbers }}</p>
+   ```
 
-7. Console.log and see its changed but not the screen
+4. In the interval timer, add 4 to the to numbers using this.numbers.push(4) and then use a console.log to display numbers.
 
-8. then change the code to replace the album with a new array with the updated ten dollars show how screen reflects changes
+5. Run your code and open the console. You can refresh to see it start from the beginning. Notice the array of numbers is growing but the screen is not updating.
+
+6. To address this, you can instead use the assignment operator to copy the current array to a new array. Add this line of code after the console.log
+
+   ```javascript
+   this.numbers = [...this.numbers];
+   ```
+
+7. Refresh the browser, you should now see the numbers showing on the screen.
+
+8. Now, inside of the interval function, change the albumsArray[0] price property to be increased by ten dollars.
+
+   ```javascript
+   albumsArray[0].price += 10;
+   ```
+
+9. Can you see your changes on the screen? How did this compare to adding/removing items from an array?
+
+10. Mark your work as complete
