@@ -18,22 +18,22 @@
 
 1. Modify **angular-cli.json** to add bootstrap to the project by finding the section for styles and have these two entries:
 
-```JSON
-  "styles": [
-  "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-  "src/styles.css"
-  ]
-```
+   ```JSON
+     "styles": [
+     "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+     "src/styles.css"
+     ]
+   ```
 
 1. Replace the current contents of **app.component.html** with this which displays a jumbotron:
 
-```html
-<div style="text-align:center;">
-  <h1 class="jumbotron my-5 mx-5">
-    Welcome to {{ title }}!
-  </h1>
-</div>
-```
+   ```html
+   <div style="text-align:center;">
+     <h1 class="jumbotron my-5 mx-5">
+       Welcome to {{ title }}!
+     </h1>
+   </div>
+   ```
 
 1. When you revisit the browser it should be updated with this content.
 
