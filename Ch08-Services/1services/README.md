@@ -11,7 +11,7 @@
 1. Generate a service which returns albums
 
 ```
-ng g s people
+ng g s albums/shared/album
 ```
 
 1. update album list component to be dependency injected via the constructor.
