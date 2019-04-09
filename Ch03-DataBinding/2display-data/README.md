@@ -35,7 +35,7 @@
 
 1. Copy the img folder from this README folder into your projects **/src/assets** directory. We will use this for albums. Where the album id is 1 the image is 1.jpg.
 
-1. For the **src** paths of each card, do not use property binding - just use the nral src and set the path by using interpolation to the corresponding image, example:
+1. For the **src** paths of each card, do not use property binding - just use the normal src and set the path by using interpolation to the corresponding image, example:
 
    ```
      src = "assets/img/{{ albumsArray[0].id }}.jpg"
