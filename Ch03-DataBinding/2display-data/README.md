@@ -57,3 +57,5 @@
    ```
 
 1. Load the app you should now see three albums on the screen.
+
+1. Mark your work as complete. (Name tent card, electronic status, etc.)
