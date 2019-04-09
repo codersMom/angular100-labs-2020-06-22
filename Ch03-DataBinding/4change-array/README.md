@@ -20,7 +20,7 @@
 
 5. Run your code and open the console. You can refresh to see it start from the beginning. Notice the array of numbers is growing but the screen is not updating.
 
-6. To address this, you can instead use the assignment operator to copy the current array to a new array. Add this line of code after the console.log
+6. To address this, you can instead use the assignment operator to copy the current array to a new array. Add this line of code after the console.log - it uses the spread operator to copy values form the array to a new array - and assign it back to the original variable.
 
    ```javascript
    this.numbers = [...this.numbers];
