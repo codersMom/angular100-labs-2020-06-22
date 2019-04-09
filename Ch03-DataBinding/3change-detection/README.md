@@ -1,16 +1,16 @@
-# Chapter 3 DataBinding: Display data in the template
+# Chapter 3 DataBinding: Change Detection
 
 ## Objectives
 
-- Overview in this lab, you will create an interval timer which makes changes to the array of albums
+- Overview in this lab, you will create an interval timer which makes changes to a property, which updates the screen.
 
 ## Steps
 
 1. In the app.component.ts file, create a property inside of the export class block called **titleCounter** and set it equal to 1
 
-2. In the template, app.component.html, after the Welcome h1 - and a paragraph that displays: **Albums Title # {{titleCounter }}**
+2. In the template, **app.component.html**, after the Welcome h1 - add a paragraph that displays: **Albums Title # {{titleCounter }}**
 
-3. In the top of the **ngOnInit** block, create an interval timer, where every 2 seconds, you update the titleCounter by one. After 6 seconds cancel the interval.
+3. In the top of the **ngOnInit** block, create an interval timer, where every 2 seconds, you update the **titleCounter** by one. After 6 seconds cancel the interval.
 
    ```javascript
    const interval = setInterval(() => this.titleCounter++, 2000);
