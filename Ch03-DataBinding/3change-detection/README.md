@@ -18,7 +18,7 @@
    setTimeout(() => clearInterval(interval), 6000);
    ```
 
-   Notice the use of the keyword **this**. It is necessary this.titleCounter = titleCounter + 1
+   Notice the use of the keyword **this**. It is to use this in front of class properties
 
 4. You should see the screen get updated every second with the new value
 
