@@ -41,9 +41,9 @@
      assets/img/{{ albumsArray[0].id }}.jpg
    ```
 
-1. For the **alt** content for each, use Cover photo for XXX where XXX is the name of the album.
+1. For the **alt** content for each, use Album Cover for XXX where XXX is the name of the album.
 
-1. After the `<img>` for each card, add a card body like this:
+1. Immediately after the `<img>` for each card, add a card body like this, updating it for the 2nd and 3rd card:
 
    ```html
    <div class="card-body">
@@ -54,49 +54,6 @@
        <li>{{ albumsArray[0].price }} {{ albumsArray[0].currency }}</li>
      </ul>
    </div>
-
-   {{ albumsArray[0].album_name }}
    ```
-
-````
-
-1.
-
-```html
-<div class="container">
-<div class="card-deck">
- <div class="card">
-   <div class="card-body text-center">
-     <h4 class="card-title">{{albumsArray[0].artist}}</h4>
-     <ul>
-       <li>{{albumsArray[0].album_name}}</li>
-       <li>{{albumsArray[0].genre}}</li>
-       <li>{{albumsArray[0].price}} {{albumsArray[0].currency}}</li>
-     </ul>
-   </div>
- </div>
- <div class="card">
-   <div class="card-body text-center">
-     <h4 class="card-title">{{albumsArray[1].artist}}</h4>
-     <ul>
-       <li>{{albumsArray[1].album_name}}</li>
-       <li>{{albumsArray[1].genre}}</li>
-       <li>{{albumsArray[1].price}} {{albumsArray[1].currency}}</li>
-     </ul>
-   </div>
- </div>
- <div class="card">
-   <div class="card-body text-center">
-     <h4 class="card-title">{{albumsArray[2].artist}}</h4>
-     <ul>
-       <li>{{albumsArray[2].album_name}}</li>
-       <li>{{albumsArray[2].genre}}</li>
-       <li>{{albumsArray[2].price}} {{albumsArray[2].currency}}</li>
-     </ul>
-   </div>
- </div>
-</div>
-</div>
-````
 
 1. Load the app you should now see three albums on the screen.
