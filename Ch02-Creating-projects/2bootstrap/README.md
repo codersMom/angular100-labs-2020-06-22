@@ -16,7 +16,7 @@
    npm install bootstrap -S
    ```
 
-1. Modify **angular-cli.json** to add bootstrap to the project by finding the section for styles and have these two entries:
+1. Modify **angular.json** to add bootstrap to the project by finding the section for styles and have these two entries:
 
    ```JSON
      "styles": [
