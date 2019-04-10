@@ -22,19 +22,25 @@
 
 4. Move this code (about 16 lines) to the newly created **album-card.component.html** file replacing its placeholder content.
 
-5. Search and replace in **album-card.component.html** the **albumsArray[0]** references to be instead **albumInfo**.
+5. Search and replace in **album-card.component.html** the **albumsArray[0]** references to be instead **album**.
 
 6. Now declare a member variable in **album-card.component.ts** to be
 
    ```javascript
     @Input()
-    albumInfo: Album;
+    album: Album;
    ```
 
 7. In **album-list.component.html** update it to look like this:
 
    ```html
-
+   <div class="container">
+     <div class="card-deck">
+       <app-album-card [album]="albumsArray[0]"></app-album-card>
+       <app-album-card [album]="albumsArray[1]"></app-album-card>
+       <app-album-card [album]="albumsArray[2]"></app-album-card>
+     </div>
+   </div>
    ```
 
 8. In **album-card.component.css** add a rule that the class for card should be:
