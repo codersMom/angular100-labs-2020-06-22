@@ -10,7 +10,7 @@
 
 1. In this folder's README there is a file called **albums.data.ts**. Open and examine this file and copy it to your project's app/albums folder. (src/app/albums)
 
-1. Update the album.model.ts to add in the Album properties that were not present before, and to add in Track.
+1. Replace the content of **album.model.ts** with the following to add in the Album properties that were not present before, and to add in Track.
 
    ```javascript
    export interface Album {
@@ -19,7 +19,7 @@
      album_name: string;
      genre: string;
      price: number;
-     currency: string;
+     currency?: string;
      on_sale: boolean;
      year: number;
      release_date: string;
