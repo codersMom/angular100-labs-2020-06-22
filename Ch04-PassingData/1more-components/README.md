@@ -48,4 +48,6 @@
 
    Note the reference to the selector of AlbumListComponent.
 
-9. Mark your work as complete.
+9. You should now see the albums in the browser, now being shown via the lst component.
+
+10. Mark your work as complete.
