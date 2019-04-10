@@ -1,4 +1,4 @@
-# Chapter 4 Passing Data: Add more components
+# Chapter 4 Passing Data: How to add and reference a new component
 
 ## Objectives
 
