@@ -6,24 +6,21 @@
 
 ## Steps
 
-1. Open the album-card.component.html file and find the
+1. Open the album-card.component.html file and find the div with class="card"
 
 ```html
 <div class="card"></div>
 ```
 
-<div
-  class="card">
-  [ngStyle]="{ 'background-color': album.on_sale ? 'green' : '' }"
->
-1. Add the use of
+1. Modify this element to have a style applied if the album is on sale.
+
    ```html
-   <app-album-card
-     *ngFor="let album of albums"
-     [album]="album"
-     (albumClicked)="getSelectedAlbum($event)"
-     [ngStyle]="{'background-color': album.on_sale ? 'green' : ''}"
+   <div
+     class="card"
+     [ngStyle]="{ 'background-color': album.on_sale ? 'green' : '' }"
    >
-   </app-album-card>
+     >
+   </div>
    ```
-2. Create an event that when
+
+1. Mark your work as complete.
