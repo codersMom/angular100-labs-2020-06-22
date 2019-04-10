@@ -2,33 +2,50 @@
 
 ## Objectives
 
-- Overview in this lab, you will practice creating a hierarchy of components
+- Overview in this lab, you will practice creating a hierarchy of components, moving HTML template from AppComponent
 
 ## Steps
 
-1. Create AlbumList
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
+
+2. Open the integrated terminal. Create an **AlbumListComponent** by using this Angular CLI command. Note that g is short for generate, c is for component.
+
+   ```
    ng g c albums/album-list --flat
+   ```
 
-1. Examine the updates made to the app.module class decorator. Use the git tool if need be to see the changes.
+   Here we are specifying to create album-list inside of a directory called albums. The --flat indicates to start at the root directory. If the command given was **ng g c some-name** there would be a directory created called **some-name** and inside would be the **some-name** component files.
 
-1. Move working with array code from app.component to the newly generated component class.
+3. Examine the updates made to the **app.module** class decorator. You can see the changes easily if you click on the Y shaped Source Control icon in VSCode and click the changed **app.module.ts** file.
 
-1. In app.component.html refer to the new albumlist selector.
+4. From the **app.component.html** file, move the entire element that starts with `<div class="container">` to the new **album-list.component.html** file.
 
-1. Create AlbumCard
-   ng g c albums/album-card --flat
+5. You may notice an error because of the need for albumsArray to be in the **album-list.component.ts** file. In that file, include the declaration of **albumsArray** in the class:
 
-1. In album list hard-code 3 album cards
+   ```javascript
+   albumsArray: Album[];
+   ```
 
-```html
-<app-album-card></app-album-card>
-<app-album-card></app-album-card>
-<app-album-card></app-album-card>
-```
+6. To make this compile you must import Album into the AlbumListComponent file.
 
-1. In album card just have the structure used by cards
-   can copy array[0] data to the card component ts file
+   ```javascript
+   import { Album } from "../album.model";
+   ```
 
-1. Have a property called albumData. Use this in album card html to display data.
+7. Move the **ngOnInit()** from app.component.ts into the album-list.component.ts file.
 
-1. In later section we will pass the data to the card so each will be unique.
+8. Update **app.component.html** so that it only has this code:
+
+   ```html
+   <div style="text-align:center;">
+     <h1 class="jumbotron my-5 mx-5">Welcome to {{ title }}!</h1>
+   </div>
+
+   <app-album-list></app-album-list>
+
+   <router-outlet></router-outlet>
+   ```
+
+   Note the reference to the selector of AlbumListComponent.
+
+9. Mark your work as complete.
