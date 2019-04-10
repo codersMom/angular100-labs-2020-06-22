@@ -6,6 +6,8 @@
 
 ## Steps
 
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
+
 1. In this folder's README there is a file called **albums.data.ts**. Open and examine this file and copy it to your project's app/albums folder. (src/app/albums)
 
 1. Update the album.model.ts to add in the Album properties that were not present before, and to add in Track.
