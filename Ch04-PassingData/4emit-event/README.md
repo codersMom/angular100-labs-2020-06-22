@@ -6,14 +6,14 @@
 
 ## Steps
 
-1. In **album-card.component.ts** create a member variable which is an EventEmitter.
+1. In **album-card.component.ts** create a member variable which is an EventEmitter. You will need to make sure you have all of the needed imports. (Output, EventEmitter)
 
    ```javascript
     @Output()
     albumClicked: EventEmitter<Album> = new EventEmitter<Album>();
    ```
 
-2. Modify the showAlbum function to be:
+2. Modify the **showAlbum** function to be:
 
    ```javascript
     showAlbum() {
@@ -25,20 +25,20 @@
 
    ```html
    <app-album-card
-     [album]="albums[0]"
+     [album]="albumsArray[0]"
      (albumClicked)="parentFunctionHandler($event)"
    ></app-album-card>
    <app-album-card
-     [album]="albums[1]"
+     [album]="albumsArray[1]"
      (albumClicked)="parentFunctionHandler($event)"
    ></app-album-card>
    <app-album-card
-     [album]="albums[2]"
+     [album]="albumsArray[2]"
      (albumClicked)="parentFunctionHandler($event)"
    ></app-album-card>
    ```
 
-4. In **album-list.component.ts**, add the parentFunctionHandler function
+4. In **album-list.component.ts**, add the parentFunctionHandler function **after** the ngOnInit() function.
 
    ```javascript
    parentFunctionHandler(album) {
