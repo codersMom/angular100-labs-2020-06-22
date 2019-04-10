@@ -11,10 +11,10 @@
 2. Open the integrated terminal. Create an **AlbumListComponent** by using this Angular CLI command. Note that g is short for generate, c is for component.
 
    ```
-   ng g c albums/album-list --flat
+   ng g c albums/album-list
    ```
 
-   Here we are specifying to create album-list inside of a directory called albums. The --flat indicates to start at the root directory. If the command given was **ng g c some-name** there would be a directory created called **some-name** and inside would be the **some-name** component files.
+   Here we are specifying to create album-list inside of a directory called albums. Notice that a sub-directory is also created called album-list. If you wish to not have a subdirectory created you can use --flat.
 
 3. Examine the updates made to the **app.module** class decorator. You can see the changes easily if you click on the Y shaped Source Control icon in VSCode and click the changed **app.module.ts** file.
 
