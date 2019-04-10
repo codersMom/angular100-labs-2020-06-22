@@ -1,4 +1,4 @@
-# Chapter 4 Passing @Input to child components
+# Chapter 4 Passing Data: Using @Input in child components
 
 ## Objectives
 

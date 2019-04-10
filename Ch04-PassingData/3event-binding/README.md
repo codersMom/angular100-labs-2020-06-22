@@ -1,8 +1,8 @@
-# Chapter 4 Event Binding
+# Chapter 4 Passing Data: Event Binding
 
 ## Objectives
 
-- Add a button to each card that when clicked raises an alert showing that cards id.
+- Add a button to each card that when clicked calls a function to display an alert
 
 ## Steps
 
@@ -33,3 +33,9 @@
    ```
 
 4. You should now see buttons for the 3 albums in the browser and when you click - an alert should be raised with the album name.
+
+5. Once this is working, mark your work as complete.
+
+## Bonus
+
+1. On a hover event of a card, console.log the name of the artist.
