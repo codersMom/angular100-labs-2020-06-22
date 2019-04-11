@@ -2,11 +2,39 @@
 
 ## Objectives
 
-The display of the price as it changes has been formatting with odd decimal places.
-Use a Pipe to format the price using the decimal pipe and currency pipe
+- Apply a 10% discount to albums that are on sale and format them nicely for the screen.
+- Previously, the decimal places after simple math did not look great.
+- Use a Pipe to format the price using the decimal pipe and currency pipe
 
 ## Steps
 
-1. In the
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
-2.
+1. Ensure some of the data has currency of USD and if need be, set something to have currency of GBP
+
+1. In AlbumCardComponent add a property called **newPrice**.
+
+1. In ngOnInit() check if the album is on sale and if it is - set newPrice to be 10% less.
+
+   ```javascript
+   if (this.album.on_sale) {
+   // Apply 10% discount
+   this.newPrice = this.album.price - (this.album.price \* .1);
+   }
+   ```
+
+1. Open this in the browser, how does it look? Lets fix the decimals and add the use of currency.
+
+1. In the template, use a album-card.component.ts
+
+   ```html
+   <li>
+     <span *ngIf="album.on_sale" style="text-decoration:line-through;">
+       {{album.price | number:'1.1-2' | currency:album.currency}}
+     </span>
+     {{ (album.on_sale ? newPrice : album.price) | number:'1.2-2' |
+     currency:album.currency }}
+   </li>
+   ```
+
+1. Once it is displaying correctly mark your work as complete.
