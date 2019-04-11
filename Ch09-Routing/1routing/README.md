@@ -1,49 +1,67 @@
-Create a component for album details
+# Chapter 9 Routing: Work with Routing
 
-```console
-$ ng g component albums/album-details
-```
+## Objectives
 
-Add Nav/Update app.component.html:
+- Use Routing in your application
+- Add the use of the bootstrap javascrpt file for navbar functionality
 
-- Remove Jumbtron -> Add Navbar
-- Remove app-album-list tags
+## Steps
 
-```html
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" routerLink="/">{{ title }}</a>
-  <div class="navbar-nav">
-    <a class="nav-item nav-link" routerLink="/albums" routerLinkActive="active"
-      >Home</a
-    >
-  </div>
-</nav>
-```
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
-Update Routes (app-routing.module.ts):
+2. Create a component for album details
 
-```typescript
-const routes: Routes = [
-  { path: "", redirectTo: "/albums", pathMatch: "full" },
-  { path: "albums", component: AlbumListComponent },
-  { path: "details", component: AlbumDetailsComponent }
-];
-```
+   ```console
+   $ ng g component albums/album-details
+   ```
 
-Update album-card.component.html:
+3. Add Nav/Update **app.component.html**:
 
-- Remove click directive -> add router link
+   - Remove Jumbtron -> Add Navbar
+   - Remove app-album-list tags
 
-```html
-<button class="btn btn-primary float-right" routerLink="/details">
-  See Details
-</button>
-```
+   ```html
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <a class="navbar-brand" routerLink="/">{{ title }}</a>
+     <div class="navbar-nav">
+       <a
+         class="nav-item nav-link"
+         routerLink="/albums"
+         routerLinkActive="active"
+         >Home</a
+       >
+     </div>
+   </nav>
+   ```
 
-Results:
+4. Update **angular.json** file to reference the Bootstrap navbar
 
-- Page will navigate to album-details component when "See Details" button is clicked on the cards
-- Page will navigate to /albums when clicking Home or app name in nav
+   ```javascript
+    "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+   ```
 
-this.route.params snippet
-gives pipe and tap
+5. Define Routes in **app-routing.module.ts**:
+
+   ```typescript
+   const routes: Routes = [
+     { path: "", redirectTo: "/albums", pathMatch: "full" },
+     { path: "albums", component: AlbumListComponent },
+     { path: "details", component: AlbumDetailsComponent }
+   ];
+   ```
+
+6. Update the button on the card in **album-card.component.html**:
+
+   - Remove (click) directive -> add the use of **routerLink**
+
+   ```html
+   <button class="btn btn-primary float-right" routerLink="/details">
+     See Details
+   </button>
+   ```
+
+7. Test your changes in the browser
+   - Page will navigate to album-details component when "See Details" button is clicked on the cards
+   - Page will navigate to /albums when clicking Home or app name in nav
