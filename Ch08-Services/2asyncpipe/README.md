@@ -28,7 +28,9 @@
 
 6. The json-server and the angular server should both start. Test the url works for the resources, as listed in the console.
 
-7. Modify the **album.service** to be dependency injected with httpClient, and use this to request the albums from the given URL.
+7. Inside the **app.module.ts** - add the use of **HttpClientModule** to the **@NgModule** imports property. You will also need to have this added to the imports at the top of the file.
+
+8) Modify the **album.service** to be dependency injected with httpClient, and use this to request the albums from the given URL.
 
    ```javascript
    import { Injectable } from '@angular/core';
@@ -53,16 +55,16 @@
 
    **NOTICE**: the return type is an Observable<Album[]>
 
-8. In the **AlbumListComponent** change the data type of the albums from Album[] to an Observable of Album[]. this requires an import of **import { Observable } from 'rxjs';**
+9) In the **AlbumListComponent** change the data type of the albums from Album[] to an Observable of Album[]. this requires an import of **import { Observable } from 'rxjs';**
 
-   ```javascript
-        albums: Observable<Album[]>;
-   ```
+```javascript
+     albums: Observable<Album[]>;
+```
 
-9. In the album-list.component.html use the async pipe
+11. In the album-list.component.html use the async pipe
 
-   ```html
-   <app-album-card *ngFor="let album of albums | async"
-   ```
+```html
+<app-album-card *ngFor="let album of albums | async"
+```
 
-10. Check that your app is working, and mark your work as complete.
+11. Check that your app is working, and mark your work as complete.
