@@ -1,4 +1,4 @@
-# Chapter 8 Services: Use a service to return data for use in component
+# Chapter 8 Services: 1 Use a service to return data for use in component
 
 ## Objectives
 

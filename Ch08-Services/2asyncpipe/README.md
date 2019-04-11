@@ -1,4 +1,4 @@
-# Chapter 8 Services: AsyncPipe
+# Chapter 8 Services: 2 AsyncPipe
 
 ## Objectives
 
