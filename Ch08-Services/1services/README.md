@@ -8,17 +8,53 @@
 
 ## Steps
 
-1. Generate a service which returns albums
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
-```
-ng g s albums/shared/album
-```
+1. Use the integrated terminal to generate a service which returns an array of albums.
 
-1. update album list component to be dependency injected via the constructor.
+   ```
+   ng g s albums/shared/album
+   ```
+
+1. Update the content of the service to
+
+   ```javascript
+   import { Injectable } from "@angular/core";
+   import { ALBUMS } from "./albums.data";
+
+   @Injectable({
+     providedIn: "root"
+   })
+   export class AlbumService {
+     constructor() {}
+
+     getAlbums() {
+       return ALBUMS;
+     }
+   }
+   ```
+
+   Notice the use of providedIn - this is new since Angular 6. With it - you do not need to add the service within the module.
+
+1. Update the **album list component** to be dependency injected via the constructor.
 
    1. import the service
    2. Add it as an argument to the constructor
 
-2. In ngOnInit() call the service using this.service.getAlbums() and set it to your albumArray property
+   ```javascript
+   constructor(private albumService: AlbumService) { }
+   ```
 
-3. Check that your code still works
+1. Add these functions to call the service's getAlbums() and set it to your albums property
+
+   ```javascript
+    getAlbums() {
+        this.albums = this.albumService.getAlbums();
+    }
+
+    ngOnInit() {
+        this.getAlbums();
+    }
+   ```
+
+1. Check that your code works, and mark your work as complete.
