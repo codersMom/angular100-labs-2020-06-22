@@ -33,16 +33,4 @@
    1. Open the file **src\app\demo\demo.ts**
    2. Notice its contents contain various items. Find the **ValueService**. (In a real-project you would have these as separate files.)
    3. The **ValueService** has no dependencies. This makes it even easier to test.
-   4. Note the different tests being run. Calling the transform function with different data.
-   5. Change describe on line 3 to be **fdescribe**.
-   6. This will give this describe block focus and will be the only tests run now.
-   7. Run the tests using _npm run tests_
-   8. Notice only 5 tests are now run.
-
-7. Testing a component
-
-8. Update **album details component**:
-
-   - Add router and service dependencies
-   - Add method to use parameter and get album
-   - Add html to display album details on page
+   4. Note the different tests being run.
