@@ -3,65 +3,165 @@
 ## Objectives
 
 - Use Routing in your application
-- Add the use of the bootstrap javascrpt file for navbar functionality
+- Add the use of the bootstrap javascript file for navbar functionality
 
 ## Steps
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
-2. Create a component for album details
+2. We are going to use Bootstrap to style the navbar and make it be responsive, which requires bootstrap.min.js, **jquery** and **popper**. We have already installed Bootstrap, so bootstrap.min.js is available, but we need to install jquery and popper.
 
    ```console
-   $ ng g component albums/album-details
+   $ npm i popper jquery -S
    ```
 
-3. Add Nav/Update **app.component.html**:
-
-   - Remove Jumbtron -> Add Navbar
-   - Remove app-album-list tags
-
-   ```html
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     <a class="navbar-brand" routerLink="/">{{ title }}</a>
-     <div class="navbar-nav">
-       <a
-         class="nav-item nav-link"
-         routerLink="/albums"
-         routerLinkActive="active"
-         >Home</a
-       >
-     </div>
-   </nav>
-   ```
-
-4. Update **angular.json** file to reference the Bootstrap navbar
+3. Update **angular.json** in order to refer to the .js files. Find the **scripts** property and add these items to the array:
 
    ```javascript
     "scripts": [
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
+          "node_modules/jquery/dist/jquery.min.js",
+          "node_modules/popper.js/dist/umd/popper.min.js",
+          "node_modules/bootstrap/dist/js/bootstrap.min.js"
+      ],
    ```
 
-5. Define Routes in **app-routing.module.ts**:
+4. Because **angular.json** was updated you need to restart the server for changes to be picked up. Do that now.
+
+5. Let's create an **About** "page" for our application. Make the component have an inline template and inline styling.
+
+   ```console
+    $ ng g c about -it -is
+   ```
+
+6. Modify the **about.component.ts** template to display the following:
+
+   ```html
+   <div style="text-align:center;">
+     <h1 class="jumbotron my-5 mx-5">
+       Welcome to {{ title }}!
+     </h1>
+   </div>
+   ```
+
+7. And set the **about.component.ts** title property to equal **My Angular Albums**. We cannot reach this component yet.
+
+8. Update **app.component.html** to simply be:
+
+   ```html
+   <app-navbar></app-navbar> <router-outlet></router-outlet>
+   ```
+
+9) Now we will add paths to be loaded beneath the `<router-outlet>` element.
+
+   Add 3 object elements to the Routes array in **app-routing.module.ts**:
 
    ```typescript
    const routes: Routes = [
-     { path: "", redirectTo: "/albums", pathMatch: "full" },
-     { path: "albums", component: AlbumListComponent },
-     { path: "details", component: AlbumDetailsComponent }
+     { path: "", redirectTo: "/about", pathMatch: "full" },
+     { path: "about", component: AboutComponent },
+     { path: "albums", component: AlbumListComponent }
    ];
    ```
 
-6. Update the button on the card in **album-card.component.html**:
+10. Open the browser for testing. With the URL of **http://localhost:xxxx/** you should see the about page. If you manually change the URL and add **http://localhost:xxxx/albums**, you should see the albums. If not fix your errors.
 
-   - Remove (click) directive -> add the use of **routerLink**
+11. Let's create a navbar component to click links to change page views.
 
-   ```html
-   <button class="btn btn-primary float-right" routerLink="/details">
-     See Details
-   </button>
-   ```
+    ```console
+    $ ng g c navbar -is
+    ```
 
-7. Test your changes in the browser
-   - Page will navigate to album-details component when "See Details" button is clicked on the cards
-   - Page will navigate to /albums when clicking Home or app name in nav
+12. In **navbar.component.ts** create this title property
+
+    ```javascript
+    title = "My Albums Project";
+    ```
+
+13. Use this content for the new **navbar.component.html**. Note the use of **routerLink**
+
+    ```html
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" routerLink="/">
+        <img
+          src="assets/album.gif"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        {{ title }}
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <a
+            class="nav-item nav-link"
+            routerLink="/albums"
+            routerLinkActive="active"
+            >View Albums</a
+          >
+        </div>
+      </div>
+    </nav>
+    ```
+
+14. Copy the image **album.gif** from this folder into your projects assets folder.
+
+15. Test your changes in the browser and ensure you have no errors. You should see the navbar with image. If you click the links they should work. Clicking the nav brand should bring back the album page.
+
+16. Modify the **About** template to use a button to routerLink to albums.
+
+    ```html
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Welcome to {{ title }}!</h1>
+      <button
+        type="button"
+        routerLink="/albums"
+        class="btn btn-primary text-center mt-3 mx-auto"
+      >
+        View Albums
+      </button>
+    </div>
+    ```
+
+17. Try adding a non-existing URL in the browser bar such as **http://localhost:xxxx/abc**. View the console to see the error generated.
+
+18. Generate a new component to be used for any bad urls.
+
+    ```console
+    ng g c Notfound -it -is
+    ```
+
+19. Update the **Notfound** template to have this content
+
+    ```html
+    <h1>Error 404</h1>
+    <p>Page not found</p>
+    ```
+
+20. Update routes to add a wildcard path with asterix. This must go at the end of your path objects. It will be teh match if no other url matches.
+
+    ```typescript
+    const routes: Routes = [
+      { path: "", redirectTo: "/about", pathMatch: "full" },
+      { path: "about", component: AboutComponent },
+      { path: "albums", component: AlbumListComponent },
+      { path: "**", component: NotfoundComponent, pathMatch: "full" }
+    ];
+    ```
+
+21. Try adding a non-existing URL in the browser bar such as **http://localhost:xxxx/abc**.
+
+22. This should now load the 404 Error page.

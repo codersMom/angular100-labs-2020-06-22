@@ -9,6 +9,22 @@
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
    Update AlbumService:
 
+   5. Create a component for album details
+
+   ```console
+   $ ng g component albums/album-details
+   ```
+
+16) Update the button on the card in **album-card.component.html**:
+
+- Remove (click) directive -> add the use of **routerLink**
+
+```html
+<button class="btn btn-primary float-right" routerLink="/details">
+  See Details
+</button>
+```
+
 1. Add method to get individual album by 'id'
 
    ```typescript
