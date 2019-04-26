@@ -30,7 +30,7 @@ In this lab you will use create a Github repository and push code to your reposi
 
 1. Call it **my-angular-course**. Do not initialize - do not check any boxes. When it creates it will display some setup code which includes **…or create a new repository on the command line**
 
-1. Copy the commands given by Github which will look something similar to the following into your command prompt within the **my-angular-albums**
+1. Copy the commands given by GitHub into your command prompt within the **my-angular-albums**. It will look similar to the following (do not execute the commands below)
 
    ```bash
    echo "# test1234" >> README.md

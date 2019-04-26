@@ -27,7 +27,7 @@
 
 8. In the browser view the running project. Right click in the browser and choose View Source. (not the dev tools). Notice how the original source in the browser includes javascript files that were not in the original index.html.
 
-9. In the browser right click and choose Inspect. Notice the message in the console. Which mode is the default mode that started? Notice under elements, a lot of DOM manipulation has happened to create the view.
+9. Go back to your running project in the browser, right click and choose Inspect. Notice the message in the console. Which mode is the default mode that started? Notice under elements, a lot of DOM manipulation has happened to create the view.
 
 10. In the Chrome debugger tools, click the Network tab. Right click on the browser reload button and choose hard reload. Notice the output in the network tab. It shows the request being made to the server and the JavaScript files being loaded which are used to display the components. The total size and number of milliseconds to load is also shown.
 
