@@ -14,7 +14,7 @@ In this lab you will use create a Github repository and push code to your reposi
 1. Set up your git username and email locally using these commands - replacing John Doe with your name and johndoe@example.com with your email.
 
    1. git config --global user.name "John Doe"
-   2. git config --global user.email johndoe@example.com
+   1. git config --global user.email johndoe@example.com
 
 1. Open a command prompt in windows and navigate to c:\
 
