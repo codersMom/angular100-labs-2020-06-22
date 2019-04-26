@@ -11,15 +11,15 @@
 
 1. On the first line of **app.component.ts**, change the import statement to use double-quotes " instead of single-quotes '
   
-    ```javascript
+    ```typescript
     import { Component } from "@angular/core";
     ```
 
-1. You should see a message from tslint that the double-quotes " should be single-quotes '. This rule comes from Google's Style Guide and historically was a 'nice to have' because everyone used to put lots of HTML strings inside of JS; this meant you could double-quoted HTML attributes inside a string without escaping the quotes. Since the days of concatenating HTML strings are mostly behind us and many of us prefer to use double-quotes, let's change this rule.
+1. You should see a message from tslint that the double-quotes " should be single-quotes '. This rule comes from Google's Style Guide and historically was a 'nice to have' because everyone used to put lots of HTML strings inside of JS; this meant you could have double-quoted HTML attributes inside a string without escaping the quotes. Since the days of concatenating HTML strings are mostly behind us and since many of us prefer to use double-quotes, let's change this rule.
 
-1. You'll make this change in tslint.json, but you may have noticed that there's two different tslint.json files in our project. With Angular you can have multiple projects and you may want slightly different TS lint settings for those projects. Since we will only have one project in this repo, delete the /src/tslint.json file.
+1. You'll make this change in tslint.json, but you may have noticed that there's two different tslint.json files in our project. With Angular you can have multiple projects and you may want slightly different TS lint settings for those projects. Since we will only have one project in this repo, delete the **/src/tslint.json** file.
 
-1. Open /tslinr.json and change the rule below
+1. Open **/tslinr.json** and change the rule below
 
     from
     ```json
@@ -39,7 +39,7 @@
 1.  Another helpful extension is **Prettier - Code formatter**. If not already installed, then install it. Create a file with the name **.prettierrc**
     in the root of your project. Use JSON formatting to add these rules:
 
-    ```javascript
+    ```typescript
     {
         "trailingComma": "es5",
         "tabWidth": 4,
@@ -51,7 +51,7 @@
 1.  Data is added VIA the **XXX.component.ts** type files. We will start by modifying the file **app.component.ts**. Open this file and after the line with **title = "My Angular Albums";**
     and a property called
 
-    ```javascript
+    ```typescript
     albumsArray: any;
     ```
 
@@ -59,7 +59,7 @@
 
 1.  Modify the line with the class export to include implements OnInit like this:
 
-    ```javascript
+    ```typescript
     export class AppComponent implements OnInit {
     ```
 
@@ -67,19 +67,19 @@
 
 1.  You must import **OnInit**. If you have extensions installed this may have already been done for you - if not, modify the top of **app.component.ts** which imports from Angular core to look like this:
 
-    ```javascript
+    ```typescript
     import { Component, OnInit } from "@angular/core";
     ```
 
 1.  You may see errors that you need to now implement OnInit. Do this by adding this function in the class after the property definitions - but before the closing brace } for the class.
 
-    ```javascript
+    ```typescript
     ngOnInit(): void {    }
     ```
 
 1.  Inside of this **ngOnInit()** function is where you should initialize the **albumsArray** property you created. For now you can hard-code 3 items from an array such as shown next. In the future we will get these from a server.
 
-    ```javascript
+    ```typescript
     ngOnInit(): void {
       this.albumsArray = [
         {
@@ -141,7 +141,7 @@
 
 1. Complete the interface so that it looks like this:
 
-    ```javascript
+    ```typescript
     export interface Album {
       id: number;
       artist: string;
@@ -160,19 +160,19 @@
 
 1. In **app.component.ts**, import the type Album
 
-    ```javascript
+    ```typescript
     import { Album } from "./albums/album.model";
     ```
 
 1. Now make the property of albumsArray be of type Album[]
 
-    ```javascript
+    ```typescript
     albumsArray: Album[];
     ```
 
 1. You should now get errors about the data not quite matching up. Fix the hard-coded array items to update the id and on_sale. For currency and tracks, data may not exists so add a question mark so data looks something like this:
 
-    ```javascript
+    ```typescript
     export interface Album {
     id: number;
     artist: string;
