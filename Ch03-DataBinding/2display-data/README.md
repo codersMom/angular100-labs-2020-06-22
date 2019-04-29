@@ -10,7 +10,7 @@
 
 ## Steps
 
-1. Create a structure for displaying a number of albums as cards.
+1. In the app.component.html file, create a structure for displaying a number of albums as cards.
 
    ```html
    <div class="container">
