@@ -156,7 +156,7 @@
       release_date: string;
       recording_location: string;
       duration: string;
-      url: string;
+      URL: string;
     }
     ```
 
