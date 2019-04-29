@@ -63,13 +63,15 @@
     export class AppComponent implements OnInit {
     ```
 
-1.  We will be exploring this in more detail, it indicates that you intend to implement a method called **ngOnInit()** which is defined in the OnInit interface. This method is called when the component is loaded by Angular.
+    We will be exploring this in more detail, it indicates that you intend to implement a method called **ngOnInit()** which is defined in the OnInit interface. This method is called when the component is loaded by Angular.
 
-1.  You must import **OnInit**. If you have extensions installed this may have already been done for you - if not, modify the top of **app.component.ts** which imports from Angular core to look like this:
+1.  Mouse over the red wavy underline that **OnInit** has. You must import **OnInit**. Depending on the extensions you have installed, this may have already been done for you - if not, modify the top of **app.component.ts** which imports from Angular core to look like this:
 
     ```typescript
     import { Component, OnInit } from "@angular/core";
     ```
+
+    Alternatively, you can click the 'Quick Fix' suggested to you when you mouse over the red way underline and it will add it for you.
 
 1.  You may see errors that you need to now implement OnInit. Do this by adding this function in the class after the property definitions - but before the closing brace } for the class.
 
@@ -163,6 +165,8 @@
     ```typescript
     import { Album } from "./albums/album.model";
     ```
+
+    Remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
 
 1. Now make the property of albumsArray be of type Album[]
 
