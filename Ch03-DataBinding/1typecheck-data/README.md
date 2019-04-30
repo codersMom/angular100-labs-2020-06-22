@@ -19,7 +19,7 @@
 
 1. You'll make this change in tslint.json, but you may have noticed that there's two different tslint.json files in our project. With Angular you can have multiple projects and you may want slightly different TS lint settings for those projects. Since we will only have one project in this repo, delete the **/src/tslint.json** file.
 
-1. Open **/tslinr.json** and change the rule below
+1. Open **/tslint.json** and change the rule below
 
     from
     ```json
@@ -156,7 +156,7 @@
       release_date: string;
       recording_location: string;
       duration: string;
-      URL: string;
+      url: string;
     }
     ```
 
@@ -174,7 +174,7 @@
     albumsArray: Album[];
     ```
 
-1. You should now get errors about the data not quite matching up. Fix the hard-coded array items to update the id and on_sale. For currency and tracks, data may not exists so add a question mark so data looks something like this:
+1. You should now get errors about the data not quite matching up. Fix the hard-coded array items to update the id and on_sale. For currency, data may not exists so add a question mark so data looks something like this:
 
     ```typescript
     export interface Album {
