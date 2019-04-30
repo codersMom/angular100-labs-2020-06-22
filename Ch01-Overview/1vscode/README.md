@@ -59,14 +59,14 @@ To install extensions, look on the left side bar menu of VS Code and click on th
 
 1. Open the extensions icon from the VSCode vertical menu on the left of the screen.
 
-2. Search for **Install Angular Essentials** extension by the author John Papa.
+1. Search for **Install Angular Essentials** extension by the author John Papa.
    If it isn’t already installed, click te install button and follow directions within VSCode.
 
-3. Follow a similar workflow as explained in Step 1 to download another VS Code Extension called **GitLens - Git supercharged**
+1. Follow a similar workflow as explained in Step 1 to download another VS Code Extension called **GitLens - Git supercharged**
 
    GitLens supercharges the Git capabilities built into Visual Studio Code. It helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
 
-4. If you get done before others then mark your work as complete using a name tent card if in class, or using the method described by your instructor.
+1. If you get done before others then mark your work as complete using a name tent card if in class, or using the method described by your instructor.
 
 ## Bonus
 
