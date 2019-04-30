@@ -34,10 +34,9 @@
     "quotemark": false,
     ```
 
-    Remeber to save your change and if you go back to your **app.component.ts** file you should see tslint now accepts double-quotes
+    Remember to save your change and if you go back to your **app.component.ts** file you should see tslint now accepts double-quotes
 
-1.  Another helpful extension is **Prettier - Code formatter**. If not already installed, then install it. Create a file with the name **.prettierrc**
-    in the root of your project. Use JSON formatting to add these rules:
+1.  Another helpful extension is **Prettier - Code formatter**. If not already installed, then install it (author is Esben Petersen). Create a file with the name **.prettierrc** in the root of your project. Use JSON formatting to add these rules:
 
     ```typescript
     {
@@ -133,15 +132,13 @@
 
 1. You may notice that there are some purposeful issues with this array data. The first item has id as a string value and the other as a number. Lets define an interface to do type checking against this data.
 
-1. Open a terminal in VSCode for the project, and use Angular CLI to create a model file for an **album** within a folder called **albums** using this:
-
     ```
     ng g interface albums\album --type=model
     ```
 
-1. Notice the creation of the directory albums and the naming of the file **album.model.ts** the type fag was used to name the file with the type. Look inside this file and notice it is rather bare bones but exports an interface.
+12. Notice the creation of the directory albums and the naming of the file **album.model.ts** the type flag was used to name the file with the type. Look inside this file and notice it is rather bare bones but exports an interface.
 
-1. Complete the interface so that it looks like this:
+13. Complete the interface so that it looks like this:
 
     ```typescript
     export interface Album {
@@ -160,17 +157,15 @@
     }
     ```
 
-1. In **app.component.ts**, import the type Album
+1. Import the Album class.
 
-    ```typescript
+    ```javascript
     import { Album } from "./albums/album.model";
     ```
 
-    Remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
-
 1. Now make the property of albumsArray be of type Album[]
 
-    ```typescript
+    ```javascript
     albumsArray: Album[];
     ```
 
