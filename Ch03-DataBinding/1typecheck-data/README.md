@@ -107,53 +107,53 @@
 
 11. Open a terminal in VSCode for the project, and use Angular CLI to create a model file for an **album** within a folder called **albums** using this:
 
-```
-ng g interface albums\album --type=model
-```
+    ```
+    ng g interface albums\album --type=model
+    ```
 
-12. Notice the creation of the directory albums and the naming of the file **album.model.ts** the type fag was used to name the file with the type. Look inside this file and notice it is rather bare bones but exports an interface.
+12. Notice the creation of the directory albums and the naming of the file **album.model.ts** the type flag was used to name the file with the type. Look inside this file and notice it is rather bare bones but exports an interface.
 
 13. Complete the interface so that it looks like this:
 
-```javascript
-export interface Album {
-  id: number;
-  artist: string;
-  album_name: string;
-  genre: string;
-  price: number;
-  currency: string;
-  on_sale: boolean;
-  year: number;
-  release_date: string;
-  recording_location: string;
-  duration: string;
-  url: string;
-}
-```
+    ```javascript
+      export interface Album {
+        id: number;
+        artist: string;
+        album_name: string;
+        genre: string;
+        price: number;
+        currency: string;
+        on_sale: boolean;
+        year: number;
+        release_date: string;
+        recording_location: string;
+        duration: string;
+        url: string;
+      }
+    ```
 
 14. In **app.component.ts**, import the type Album
 
-```javascript
-import { Album } from "./albums/album.model";
-```
+    ```javascript
+    import { Album } from "./albums/album.model";
+    ```
 
 15. Now make the property of albumsArray be of type Album[]
 
-```javascript
-albumsArray: Album[];
-```
+    ```javascript
+    albumsArray: Album[];
+    ```
 
-16. You should now get errors about the data not quite matching up. Fix the hard-coded array items to update the id and on_sale. For currency and tracks, data may not exists so add a question mark so data looks something like this:
+16. You should now get errors about the data not quite matching up. Fix the hard-coded array items to update the id and on_sale. For currency, data may not exist so add a question mark so data looks something like this:
 
-```javascript
-export interface Album {
- id: number;
- artist: string;
- album_name: string;
- genre: string;
- price: number;
- currency?: string;
-```
+    ```javascript
+    export interface Album {
+    id: number;
+    artist: string;
+    album_name: string;
+    genre: string;
+    price: number;
+    currency?: string;
+    ```
 
 17. Make the necessary changes so the code compiles and runs in the browser.
