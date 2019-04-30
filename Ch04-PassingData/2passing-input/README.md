@@ -8,30 +8,32 @@
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
-2. Open the integrated terminal. Create an **AlbumCardComponent** by using this Angular CLI command. Note that g is short for generate, c is for component.
+1. Open the integrated terminal. Create an **AlbumCardComponent** by using this Angular CLI command. Note that g is short for generate, c is for component.
 
    ```
    ng g c albums/album-card
    ```
 
-3. Find the first element (with all of its child elements) in **album-list.component.html** that has
+1. Find the first element (with all of its child elements) in **album-list.component.html** that has
 
    ```html
    <div class="card"></div>
    ```
 
-4. Move this code (about 16 lines) to the newly created **album-card.component.html** file replacing its placeholder content.
+1. Move this code (about 16 lines) to the newly created **album-card.component.html** file replacing its placeholder content.
 
-5. Search and replace in **album-card.component.html** the **albumsArray[0]** references to be instead **album**.
+1. Search and replace in **album-card.component.html** the **albumsArray[0]** references to instead be **album**.
 
-6. Now declare a member variable in **album-card.component.ts** to be
+1. In **album-card.component.ts**, declare a member variable in the top of the class decleration
 
    ```javascript
     @Input()
     album: Album;
    ```
 
-7. In **album-list.component.html** update it to look like this:
+1. You may have a red wavy line under **@Input** and **Album**; fix these if you do.
+
+1. In **album-list.component.html** update it to look like this:
 
    ```html
    <div class="container">
@@ -43,7 +45,7 @@
    </div>
    ```
 
-8. In **album-card.component.css** add a rule that the class for card should be:
+1. In **album-card.component.css** add a rule that the class for card should be:
 
    ```css
    .card {
@@ -53,6 +55,6 @@
    }
    ```
 
-9. In the browser you should see the 3 different albums.
+1. In the browser you should see the 3 different albums.
 
-10. Mark your work as complete
+1. Mark your work as complete
