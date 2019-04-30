@@ -36,6 +36,6 @@
 
 9. Can you see your changes on the screen? How did this compare to adding/removing items from an array?
 
-    You may notice that due to JS's floating point arithmetc the display is odd. We will fix this later using functionality built into Angular.
+    You may notice that due to JavaScript floating point calculations the display is odd. We will fix this later using functionality built into Angular.
 
 10. Mark your work as complete
