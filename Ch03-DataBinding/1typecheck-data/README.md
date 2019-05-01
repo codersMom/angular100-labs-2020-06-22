@@ -136,9 +136,9 @@
     ng g interface albums/album --type=model
     ```
 
-12. Notice the creation of the directory albums and the naming of the file **album.model.ts** the type flag was used to name the file with the type. Look inside this file and notice it is rather bare bones but exports an interface.
+1. Notice the creation of the directory albums and the naming of the file **album.model.ts** the type flag was used to name the file with the type. Look inside this file and notice it is rather bare bones but exports an interface.
 
-13. Complete the interface so that it looks like this:
+1. Complete the interface so that it looks like this:
 
     ```typescript
     export interface Album {

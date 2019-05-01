@@ -8,63 +8,78 @@
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
-2. In this readme folder here is a folder called data with a file inside called **music-info.json**. Copy this directory to the root of your project folder - the same location as your **package.json**.
+1. In this readme folder here is a folder called data with a file inside called **music-info.json**. Copy this directory to the root of your project folder - the same location as your **package.json**.
 
-3. Install json server and npm-run-all packages.
+1. Install json server and npm-run-all packages.
 
    ```bash
    npm i json-server npm-run-all -S
    ```
 
-4. Modify **package.json** scripts to start up json-server by pointing it at the music-info.json file.
+1. Modify **package.json** scripts to start up json-server by pointing it at the music-info.json file.
 
    ```javascript
    "start": "run-p start-db start-app",
-   "start-app": "ng serve --port 4444 -o",
-   "start-db": "json-server --watch data/music-info.json --port 4445",
+   "start-app": "ng serve --port 3333 -o",
+   "start-db": "json-server --watch data/music-info.json --port 3334",
    ```
 
-5. Start the project using **npm start**
+1. Start the project using **npm start**
 
-6. The json-server and the angular server should both start. Test the url works for the resources, as listed in the console.
+1. The json-server and the angular server should both start. Test the url works for the resources, as listed in the console.
 
-7. Inside the **app.module.ts** - add the use of **HttpClientModule** to the **@NgModule** imports property. You will also need to have this added to the imports at the top of the file.
+1. Inside the **app.module.ts** - add **HttpClientModule** to the **@NgModule** imports property. 
 
-8) Modify the **album.service** to be dependency injected with httpClient, and use this to request the albums from the given URL.
+     ```typescript
+     imports: [
+          BrowserModule,
+          AppRoutingModule,
+          HttpClientModule
+     ],
+     ```
 
-   ```javascript
-   import { Injectable } from '@angular/core';
-   import { HttpClient } from '@angular/common/http';
-   import { Observable } from 'rxjs';
-   import { Album } from './album.model';
+     Notice, you will also need to import **HttpClientModule**.
 
-   @Injectable({
-    providedIn: 'root'
-   })
-   export class AlbumService {
-        url = "http://localhost:4445/albums";
+     Remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
 
-        constructor(private http: HttpClient) { }
+1. Modify the **album.service** to be dependency injected with HttpClient, and use this to request the albums from the given URL.
 
-        getAlbums(): Observable<Album[]> {
-            return this.http.get<Album[]>(this.url);
-        }
-   }
+     ```typescript
+     import { Injectable } from '@angular/core';
+     import { HttpClient } from '@angular/common/http';
 
-   ```
+     import { Observable } from 'rxjs';
+     import { Album } from '../album.model';
+
+     @Injectable({
+     providedIn: 'root'
+     })
+     export class AlbumService {
+          url = "http://localhost:3334/albums";
+
+          constructor(private http: HttpClient) { }
+
+          getAlbums(): Observable<Album[]> {
+               return this.http.get<Album[]>(this.url);
+          }
+     }
+     ```
 
    **NOTICE**: the return type is an Observable<Album[]>
 
-9) In the **AlbumListComponent** change the data type of the albums from Album[] to an Observable of Album[]. this requires an import of **import { Observable } from 'rxjs';**
+1. In the **AlbumListComponent** change the data type of the albums from Album[] to an **Observable** of type Album[].
 
-```javascript
-     albums: Observable<Album[]>;
-```
+     ```typescript
+     albumsArray: Observable<Album[]>;
+     ```
 
-11. In the album-list.component.html use the async pipe
+     Notice, you will also need to import **Observable**.
 
-```html
-<app-album-card *ngFor="let album of albums | async"
-```
+1. In the **album-list.component.html** use the async pipe
 
-11. Check that your app is working, and mark your work as complete.
+     ```html
+     <app-album-card 
+          *ngFor="let album of albumsArray | async"
+     ```
+
+1. Check that your app is working, and mark your work as complete.
