@@ -61,6 +61,13 @@
    ></app-album-card>
    ```
 
-1. Now in the browser you should now see all of the albums. Now that we have more data - resize the browser to see the responsiveness from using Bootstrap.
+    Make sure to keep the above still contained in the following two <divs>
+
+    ```html
+    <div class="container">
+      <div class="card-deck">
+    ```
+
+1. Now in the browser you should now see all of the albums. Now that we have more data - resize the browser to see the responsiveness from using Bootstrap. Can you point out what part of your code is has Bootsrtap implement this functionality?
 
 1. Once this is working, mark your work as complete.
