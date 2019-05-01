@@ -20,7 +20,8 @@
 
    ```javascript
    import { Injectable } from "@angular/core";
-   import { ALBUMS } from "./albums.data";
+
+   import { ALBUMS } from "../albums.data";
 
    @Injectable({
      providedIn: "root"
@@ -45,11 +46,11 @@
    constructor(private albumService: AlbumService) { }
    ```
 
-1. Add these functions to call the service's getAlbums() and set it to your albums property
+1. Add these functions to call the service's getAlbums() and set it to your albumsArray property
 
    ```javascript
     getAlbums() {
-        this.albums = this.albumService.getAlbums();
+        this.albumsArray = this.albumService.getAlbums();
     }
 
     ngOnInit() {

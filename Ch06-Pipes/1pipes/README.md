@@ -12,20 +12,26 @@
 
 1. Ensure some of the data has currency of USD and if need be, set something to have currency of GBP
 
-1. In AlbumCardComponent add a property called **newPrice**.
+1. In **album-card.component.ts** add a property called **newPrice** to be type number.
 
-1. In ngOnInit() check if the album is on sale and if it is - set newPrice to be 10% less.
+1. In **ngOnInit()** check if the album is on sale and if it is - set newPrice to be 10% less.
 
    ```javascript
    if (this.album.on_sale) {
    // Apply 10% discount
-   this.newPrice = this.album.price - (this.album.price \* .1);
+   this.newPrice = this.album.price - (this.album.price * .10);
    }
    ```
 
-1. Open this in the browser, how does it look? Lets fix the decimals and add the use of currency.
+1. Update the album card component template to use the new price if the album is on sale.
 
-1. In the template, use a album-card.component.ts
+    HINT: Add to current interpolation {{album.price}}, can use ternary operator to define, if album on sale, show new price, else album.price
+
+1. Open this in the browser, how do the prices of the albums on sale look? 
+
+    Lets fix the decimals and add the use of currency.
+
+1. Replace what you currently have in **album-card.component.ts** with the following:
 
    ```html
    <li>

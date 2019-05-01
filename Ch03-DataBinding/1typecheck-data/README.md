@@ -133,7 +133,7 @@
 1. You may notice that there are some purposeful issues with this array data. The first item has id as a string value and the other as a number. Lets define an interface to do type checking against this data.
 
     ```
-    ng g interface albums\album --type=model
+    ng g interface albums/album --type=model
     ```
 
 12. Notice the creation of the directory albums and the naming of the file **album.model.ts** the type flag was used to name the file with the type. Look inside this file and notice it is rather bare bones but exports an interface.
