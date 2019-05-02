@@ -2,7 +2,7 @@
 
 ## Objectives
 
-- Start a server and use HttpClient and asyncPipe to display it in the browser
+- Start a server, use HttpClient and routing to dynamically create a page of details for each album
 
 ## Steps
 
