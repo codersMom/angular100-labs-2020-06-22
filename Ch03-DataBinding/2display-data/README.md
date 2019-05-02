@@ -13,7 +13,7 @@
 1. In the app.component.html file, create a structure for displaying a number of albums as cards.
 
    ```html
-   <div class="container">
+   <div class="container-fluid">
      <div class="card-deck">
        <div class="card"></div>
        <div class="card"></div>
@@ -45,17 +45,18 @@
 
 1. Immediately after the `<img>` for each card, add a card body like this, updating it for the 2nd and 3rd card:
 
-   ```html
-   <div class="card-body">
-     <h4 class="card-title">{{ albumsArray[0].artist }}</h4>
-     <ul style="list-style: none;">
-       <li>{{ albumsArray[0].album_name }}</li>
-       <li>Released: {{ albumsArray[0].year }}</li>
-       <li>{{ albumsArray[0].price }} {{ albumsArray[0].currency }}</li>
-     </ul>
-   </div>
-   ```
+  ```html
+  <div class="card-body">
+    <h5 class="card-title">{{ albumsArray[0].artist }}</h5>
+    <div class="scrollable">
+      <h6 class="card-title">{{ albumsArray[0].album_name }}</h6>
+      <h6 class="card-text">Released: {{ albumsArray[0].release_date }}</h6>
+      <h6>{{ albumsArray[0].price }} {{ albumsArray[0].currency }}</h6>
+    </div>
+  </div>
+  ```
 
 1. Load the app you should now see three albums on the screen.
 
 1. Mark your work as complete. (Name tent card, electronic status, etc.)
+`

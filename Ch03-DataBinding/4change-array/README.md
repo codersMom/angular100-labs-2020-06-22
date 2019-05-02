@@ -6,7 +6,7 @@
 
 ## Steps
 
-1. In your app.component.ts file, add a variable called numbers: number[];
+1. In your **app.component.ts** file, add a variable called **numbers: number[]**;
 
 1. Inside of **ngOnInit**, set numbers to [1,2,3]
 
