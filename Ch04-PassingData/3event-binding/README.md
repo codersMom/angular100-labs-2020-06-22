@@ -12,7 +12,7 @@
 
    ```javascript
     showAlbum() {
-        alert('Album selected: ' + this.album.album_name)
+        alert('Album selected: ' + this.album.albumName)
     }
    ```
 
@@ -24,14 +24,6 @@
        Raise Alert
      </button>
    </div>
-   ```
-
-1. In **album-card.component.css** add a rule for the card-footer class:
-
-   ```css
-   .card-footer {
-     height: 75px;
-   }
    ```
 
 1. You should now see buttons for the 3 albums in the browser and when you click - an alert should be raised with the album name.
