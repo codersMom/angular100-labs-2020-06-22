@@ -22,4 +22,4 @@
 
 4. You should see the screen get updated every second with the new value
 
-5. Mark your work as complete.
+1. Mark your work as complete. 

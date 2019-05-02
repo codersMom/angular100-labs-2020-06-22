@@ -69,4 +69,4 @@
 
 1. You should now see the albums in the browser, now being shown via the lst component.
 
-1. Mark your work as complete.
+1. Mark your work as complete. (Name tent card, electronic status, etc.)
