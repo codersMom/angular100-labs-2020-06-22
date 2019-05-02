@@ -14,9 +14,9 @@
         albumsArray: Album[];
         ```
 
-   It's good to remove any imports not in use, such as Observable from rxjs.
+   It's good practice to remove any imports not in use, such as Observable from rxjs.
 
-1. Change the method that calls the service to subscribe to the call. Notice the first argument of .subscribe( is to be called on success aka "happy path" and the second fuction will be called if there are any errors.
+1. Change the method that calls the service to subscribe to the call. Notice the first argument of **.subscribe(** is to be called on success aka "happy path", and the second fuction will be called if there are any errors.
 
    ```typescript
    getAlbums() {
