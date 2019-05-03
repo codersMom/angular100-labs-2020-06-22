@@ -77,6 +77,19 @@
     }
     ```
 
+    To apply this functionality, in the **album-card.component.html** file, wrap a div around the card details within the card-body except for the card-title with the class **scrollable** as shown below
+
+    ```html
+    <div class="card-body">
+      <h5 class="card-title">{{ album.artist }}</h5>
+      <div class="scrollable">
+        <h6 class="card-title">{{ album.albumName }}</h6>
+        <h6 class="card-text">Released: {{ album.releaseDate }}</h6>
+        <h6>{{ album.price }} {{ album.currency }}</h6>
+      </div>
+    </div>
+    ```
+
     We will see an example of this in future labs, but if you'd like to test it you can fill the body of the card with a long piece of text.
 
 1. Add a rule to create a shadow behind the card and another rule to darken the card when it's moused over.
