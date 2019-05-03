@@ -12,40 +12,40 @@
 
 1. Replace the content of **album.model.ts** with the following to add in the Album properties that were not present before, and to add in Track.
 
-   ```javascript
-   export interface Album {
-     id: number;
-     artist: string;
-     album_name: string;
-     genre: string;
-     price: number;
-     currency?: string;
-     on_sale: boolean;
-     year: number;
-     release_date: string;
-     recording_location: string;
-     duration: string;
-     url: string;
-     tracks: Track[];
-   }
+    ```typescript
+    export interface Album {
+      id: number;
+      artist: string;
+      albumName: string;
+      genre: string;
+      price: number;
+      currency?: string;
+      onSale: boolean;
+      year: number;
+      releaseDate: string;
+      recordingLocation: string;
+      duration: string;
+      url: string;
+      tracks: Track[];
+    }
 
-   export interface Track {
-     id: number;
-     track_number: number;
-     title: string;
-     length: string;
-   }
-   ```
+    export interface Track {
+      id: number;
+      trackNumber: number;
+      title: string;
+      length: string;
+    }
+    ```
 
 1. Now, in **album-list.component.ts** - import this JSON file using an import.
 
-   ```javascript
+   ```typescript
    import { ALBUMS } from "../albums.data";
    ```
 
 1. Modify **album-list.component.ts** so that the ngOnInit() is simply:
 
-   ```javascript
+   ```typescript
    ngOnInit(): void {
     this.albumsArray = this.albumsArray = ALBUMS;
    }
@@ -64,10 +64,10 @@
     Make sure to keep the above still contained in the following two <divs>
 
     ```html
-    <div class="container">
+    <div class="container-fluid">
       <div class="card-deck">
     ```
 
-1. Now in the browser you should now see all of the albums. Now that we have more data - resize the browser to see the responsiveness from using Bootstrap. Can you point out what part of your code is has Bootsrtap implement this functionality?
+1. Now in the browser you should now see all of the albums. Now that we have more data - resize the browser to see the responsiveness from using Bootstrap. Can you point out what part of your code is has Bootstrap implement this functionality?
 
 1. Once this is working, mark your work as complete.

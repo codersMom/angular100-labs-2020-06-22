@@ -8,18 +8,18 @@
 
 1. Open the album-card.component.html file and find the div with class="card"
 
-```html
-<div class="card"></div>
-```
+    ```html
+    <div class="card"></div>
+    ```
 
 1. Modify this element to have a style applied if the album is on sale.
 
    ```html
    <div
      class="card"
-     [ngStyle]="{ 'background-color': album.on_sale ? 'green' : '' }"
+     [ngStyle]="{ 'background-color': album.onSale ? 'green' : '' }"
    >
-     >
+     
    </div>
    ```
 

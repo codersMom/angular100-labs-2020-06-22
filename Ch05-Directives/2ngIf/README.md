@@ -8,11 +8,11 @@
 
 1. Copy the sale icon image form this folder to your projects assets folder
 
-2. In your albumCard template, use ngIf to display the onsale image if on_sale == true. Put this code into the footer before the button.
+2. In your albumCard template, use ngIf to display the onsale image if onSale == true. Put this code into the footer before the button.
 
    ```html
    <img
-     *ngIf="album.on_sale"
+     *ngIf="album.onSale"
      src="assets/img/sale.png"
      style="width:40px;height:40px;"
    />
