@@ -8,6 +8,13 @@
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
+1. In the **album-list.component.html** remove the use of the async pipe as we will be using subscribe to get the data instead
+
+   ```html
+   <app-album-card 
+        *ngFor="let album of albums"
+   ```
+
 1. In the **AlbumListComponent** change the data type of the albums from **albums: Observable<Album[]>** back to a **Album[]**
 
         ```typescript
@@ -25,13 +32,6 @@
            albums => this.albumsArray = albums,
            error => console.log("Error: ", error));
    }
-   ```
-
-1. In the **album-list.component.html** remove the use of the async pipe
-
-   ```html
-   <app-album-card 
-        *ngFor="let album of albums"
    ```
 
 1. Check that your app is working, and mark your work as complete.

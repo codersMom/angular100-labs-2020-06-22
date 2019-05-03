@@ -18,7 +18,7 @@
 
 1. Update the content of the service to
 
-   ```javascript
+   ```typescript
    import { Injectable } from "@angular/core";
 
    import { ALBUMS } from "../albums.data";
@@ -42,13 +42,13 @@
    1. import the service
    2. Add it as an argument to the constructor
 
-   ```javascript
+   ```typescript
    constructor(private albumService: AlbumService) { }
    ```
 
 1. Add these functions to call the service's getAlbums() and set it to your albumsArray property
 
-   ```javascript
+   ```typescript
     getAlbums() {
         this.albumsArray = this.albumService.getAlbums();
     }
