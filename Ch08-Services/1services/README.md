@@ -50,11 +50,11 @@
 
    ```typescript
     getAlbums() {
-        this.albumsArray = this.albumService.getAlbums();
+      this.albumsArray = this.albumService.getAlbums();
     }
 
     ngOnInit() {
-        this.getAlbums();
+      this.getAlbums();
     }
    ```
 
