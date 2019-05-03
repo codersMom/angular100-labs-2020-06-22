@@ -22,7 +22,7 @@
 
    - note that the decorator is used to assign the name to be used in templates
 
-   ```javascript
+   ```typescript
    import { Pipe, PipeTransform } from "@angular/core";
 
    @Pipe({ name: "reverseStr" })
@@ -40,3 +40,7 @@
 1. Examine the code above. Try to understand what it accomplishes and how it does it.
 
 1. Now in the **app.component.html** add the use of | **reverseStr** after the title.
+
+1. Verify on the browser that the pipe is working as intented
+
+1. Mark your work as complete.

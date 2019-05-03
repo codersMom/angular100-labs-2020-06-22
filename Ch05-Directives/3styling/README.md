@@ -6,7 +6,7 @@
 
 ## Steps
 
-1. Open the album-card.component.html file and find the div with class="card"
+1. Open the **album-card.component.html** file and find the div with class="card"
 
     ```html
     <div class="card"></div>

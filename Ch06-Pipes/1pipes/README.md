@@ -16,8 +16,8 @@
 
 1. In **ngOnInit()** check if the album is on sale and if it is - set newPrice to be 10% less.
 
-   ```javascript
-   if (this.album.on_sale) {
+   ```typescript
+   if (this.album.onSale) {
    // Apply 10% discount
    this.newPrice = this.album.price - (this.album.price * .10);
    }
@@ -34,13 +34,13 @@
 1. Replace what you currently have in **album-card.component.ts** with the following:
 
    ```html
-   <li>
-     <span *ngIf="album.on_sale" style="text-decoration:line-through;">
+   <h6>
+     <span *ngIf="album.onSale" style="text-decoration:line-through;">
        {{album.price | number:'1.1-2' | currency:album.currency}}
      </span>
-     {{ (album.on_sale ? newPrice : album.price) | number:'1.2-2' |
+     {{ (album.onSale ? newPrice : album.price) | number:'1.2-2' |
      currency:album.currency }}
-   </li>
+   </h6>
    ```
 
 1. Once it is displaying correctly mark your work as complete.
