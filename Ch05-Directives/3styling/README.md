@@ -12,12 +12,10 @@
     <div class="card"></div>
     ```
 
-1. Modify this element to have a style applied if the album is on sale.
+1. Modify the element with card-body, to have a style applied if the album is on sale.
 
    ```html
-   <div
-     class="card"
-     [ngStyle]="{ 'background-color': album.onSale ? 'green' : '' }"
+   <div class="card-body" [ngStyle]="{ 'background-color': album.onSale ? '#93df93' : '' }">
    >
      
    </div>
