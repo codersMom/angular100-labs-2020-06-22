@@ -37,21 +37,21 @@
 
 7. In the same folder as this file, open the file **add-album.component.html** and copy its content over the content in your project's **add-album.component.html**. Do the same with **add-album.component.ts**
 
-8) Notice how the use of [ngModel] sets up two way data binding
+8. Notice how the use of [ngModel] sets up two way data binding
 
 9. Update **album.service.ts** to include a method to add an album.
 
-```typescript
-     addAlbum(album: Album): Observable<Album> {
-     return this.http.post<Album>(this.url, album);
-   }
+  ```typescript
+      addAlbum(album: Album): Observable<Album> {
+      return this.http.post<Album>(this.url, album);
+    }
 
-```
+  ```
 
-1. Notice the button cannot be submitted until the form is valid.
+10. Notice the button cannot be submitted until the form is valid.
 
-2. Test your changes in the browser
+11. Test your changes in the browser
 
 ## Bonus
 
-1.  add a remove button on the details page that when clicked calls a method you create which uses a service to delete the item.
+1.  Add a remove button on the details page that when clicked calls a method you create which uses a service to delete the item.
