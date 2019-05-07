@@ -2,7 +2,7 @@
 
 ## Objectives
 
-- Practice testing various parts of Angular
+- Practice testing various classes of Angular
 
 ## Steps
 
