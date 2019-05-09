@@ -55,14 +55,17 @@ In this lab you will use this markdown file to complete steps to modify your VSC
 
 ### Part 3: Install VS Code extensions
 
-To install extensions, look on the left side bar menu of VS Code and click on the **Extensions** icon or use the shortcut (Ctrl + Shift + X). Type into the Extensions Marketplace search field to find **Install Angular Essentials**. When you've found the extension, install it by pressing the green **Install** button. Wait for the install to complete. At times, there may be an additional step of pressing a blue **Reload** button which may appear at the same location where the green **Install** button was located.
-
 1. Open the extensions icon from the VSCode vertical menu on the left of the screen.
 
-1. Search for **Install Angular Essentials** extension by the author John Papa.
-   If it isn’t already installed, click te install button and follow directions within VSCode.
+1. Type into the top left pane labeled Search Extensions in Marketplace the name of the extension for which you are looking.  When you find the correct extension by the given author, install it if it is not already installed. For example search for **Angular Essentials** by the author John Papa. When you've found the extension, install it by pressing the green **Install** button. Wait for the install to complete. At times, there may be an additional step of pressing a blue **Reload** button which may appear at the same location where the green **Install** button was located.
 
-1. Follow a similar workflow as explained in Step 1 to download another VS Code Extension called **GitLens - Git supercharged**
+1. Search and install if not present: **Angular 8 Snippets** extension by the author Mikael Morlund.
+
+1. Search and install if not present: **Bracket Pair Colorizer** extension by CoenraadS.
+
+1. Search and install if not present: **TSLint** extension by Microsoft.
+
+1. Search and install if not present: **GitLens - Git supercharged** by Eric Amodio
 
    GitLens supercharges the Git capabilities built into Visual Studio Code. It helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
 
@@ -70,6 +73,6 @@ To install extensions, look on the left side bar menu of VS Code and click on th
 
 ## Bonus
 
-1. From the Help menu, choose **Welcome** to bring up a screen. Explore the areas under Learn.
+1. From the VSCode Help menu, choose **Welcome** to bring up a screen. Explore the areas under Learn.
 
-1. Another area to explore is frm the Help menu, choose Interactive Playground and explore those examples.
+1. Another area to explore is from the Help menu, choose **Interactive Playground** and explore those examples.
