@@ -21,7 +21,7 @@
    ```html
    <div class="card-footer">
      <button class="btn btn-primary float-right" (click)="showAlbum()">
-       Raise Alert
+       See Details
      </button>
    </div>
    ```
