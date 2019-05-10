@@ -71,3 +71,9 @@
 1. Now in the browser you should now see all of the albums. Now that we have more data - resize the browser to see the responsiveness from using Bootstrap. Can you point out what part of your code is has Bootstrap implement this functionality?
 
 1. Once this is working, mark your work as complete.
+
+## Bonus
+
+Create a new from scratch application that displays a person, as well as their family and friends. Hold onto an array of People in the root of your application, and for a selected person pass an array to a Friends Component,and an array to Family Component and an array to a HobbiesComponent. Make use of ngFor.
+
+Once data is displayed in all components, provide a button in each for Next person. Pass this event up to the root component and change the selected person the the next in the array, or the first person in the array if you are at the end.
