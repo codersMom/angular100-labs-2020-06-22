@@ -86,7 +86,7 @@
 1. Use this content for the new **navbar.component.html**. Note the use of **routerLink**
 
     ```html
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand" routerLink="/">
         <img
           src="assets/album.gif"
