@@ -112,6 +112,12 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav">
+          <a 
+            class="nav-item nav-link" 
+            routerLink="/about" 
+            routerLinkActive="active"
+            >Home</a
+          >
           <a
             class="nav-item nav-link"
             routerLink="/albums"
