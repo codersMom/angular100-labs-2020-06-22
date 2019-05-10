@@ -1,27 +1,71 @@
-# Chapter 8 Services: 3 Using subscribe
+# Chapter 8 Services: 2 Using subscribe
 
 ## Objectives
 
-- Instead of async pipe now use subscribe to get the data
+- Start a server and use HttpClient and subscribe to display it in the browser
 
 ## Steps
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
-1. In the **album-list.component.html** remove the use of the async pipe as we will be using subscribe to get the data instead
+1. In this readme folder here is a folder called data with a file inside called **music-info.json**. Copy this directory to the root of your project folder - the same location as your **package.json**.
 
-   ```html
-   <app-album-card 
-        *ngFor="let album of albums"
+1. Install json server and npm-run-all packages.
+
+   ```bash
+   npm i json-server npm-run-all -S
    ```
 
-1. In the **AlbumListComponent** change the data type of the albums from **albums: Observable<Album[]>** back to a **Album[]**
+1. Modify **package.json** scripts to start up json-server by pointing it at the music-info.json file.
 
-        ```typescript
-        albumsArray: Album[];
-        ```
+   ```javascript
+   "start": "run-p start-db start-app",
+   "start-app": "ng serve --port 3333 -o",
+   "start-db": "json-server --watch data/music-info.json --port 3334",
+   ```
 
-   It's good practice to remove any imports not in use, such as Observable from rxjs.
+1. Start the project using **npm start**
+
+1. The json-server and the angular server should both start. Test the url works for the resources, as listed in the console.
+
+1. Inside the **app.module.ts** - add **HttpClientModule** to the **@NgModule** imports property. 
+
+     ```typescript
+     imports: [
+          BrowserModule,
+          AppRoutingModule,
+          HttpClientModule
+     ],
+     ```
+
+     Notice, you will also need to import **HttpClientModule**.
+
+     Remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
+
+1. Modify the **album.service** to be dependency injected with HttpClient, and use this to request the albums from the given URL.
+
+     ```typescript
+     import { Injectable } from '@angular/core';
+     import { HttpClient } from '@angular/common/http';
+
+     import { Observable } from 'rxjs';
+     import { Album } from '../album.model';
+
+     @Injectable({
+     providedIn: 'root'
+     })
+     export class AlbumService {
+          url = "http://localhost:3334/albums";
+
+          constructor(private http: HttpClient) { }
+
+          getAlbums(): Observable<Album[]> {
+               return this.http.get<Album[]>(this.url);
+          }
+     }
+     ```
+
+   **NOTICE**: the return type is an Observable<Album[]>
 
 1. Change the method that calls the service to subscribe to the call. Notice the first argument of **.subscribe(** is to be called on success aka "happy path", and the second fuction will be called if there are any errors.
 
