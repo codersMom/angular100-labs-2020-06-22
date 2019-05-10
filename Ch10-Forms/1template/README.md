@@ -42,7 +42,7 @@
 9. Update **album.service.ts** to include a method to add an album.
 
   ```typescript
-      addAlbum(album: Album): Observable<Album> {
+    addAlbum(album: Album): Observable<Album> {
       return this.http.post<Album>(this.url, album);
     }
 

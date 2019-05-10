@@ -22,9 +22,11 @@
    { path: "albums/:id", component: AlbumDetailsComponent }
    ```
 
+   NOTE: Make sure to put this above the wildcard path.
+
 1. Test in the browser that if you use a URL similar to **localhost:xxxx/albums/2** that the page loads correctly
 
-2. Update the button in **album-card.component.html** - instead of a (click) - use **routerLink** which builds the url using the id value from album.
+1. Update the button in **album-card.component.html** - instead of a (click) - use **routerLink** which builds the url using the id value from album.
 
    ```html
    <button
@@ -34,11 +36,11 @@
    </button>
    ```
 
-3. Test in the browser that clicking the album button loads the details page.
+1. Test in the browser that clicking the album button loads the details page.
 
    ### Add a new method to the service to get one album
 
-4. Let's create a function in **album.service.ts** which will get an album's details by adding the id value to the url.
+1. Let's create a function in **album.service.ts** which will get an album's details by adding the id value to the url.
 
    ```typescript
     getAlbumById(id: number): Observable<Album> {
@@ -48,7 +50,7 @@
 
    ### Update AlbumDetailsComponent to receive the parameter
 
-5. Update **album details component** to have a property **album** of type **Album**, and to be dependency injected wih ActivatedRoute and the AlbumService.
+1. Update **album details component** to have a property **album** of type **Album**, and to be dependency injected wih ActivatedRoute and the AlbumService.
 
    ```typescript
     album: Album;
@@ -61,7 +63,7 @@
 
    - Ensure the proper classes are imported. A quick way to do this is to mouse over one of the red wavy lines, click **Quick Fix**, and then hit **Add all missing imports**. Always ensure these shortcuts work as you intended and remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
 
-6. In **ngOnInit()** use the passed in route to get the album id, and call the new AlbumService method.
+1. In **ngOnInit()** use the passed in route to get the album id, and call the new AlbumService method.
 
    ```typescript
     ngOnInit() {
@@ -77,7 +79,7 @@
 
    - Notice how the id is received using **route.snapshot.paramMap**
 
-7. Update the **album.details.ts** to display album details on the page using the following code
+1. Update the **album.details.ts** to display album details on the page using the following code
 
     ```html
     <div class="container">
@@ -120,14 +122,12 @@
     </div>
     ```
 
-8. Ensure your code is working in the browser.
+1. Ensure your code is working in the browser.
 
-9. Commit your code to your repository.
-
-10. Answer these questions by experimenting with changing the code.
+1. Answer these questions by experimenting with changing the code.
 
     - Why are the question marks needed, if you remove what errors do you get in the console.
 
     - What happens if you remove the *ngIf from around the *ngFor?
 
-11. Mark your work as complete.
+1. Mark your work as complete.
