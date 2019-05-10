@@ -67,7 +67,7 @@
 
    **NOTICE**: the return type is an Observable<Album[]>
 
-1. Change the method that calls the service to subscribe to the call. Notice the first argument of **.subscribe(** is to be called on success aka "happy path", and the second fuction will be called if there are any errors.
+1. In **album-list.component.ts**, change the method that calls the service to subscribe to the call. Notice the first argument of **.subscribe(** is to be called on success aka "happy path", and the second function will be called if there are any errors.
 
    ```typescript
    getAlbums() {
