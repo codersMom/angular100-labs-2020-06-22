@@ -43,7 +43,7 @@
    2. Add it as an argument to the constructor
 
    ```typescript
-   constructor(private albumService: AlbumService) { }
+   constructor(private albumService: AlbumService) { };
    ```
 
 1. Add these functions to call the service's getAlbums() and set it to your albumsArray property
