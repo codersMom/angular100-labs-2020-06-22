@@ -178,7 +178,7 @@
       albumName: string;
       genre: string;
       price: number;
-      currency: string;
+      currency?: string;
     ```
 
 1. Make the necessary changes so the code compiles and runs in the browser.
