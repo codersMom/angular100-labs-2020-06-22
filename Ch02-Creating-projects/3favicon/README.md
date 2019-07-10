@@ -6,7 +6,7 @@
 
 ## Steps
 
-1. Copy the favicon.ico file from this README's directory to your my-angular-albums project /src directory replacing what is there.
+1. Copy the favicon.ico file from this README's directory to your my-angular-albums project /src directory, replacing the favicon.ico that was already there
 
 1. We will need to restart our server for this change to take effect. Kill your server if it is running by pressing **ctrl + c**. Then run **npm start** 
 
