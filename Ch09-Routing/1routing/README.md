@@ -25,7 +25,7 @@
       ],
    ```
 
-1. Because **angular.json** was updated you need to restart the server for changes to be picked up. Do that now.
+1. Because **angular.json** was updated you need to restart the server for changes to be picked up. Do that now by stopping and restarting the server.
 
 1. Let's create an **About** "page" for our application. Make the component have an inline template and inline styling.
 
