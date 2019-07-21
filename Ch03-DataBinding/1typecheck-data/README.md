@@ -12,7 +12,7 @@
 1. On the first line of **app.component.ts**, change the import statement to use double-quotes " instead of single-quotes '
   
     ```typescript
-    import { Component } from "@angular/core";
+    import {Component} from "@angular/core";
     ```
 
 1. You should see a message from tslint that the double-quotes " should be single-quotes '. This rule comes from Google's Style Guide and historically was a 'nice to have' because everyone used to put lots of HTML strings inside of JS; this meant you could have double-quoted HTML attributes inside a string without escaping the quotes. Since the days of concatenating HTML strings are mostly behind us and since many of us prefer to use double-quotes, let's change this rule.
@@ -78,7 +78,9 @@
     ngOnInit(): void {    }
     ```
 
-1.  Inside of this **ngOnInit()** function is where you should initialize the **albumsArray** property you created. For now you can hard-code 3 items from an array such as shown next. In the future we will get these from a server.
+2.  Inside of this **ngOnInit()** function is where you should initialize the **albumsArray** property you created. For now copy the below code to setup an array of albums. In the future we will get these from a server.
+
+    You may notice that there are some purposeful issues with this array data. The first item has id as a string value and the next as a number. Lets define an interface to do type checking against this data.
 
     ```typescript
     ngOnInit(): void {
@@ -92,7 +94,7 @@
           currency: "USD",
           year: 2016,
           releaseDate: "April 29, 2016",
-          "recordingLocation": "Studio Barbarosa, Orlando, FL",
+          recordingLocation: "Studio Barbarosa, Orlando, FL",
           genre: "Pop/Rock",
           duration: "43:18:00",
           URL: "https://www.allmusic.com/album/dust-mw0002918360"
@@ -106,7 +108,7 @@
           year: 1985,
           currency: "USD",
           releaseDate: "April 20, 1985",
-          "recordingLocation": "Warehouse, Philadelphia, PA",
+          recordingLocation: "Warehouse, Philadelphia, PA",
           genre: "Pop/Rock",
           duration: "47:15:00",
           URL: "https://www.allmusic.com/album/7800%C2%B0-fahrenheit-mw0000189199"
@@ -120,7 +122,7 @@
           price: 24,
           year: 1968,
           releaseDate: "November 22, 1968",
-          "recordingLocation": "",
+          recordingLocation: "",
           genre: "Pop/Rock",
           duration: "1:33:43",
           URL: "https://www.allmusic.com/album/the-beatles-white-album-mw0000418113"
@@ -128,19 +130,19 @@
     }
     ```
 
-1.  In the **ngOnInit()** use a console.log to print the data `console.log(this.albumsArray);` and make sure it displays in the console of the browser.
+3.  In the **ngOnInit()** use a console.log to print the data `console.log(this.albumsArray);` and make sure it displays in the console of the browser.
 
-1. You may notice that there are some purposeful issues with this array data. The first item has id as a string value and the other as a number. Lets define an interface to do type checking against this data.
+4. You may notice that there are some purposeful issues with this array data. The first item has id as a string value and the other as a number. Lets define an interface to do type checking against this data.
 
     ```
     ng g interface albums/album --type=model
     ```
 
-1. Notice the creation of the directory albums and the naming of the file **album.model.ts** the type flag was used to name the file with the type. Look inside this file and notice it is rather bare bones but exports an interface.
+5. Notice the creation of the directory albums and the naming of the file **album.model.ts** the type flag was used to name the file with the type. Look inside this file and notice it is rather bare bones but exports an interface.
 
-1. Complete the interface so that it looks like this:
+6. Complete the interface so that it looks like this:
 
-    ```typescript
+    ```javascript
     export interface Album {
       id: number;
       artist: string;
@@ -157,19 +159,19 @@
     }
     ```
 
-1. Import the Album class.
+7. Import the Album class.
 
     ```typescript
     import { Album } from "./albums/album.model";
     ```
 
-1. Now make the property of albumsArray be of type Album[]
+8. Now make the property of albumsArray be of type Album[]
 
     ```typescript
     albumsArray: Album[];
     ```
 
-1. You should now get errors about the data not quite matching up. Fix the hard-coded array items to update the id and onSale. For currency, data may not exists so add a question mark so data looks something like this:
+9.  You should now get errors about the data not quite matching up. Fix the hard-coded array items to update the id and isOnSale. For currency, data may not exists so add a question mark so data looks something like this:
 
     ```typescript
     export interface Album {
@@ -181,6 +183,6 @@
       currency?: string;
     ```
 
-1. Make the necessary changes so the code compiles and runs in the browser.
+10. Make the necessary changes so the code compiles and runs in the browser.
 
-1. Mark your work as complete.
+11. Mark your work as complete.
