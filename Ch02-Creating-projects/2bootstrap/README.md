@@ -8,7 +8,7 @@
 
 ## Steps
 
-1. If you were unable to complete previous exercises, copy from the angular100-albums branch for the last exercise. Otherwise, keep working in your project.
+1. If you were unable to complete previous exercises, copy from the angular100-solutions branch for the last exercise. Otherwise, keep working in your project.
 
 1. From the VSCode terminal in your project use this command to install bootstrap
 
