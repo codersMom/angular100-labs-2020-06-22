@@ -38,9 +38,7 @@ In this lab you will use create a local Git repository and optionally setup a Gi
 
 7. Change into this directory using `cd my-angular-course`
 
-8. You will be using this directory to create an Angular project from scratch. If you wish to continue, the steps that follow will help you to setup a GitHub repository and link it to this local directory. You will need a valid GitHub account that you can login to. So if you have a phone, or other way to check your email you can set this up. Some students have created temporary emails using Google, Yahoo, etc and have used this to setup GitHub. You can always change the email on your account later when you have ccess to your email.
-
-
+8. You will be using this directory to create an Angular project from scratch. If you wish to continue, the steps that follow will help you to setup a GitHub repository and link it to this local directory. You will need a valid GitHub account that you can login to. So if you have a phone, or other way to check your email you can set this up. Some students have created temporary emails using Google, Yahoo, etc and have used this to setup GitHub. You can always change the email on your account later when you have access to your email.
 
 
 ## Setting up GitHub so that you have a remote repository
@@ -49,14 +47,16 @@ In this lab you will use create a local Git repository and optionally setup a Gi
 
 2.  Call it **my-angular-course**. Do not initialize - do not check any boxes. When it creates it will display some setup code which includes **…or create a new repository on the command line**
 
-3.  Copy the multiple commands given by GitHub into your command prompt within the **my-angular-albums**. It will look similar to the following (**DO NOT EXECUTE THESE COMMANDS - GET THE ONES FROM GITHUB**)
+3.  Copy the multiple commands given by GitHub into your command prompt within the **my-angular-course** directory. It will look similar to the following: 
+
+    (**DO NOT EXECUTE THESE COMMANDS - GET THE ONES FROM GITHUB**)
 
     ```bash
     echo "# test1234" >> README.md
     git init
     git add README.md
     git commit -m "first commit"
-    git remote add origin https://github.com/JudyLipinski/test1234.git
+    git remote add origin https://github.com/SOME-URL
     git push -u origin master
     ```
 
@@ -76,6 +76,6 @@ In this lab you will use create a local Git repository and optionally setup a Gi
 
    git config --global credential.helper wincred
 
-   https://help.github.com/en/articles/caching-your-github-password-in-git
+## Bonus
 
-   https://agilewarrior.wordpress.com/2017/09/25/how-to-setup-git-credential-store-in-windows/
+1. If done before others, check out the VSCode Interactive Playground
