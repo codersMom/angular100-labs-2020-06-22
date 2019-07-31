@@ -17,9 +17,7 @@
 
 1. You should see a message from tslint that the double-quotes " should be single-quotes '. This rule comes from Google's Style Guide and historically was a 'nice to have' because everyone used to put lots of HTML strings inside of JS; this meant you could have double-quoted HTML attributes inside a string without escaping the quotes. Since the days of concatenating HTML strings are mostly behind us and since many of us prefer to use double-quotes, let's change this rule.
 
-1. You'll make this change in tslint.json, but you may have noticed that there's two different tslint.json files in our project. With Angular you can have multiple projects and you may want slightly different TS lint settings for those projects. Since we will only have one project in this repo, delete the **/src/tslint.json** file.
-
-1. Open **/tslint.json** and change the rule below
+2. Open **/tslint.json** and change the rule below
 
     from
     ```json
@@ -36,7 +34,7 @@
 
     Remember to save your change and if you go back to your **app.component.ts** file you should see tslint now accepts double-quotes
 
-1.  Another helpful extension is **Prettier - Code formatter**. If not already installed, then install it (author is Esben Petersen). Create a file with the name **.prettierrc** in the root of your project. Use JSON formatting to add these rules:
+3.  Another helpful extension is **Prettier - Code formatter**. If not already installed, then install it (author is Esben Petersen). Create a file with the name **.prettierrc** in the root of your project. Use JSON formatting to add these rules:
 
     ```typescript
     {
@@ -47,7 +45,7 @@
     }
     ```
 
-1.  Data is added VIA the **XXX.component.ts** type files. We will start by modifying the file **app.component.ts**. Open this file and after the line with **title = "My Angular Albums";**
+4.  Data is added VIA the **XXX.component.ts** type files. We will start by modifying the file **app.component.ts**. Open this file and after the line with **title = "My Angular Albums";**
     and a property called
 
     ```typescript
@@ -56,7 +54,7 @@
 
     The use of any indicates that albumsArray can be of any type. We are using it not to demonstrate that there are no restrictions with any.
 
-1.  Modify the line with the class export to include implements OnInit like this:
+5.  Modify the line with the class export to include implements OnInit like this:
 
     ```typescript
     export class AppComponent implements OnInit {
@@ -64,7 +62,7 @@
 
     We will be exploring this in more detail, it indicates that you intend to implement a method called **ngOnInit()** which is defined in the OnInit interface. This method is called when the component is loaded by Angular.
 
-1.  Mouse over the red wavy underline that **OnInit** has. You must import **OnInit**. Depending on the extensions you have installed, this may have already been done for you - if not, modify the top of **app.component.ts** which imports from Angular core to look like this:
+6.  Mouse over the red wavy underline that **OnInit** has. You must import **OnInit**. Depending on the extensions you have installed, this may have already been done for you - if not, modify the top of **app.component.ts** which imports from Angular core to look like this:
 
     ```typescript
     import { Component, OnInit } from "@angular/core";
@@ -72,13 +70,13 @@
 
     Alternatively, you can click the 'Quick Fix' suggested to you when you mouse over the red way underline and it will add it for you.
 
-1.  You may see errors that you need to now implement OnInit. Do this by adding this function in the class after the property definitions - but before the closing brace } for the class.
+7.  You may see errors that you need to now implement OnInit. Do this by adding this function in the class after the property definitions - but before the closing brace } for the class.
 
     ```typescript
     ngOnInit(): void {    }
     ```
 
-2.  Inside of this **ngOnInit()** function is where you should initialize the **albumsArray** property you created. For now copy the below code to setup an array of albums. In the future we will get these from a server.
+8.  Inside of this **ngOnInit()** function is where you should initialize the **albumsArray** property you created. For now copy the below code to setup an array of albums. In the future we will get these from a server.
 
     You may notice that there are some purposeful issues with this array data. The first item has id as a string value and the next as a number. Lets define an interface to do type checking against this data.
 
@@ -130,17 +128,19 @@
     }
     ```
 
-3.  In the **ngOnInit()** use a console.log to print the data `console.log(this.albumsArray);` and make sure it displays in the console of the browser.
+9.  In the **ngOnInit()** use a console.log to print the data `console.log(this.albumsArray);` and make sure it displays in the console of the browser.
 
-4. You may notice that there are some purposeful issues with this array data. The first item has id as a string value and the other as a number. Lets define an interface to do type checking against this data.
+10. You may notice that there are some purposeful issues with this array data. The first item has id as a string value and the other as a number. Lets define an interface to do type checking against this data.
 
-    ```
+11. Open the integrated terminal. Create an interface for Album by using this Angular CLI command. Note that g is short for generate,and this will be created in a subfolder called albums.
+
+    ```bat
     ng g interface albums/album --type=model
     ```
 
-5. Notice the creation of the directory albums and the naming of the file **album.model.ts** the type flag was used to name the file with the type. Look inside this file and notice it is rather bare bones but exports an interface.
+12. Notice the creation of the directory albums and the naming of the file **album.model.ts** the type flag was used to name the file with the type. Look inside this file and notice it is rather bare bones but exports an interface.
 
-6. Complete the interface so that it looks like this:
+13. Complete the interface so that it looks like this:
 
     ```javascript
     export interface Album {
@@ -159,19 +159,19 @@
     }
     ```
 
-7. Import the Album class.
+14. Import the Album class.
 
     ```typescript
     import { Album } from "./albums/album.model";
     ```
 
-8. Now make the property of albumsArray be of type Album[]
+15. Now make the property of albumsArray be of type Album[]
 
     ```typescript
     albumsArray: Album[];
     ```
 
-9.  You should now get errors about the data not quite matching up. Fix the hard-coded array items to update the id and isOnSale. For currency, data may not exists so add a question mark so data looks something like this:
+16. You should now get errors about the data not quite matching up. Fix the hard-coded array items to update the id and isOnSale. For currency, data may not exists so add a question mark so data looks something like this:
 
     ```typescript
     export interface Album {
@@ -183,6 +183,6 @@
       currency?: string;
     ```
 
-10. Make the necessary changes so the code compiles and runs in the browser.
+17. Make the necessary changes so the code compiles and runs in the browser.
 
-11. Mark your work as complete.
+18. Mark your work as complete.
