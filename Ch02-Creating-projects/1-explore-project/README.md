@@ -7,7 +7,7 @@
 
 ## Part 1 - start project and view output
 
-1. Open your my-angular-albums project in VSCode. If you already had the project open and running, view the terminal and stop the server.
+1. Open your **my-angular-albums** project in VSCode. If you already had the project open and running, view the terminal and stop the server.
 
 2. Open the file \src\index.html. Notice it is quite empty.
 
@@ -25,11 +25,13 @@
    2. How many chunks are created? Note the size of the polyfills.js and polyfills.map.
    3. How big are these files?
 
-8. In the browser view the running project. Right click in the browser and choose View Source. (not the dev tools). Notice how the original source in the browser includes javascript files that were not in the original index.html.
+8. In the browser view the running project. Right click in the browser and choose **View Source**. (not the dev tools). Notice how the original source in the browser includes javascript files that were not in the original index.html.
 
 9. Go back to your running project in the browser, right click and choose Inspect. Notice the message in the console. Which mode is the default mode that started? Notice under elements, a lot of DOM manipulation has happened to create the view.
 
-10. In the Chrome debugger tools, click the Network tab. Right click on the browser reload button and choose hard reload. Notice the output in the network tab. It shows the request being made to the server and the JavaScript files being loaded which are used to display the components. The total size and number of milliseconds to load is also shown.
+10. In the Chrome debugger tools, click the Network tab. Right click on the browser reload button (to the left of the URL) and choose hard reload.
+    
+11. Notice the output in the network tab. It shows the request being made to the server and the JavaScript files being loaded which are used to display the components. The total size and number of milliseconds to load is also shown.
 
 ## Part 2 - start in production mode
 
