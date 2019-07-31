@@ -27,11 +27,16 @@
 
     HINT: Add to current interpolation {{album.price}}, can use ternary operator to define, if album on sale, show new price, else album.price
 
-1. Open this in the browser, how do the prices of the albums on sale look? 
+    <h6>
+     <span *ngIf="album.onSale" style="text-decoration:line-through;">
+       {{album.price }}
+     </span>
+     {{ (album.onSale ? newPrice : album.price) }}
+   </h6>
 
-    Lets fix the decimals and add the use of currency.
+2. Open this in the browser, how do the prices of the albums on sale look? 
 
-1. Replace what you currently have in **album-card.component.ts** with the following:
+3. Lets fix the decimals and add the use of currency. Update the display of the price and onSale properties to use pipes for number and currency:
 
    ```html
    <h6>
@@ -43,4 +48,4 @@
    </h6>
    ```
 
-1. Once it is displaying correctly mark your work as complete.
+4. Once it is displaying correctly mark your work as complete.
