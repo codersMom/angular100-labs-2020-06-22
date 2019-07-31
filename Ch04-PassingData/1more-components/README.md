@@ -21,7 +21,9 @@
 
 4. From the **app.component.html** file, move the entire element that starts with `<div class="container">` to the new **album-list.component.html** file.
 
-5. You may notice an error because of the need for albumsArray to be in the **album-list.component.ts** file. In that .ts file, include the declaration of the property **albumsArray** in the class, just after the export class line:
+5. The template is expecting there to be a property called **albumsArray** in the **album-list.component.ts** file. If you have extensions enabled, you should get an error about this in the template. 
+  
+  In the **album-list.component.ts** file, include the declaration of the property in the class, immediately after the export class line:
 
    ```typescript
    albumsArray: Album[];
@@ -37,9 +39,9 @@
 
 7. Move the **ngOnInit()** function out of the **app.component.ts** into the **album-list.component.ts** file. It must come after any/all property declarations.
 
-8. If you did not discard changes from the last exercise, remove any possibly remaining interval timer and setTimeout() functionality from the **album-list.component.ts** file's **ngOnInit()**
+8.  If you did not discard changes from the last exercise, remove any possibly remaining interval timer and setTimeout() functionality from the **album-list.component.ts** file's **ngOnInit()**
 
-9. Update the **app.component.ts** so that it only has this code:
+9.  Update the **app.component.ts** so that it only has this code:
 
     ```typescript
     import { Component } from "@angular/core";
