@@ -2,31 +2,32 @@
 
 ## Objectives
 
-- Overview in this lab, you will practice creating a hierarchy of components, moving HTML template from AppComponent
+- practice creating a hierarchy of components
+- move HTML template from AppComponent
 
 ## Steps
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
-1. Open the integrated terminal. Create an **AlbumListComponent** by using this Angular CLI command. Note that g is short for generate, c is for component.
+2. Open the integrated terminal. Create an **AlbumListComponent** by using this Angular CLI command. Note that g is short for generate, c is for component.
 
-   ```
+   ```bat
    ng g c albums/album-list
    ```
 
    Here we are specifying to create album-list inside of a directory called albums. Notice that a sub-directory is also created called album-list. If you wish to not have a subdirectory created you can use --flat.
 
-1. Examine the updates made to the **app.module** class decorator. You can see the changes easily if you click on the Y shaped Source Control icon in VSCode and click the changed **app.module.ts** file.
+3. Examine the updates made to the **app.module** class decorator. You can see the changes easily if you click on the Y shaped Source Control icon in VSCode and click the changed **app.module.ts** file.
 
-1. From the **app.component.html** file, move the entire element that starts with `<div class="container">` to the new **album-list.component.html** file.
+4. From the **app.component.html** file, move the entire element that starts with `<div class="container">` to the new **album-list.component.html** file.
 
-1. You may notice an error because of the need for albumsArray to be in the **album-list.component.ts** file. In that file, include the declaration of **albumsArray** in the class:
+5. You may notice an error because of the need for albumsArray to be in the **album-list.component.ts** file. In that .ts file, include the declaration of the property **albumsArray** in the class, just after the export class line:
 
    ```typescript
    albumsArray: Album[];
    ```
 
-1. To make this compile you must import Album into the AlbumListComponent file.
+6. To make this compile you must import Album into the AlbumListComponent file.
 
    ```javascript
    import { Album } from "../album.model";
@@ -34,11 +35,11 @@
 
     Remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
 
-1. Move the **ngOnInit()** from **app.component.ts** into the **album-list.component.ts** file.
+7. Move the **ngOnInit()** function out of the **app.component.ts** into the **album-list.component.ts** file. It must come after any/all property declarations.
 
-1. Remove the interval timer and setTimeout() functionality from **album-list.component.ts** file's **ngOnInit()**
+8. If you did not discard changes from the last exercise, remove any possibly remaining interval timer and setTimeout() functionality from the **album-list.component.ts** file's **ngOnInit()**
 
-1. Update the **app.component.ts** so that it only has this code:
+9. Update the **app.component.ts** so that it only has this code:
 
     ```typescript
     import { Component } from "@angular/core";
@@ -53,7 +54,7 @@
     }
     ```
 
-1. Update **app.component.html** so that it only has this code:
+10. Update **app.component.html** so that it only has this code:
 
    ```html
    <div style="text-align:center;">
@@ -67,6 +68,10 @@
 
    Note the reference to the selector of AlbumListComponent.
 
-1. You should now see the albums in the browser, now being shown via the lst component.
+11. You should now see the albums in the browser, now being shown via the lst component.
 
-1. Mark your work as complete. (Name tent card, electronic status, etc.)
+12. Mark your work as complete. (Name tent card, electronic status, etc.)
+
+## Bonus
+
+If done before others, create a new from scratch application in your my-angular-course directory related to your own work, or an interest of yours. Ony use AppComponent to refer to a new component that you create. 
