@@ -150,7 +150,7 @@
       genre: string;
       price: number;
       currency: string;
-      isOnSale: boolean;
+      onSale: boolean;
       year: number;
       releaseDate: string;
       recordingLocation: string;
@@ -171,7 +171,7 @@
     albumsArray: Album[];
     ```
 
-16. You should now get errors about the data not quite matching up. Fix the hard-coded array items to update the id and isOnSale. For currency, data may not exists so add a question mark so data looks something like this:
+16. You should now get errors about the data not quite matching up. Fix the hard-coded array items to update the id and onSale. For currency, data may not exists so add a question mark so data looks something like this:
 
     ```typescript
     export interface Album {
