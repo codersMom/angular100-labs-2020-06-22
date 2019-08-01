@@ -10,7 +10,7 @@
 
 1. Open the integrated terminal. Create an **AlbumCardComponent** by using this Angular CLI command. Note that g is short for generate, c is for component.
 
-   ```
+   ```bat
    ng g c albums/album-card
    ```
 
