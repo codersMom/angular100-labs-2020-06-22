@@ -12,7 +12,7 @@
 
 2. Use the integrated terminal to generate a service which returns an array of albums.
 
-   ```
+   ```bat
    ng g s albums/shared/album
    ```
 
