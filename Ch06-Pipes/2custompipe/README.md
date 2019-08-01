@@ -41,6 +41,6 @@
 
 1. Now in the **app.component.html** add the use of | **reverseStr** after the title.
 
-1. Verify on the browser that the pipe is working as intented
+1. Verify on the browser that the pipe is working as intended
 
 1. Mark your work as complete.
