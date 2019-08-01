@@ -8,15 +8,15 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution's src directory from **Ch06-Pipes\1pipes** over your src directory.
 
-1. Use the integrated terminal to generate a service which returns an array of albums.
+2. Use the integrated terminal to generate a service which returns an array of albums.
 
    ```
    ng g s albums/shared/album
    ```
 
-1. Update the content of the service to
+3. Update the content of the service to
 
    ```typescript
    import { Injectable } from "@angular/core";
@@ -37,7 +37,7 @@
 
    Notice the use of providedIn - this is new since Angular 6. With it - you do not need to add the service within the module.
 
-1. Update the **album list component** to be dependency injected via the constructor.
+4. Update the **album list component** to be dependency injected via the constructor.
 
    1. import the service
    2. Add it as an argument to the constructor
@@ -46,7 +46,7 @@
    constructor(private albumService: AlbumService) { };
    ```
 
-1. Add these functions to call the service's getAlbums() and set it to your albumsArray property
+5. Add these functions to call the service's getAlbums() and set it to your albumsArray property
 
    ```typescript
     getAlbums() {
@@ -58,4 +58,4 @@
     }
    ```
 
-1. Check that your code works, and mark your work as complete.
+6. Check that your code works, and mark your work as complete.

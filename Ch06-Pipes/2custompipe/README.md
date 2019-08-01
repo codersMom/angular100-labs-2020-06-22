@@ -7,8 +7,10 @@
 ## Steps
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
+   
+2. Ensure your work is committed as you will discard all changes after this exercise.
 
-1. From the integrated terminal execute the command
+3. From the integrated terminal execute the command
 
    ```bash
         ng g pipe reverse-str
@@ -18,7 +20,7 @@
 
    This creates the correct structure of the Pipe class, and adds it to the module.
 
-1. Modify the class so that the transform function looks like the following:
+4. Modify the class so that the transform function looks like the following:
 
    - note that the decorator is used to assign the name to be used in templates
 
@@ -37,10 +39,12 @@
    }
    ```
 
-1. Examine the code above. Try to understand what it accomplishes and how it does it.
+5. Examine the code above. Try to understand what it accomplishes and how it does it.
 
-1. Now in the **app.component.html** add the use of | **reverseStr** after the title.
+6. Now in the **app.component.html** add the use of | **reverseStr** after the title.
 
-1. Verify on the browser that the pipe is working as intended
+7. Verify on the browser that the pipe is working as intended
+   
+8. Use Git to discard your changes
 
-1. Mark your work as complete.
+9.  Mark your work as complete.
