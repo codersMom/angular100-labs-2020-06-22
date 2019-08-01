@@ -12,7 +12,7 @@
 1. We are going to use Bootstrap to style the navbar and make it be responsive, which requires **bootstrap.min.js**, **jquery** and **popper**. We have already installed Bootstrap, so **bootstrap.min.js** is available, but we need to install jquery and popper. 
 
    ```console
-   $ npm i popper jquery -S
+   $ npm i popper.js jquery -S
    ```
 
 1. Update **angular.json** in order to refer to the .js files. Find the **scripts** property and add these items to the array:
@@ -22,7 +22,7 @@
         "node_modules/jquery/dist/jquery.min.js",
         "node_modules/popper.js/dist/umd/popper.min.js",
         "node_modules/bootstrap/dist/js/bootstrap.min.js"
-      ],
+      ]
    ```
 
 1. Because **angular.json** was updated you need to restart the server for changes to be picked up. Do that now by stopping and restarting the server.
