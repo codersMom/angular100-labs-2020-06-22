@@ -14,8 +14,9 @@ In this lab you will use create a local Git repository and optionally setup a Gi
 1. We will be using Git in class as it is a helpful tool while working with Angular. Using the Angular CLI tool - we will create and modify many files at once. Sometimes, this may have been done mistakenly, and can be a mess to clean up! To make the process easier, and be able to UNDO - we will use a local Git repo to track our files.
    
 2. Depending on your lab setup, the global config for git may or may have not been setup. You can verify this by typing this command into the command prompt.  
-    ```
-    git config --global user.name   
+
+    ```bat
+    git config --global user.name
     git config --global user.email
     ```
 
@@ -30,9 +31,9 @@ In this lab you will use create a local Git repository and optionally setup a Gi
 
 5. Open a command prompt in windows and navigate to c:\
 
-6. Navigate to C:\ and issue this command
+6. Navigate to C:\repos and issue this command
 
-   ```bash
+   ```bat
    mkdir my-angular-course
    ```
 
