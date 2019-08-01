@@ -79,7 +79,7 @@
 
    - Notice how the id is received using **route.snapshot.paramMap**
 
-1. Update the **album.details.ts** to display album details on the page using the following code
+1. Update the **album-details.component.html** to display album details on the page using the following code
 
     ```html
     <div class="container">
