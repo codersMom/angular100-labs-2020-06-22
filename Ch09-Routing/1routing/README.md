@@ -22,7 +22,7 @@
         "node_modules/jquery/dist/jquery.min.js",
         "node_modules/popper.js/dist/umd/popper.min.js",
         "node_modules/bootstrap/dist/js/bootstrap.min.js"
-      ],
+      ]
    ```
 
 1. Because **angular.json** was updated you need to restart the server for changes to be picked up. Do that now by stopping and restarting the server.
@@ -48,9 +48,7 @@
 1. Update **app.component.html** to simply be:
 
    ```html
-   <app-navbar></app-navbar> 
-   
-   <router-outlet></router-outlet>
+       <router-outlet></router-outlet>
    ```
 
 1. Now we will add paths to be loaded beneath the `<router-outlet>` element.
@@ -76,14 +74,21 @@
     ```console
     $ ng g c navbar -is
     ```
+ 
+1. Update **app.component.html** to simply be:
 
-1. In **navbar.component.ts** create this title property
+   ```html
+      <app-navbar></app-navbar>     
+      <router-outlet></router-outlet>
+  ```   
+  
+2. In **navbar.component.ts** create this title property
 
     ```typescript
     title: string = "My Albums Project";
     ```
 
-1. Use this content for the new **navbar.component.html**. Note the use of **routerLink**
+3. Use this content for the new **navbar.component.html**. Note the use of **routerLink**
 
     ```html
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -129,11 +134,11 @@
     </nav>
     ```
 
-1. Copy the image **album.gif** from this README's folder into your projects assets folder.
+4. Copy the image **album.gif** from this README's folder into your projects assets folder.
 
-1. Test your changes in the browser and ensure you have no errors. You should see the navbar with image. If you click the links they should work. Clicking the nav brand "My Albums Project" should bring back the album page.
+5. Test your changes in the browser and ensure you have no errors. You should see the navbar with image. If you click the links they should work. Clicking the nav brand "My Albums Project" should bring back the album page.
 
-1. Modify the **About** template to use a button to routerLink to albums.
+6. Modify the **About** template to use a button to routerLink to albums.
 
     ```html
     <div class="jumbotron text-center">
@@ -148,22 +153,22 @@
     </div>
     ```
 
-1. Try adding a non-existing URL in the browser bar such as **http://localhost:xxxx/abc**. View the console to see the error generated.
+7. Try adding a non-existing URL in the browser bar such as **http://localhost:xxxx/abc**. View the console to see the error generated.
 
-1. Generate a new component to be used for any bad urls.
+8. Generate a new component to be used for any bad urls.
 
     ```console
     ng g c Notfound -it -is
     ```
 
-1. Update the **Notfound** template to have this content
+9. Update the **Notfound** template to have this content
 
     ```html
     <h1>Error 404</h1>
     <p>Page not found</p>
     ```
 
-1. Update routes to add a wildcard path with asterix. This must go at the end of your path objects. It will be the match if no other url matches.
+10. Update routes to add a wildcard path with asterix. This must go at the end of your path objects. It will be the match if no other url matches.
 
     ```typescript
     const routes: Routes = [
@@ -176,8 +181,8 @@
 
     Make sure to import **NotfoundComponent**
 
-1. Try adding a non-existing URL in the browser bar such as **http://localhost:xxxx/abc**.
+11. Try adding a non-existing URL in the browser bar such as **http://localhost:xxxx/abc**.
 
-1. This should now load the 404 Error page and still include the nav bar.
+12. This should now load the 404 Error page and still include the nav bar.
 
-1. Mark your work as complete. 
+13. Mark your work as complete. 

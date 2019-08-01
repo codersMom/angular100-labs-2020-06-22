@@ -16,7 +16,7 @@
    ng g s albums/shared/album
    ```
 
-3. Update the content of the service to
+3. Update the content of the service to look like this:
 
    ```typescript
    import { Injectable } from "@angular/core";
@@ -35,7 +35,7 @@
    }
    ```
 
-   Notice the use of providedIn - this is new since Angular 6. With it - you do not need to add the service within the module.
+   Notice the use of providedIn - this is new since Angular 6. With it - you do not need to add the service within the root module.
 
 4. Update the **album list component** to be dependency injected via the constructor.
 
