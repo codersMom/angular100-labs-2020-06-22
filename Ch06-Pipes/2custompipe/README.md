@@ -6,7 +6,7 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
 
 1. From the integrated terminal execute the command
 
@@ -41,6 +41,6 @@
 
 1. Now in the **app.component.html** add the use of | **reverseStr** after the title.
 
-1. Verify on the browser that the pipe is working as intented
+1. Verify on the browser that the pipe is working as intended
 
 1. Mark your work as complete.

@@ -7,7 +7,7 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
 
 1. We are going to use Bootstrap to style the navbar and make it be responsive, which requires **bootstrap.min.js**, **jquery** and **popper**. We have already installed Bootstrap, so **bootstrap.min.js** is available, but we need to install jquery and popper. 
 

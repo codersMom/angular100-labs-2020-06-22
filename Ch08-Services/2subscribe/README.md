@@ -6,7 +6,8 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
+
 
 1. In this readme folder here is a folder called data with a file inside called **music-info.json**. Copy this directory to the root of your project folder - the same location as your **package.json**.
 

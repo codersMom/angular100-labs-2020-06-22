@@ -8,7 +8,7 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
 
 1. Use the integrated terminal to generate a service which returns an array of albums.
 
