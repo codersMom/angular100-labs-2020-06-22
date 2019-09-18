@@ -16,7 +16,7 @@
 
    ```html
    <div class="card-body" [ngStyle]="{ 'background-color': album.onSale ? '#93df93' : '' }">
-   >
+   
      
    </div>
    ```
