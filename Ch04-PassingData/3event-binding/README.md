@@ -12,7 +12,7 @@
 
    ```javascript
     showAlbum() {
-        alert('Album selected: ' + this.album.albumName)
+        alert('Album selected: ' + this.album.albumName);
     }
    ```
 
