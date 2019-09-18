@@ -48,11 +48,9 @@
     ```html
     <div class="card-body">
       <h5 class="card-title">{{ albumsArray[0].artist }}</h5>
-      <div class="scrollable">
         <h6 class="card-title">{{ albumsArray[0].albumName }}</h6>
         <h6 class="card-text">Released: {{ albumsArray[0].releaseDate }}</h6>
         <h6>{{ albumsArray[0].price }} {{ albumsArray[0].currency }}</h6>
-      </div>
     </div>
     ```
 
