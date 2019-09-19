@@ -31,7 +31,7 @@
    export class ReverseStrPipe implements PipeTransform {
      transform(value: string): string {
        let newStr: string = "";
-       for (var i = value.length - 1; i >= 0; i--) {
+       for (let i = value.length - 1; i >= 0; i--) {
          newStr += value.charAt(i);
        }
        return newStr;
