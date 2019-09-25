@@ -16,13 +16,13 @@
    $ ng g component albums/album-details
    ```
 
-1. Update the **Route[]** to add an entry that will reach the placeholder details page saying it works. Use **albums/:id** which accepts an id parameter. Ensure the Component is imported.
+1. Update the **Route[]** in hte **AlbumsRoutingModule** to add an entry that will reach the placeholder details page saying it works. Use **:id** which accepts an id parameter. Ensure the Component is imported.
 
    ```typescript
-   { path: "albums/:id", component: AlbumDetailsComponent }
+   { path: ":id", component: AlbumDetailsComponent }
    ```
 
-   NOTE: Make sure to put this above the wildcard path.
+   NOTE: Put it below the empty path and not in **app-routing.module.ts**
 
 1. Test in the browser that if you use a URL similar to **localhost:xxxx/albums/2** that the page loads correctly
 
@@ -84,22 +84,16 @@
     ```html
     <div class="container">
       <div class="row">
-        <img
-          *ngIf="album"
-          class="float-right img-fluid"
-          src="assets/img/{{ album.id }}.jpg"
-          alt="{{ album?.album_name }}"
-        />
+        <img *ngIf="album" class="float-right img-fluid" src="assets/img/{{ album.id }}.jpg" alt="{{ album?.albumName }}" />
 
         <ul style="list-style: none;">
           <li>
-            <h2>{{ album?.album_name }}</h2>
+            <h2>{{ album?.albumName }}</h2>
           </li>
           <li>{{ album?.artist }}</li>
           <li>Year Released: {{ album?.year }}</li>
         </ul>
       </div>
-
       <div class="row">
         <h4>Tracks</h4>
         <table class="table">
@@ -112,7 +106,7 @@
           </thead>
           <tbody *ngIf="album">
             <tr *ngFor="let track of album.tracks">
-              <th scope="row">{{ track.track_number }}</th>
+              <th scope="row">{{ track.trackNumber }}</th>
               <td>{{ track.title }}</td>
               <td>{{ track.length }}</td>
             </tr>
