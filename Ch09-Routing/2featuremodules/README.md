@@ -34,7 +34,7 @@
     ![](../screenshots/ng-g-m-component-not-found.png)
 
 
-1. All components must be in ONE module. A component cannot be included inmore thn one module. We added the components to the new module, but did not add it to the Root Module. Now add the new AlbumsModule to the AppModule imports section. VSCode offers an import completion under Quick Fix.
+1. All components must be in ONE module. A component cannot be included in more than one module. We added the components to the new module, but did not add it to the Root Module. Now add the new AlbumsModule to the AppModule imports section. VSCode offers an import completion under Quick Fix.
   
     ![](../screenshots/ng-g-m-update-app-module.png)
 

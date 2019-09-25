@@ -32,9 +32,9 @@
 
 9.  Now, inside of the interval function, change the albumsArray[0] price property to be increased by ten dollars.
 
-   ```javascript
-   this.albumsArray[0].price += 10;
-   ```
+        ```javascript
+        this.albumsArray[0].price += 10;
+        ```
 
 11. Can you see your changes on the screen? How did this compare to adding/removing items from an array?
 
