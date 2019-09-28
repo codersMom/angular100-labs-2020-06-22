@@ -11,7 +11,7 @@
 2. Create an app routing module to be referenced within the albums module.
 
     ```console
-    ng g module albums\albums-routing --module albums --flat
+    ng g module albums/albums-routing --module albums --flat
     ```
 
     You should see two changes.
@@ -44,12 +44,12 @@
 
     ```javascript
     @NgModule({
-        imports: [RouterModule.forRoot(routes)],
+        imports: [RouterModule.forChild(routes)],
         exports: [RouterModule]
     })
     ```
 
-6.Now test that your app works by loading it in the browser. Open the dev tools network traffic tab. 
+6. Now test that your app works by loading it in the browser. Open the dev tools network traffic tab. 
 
 1. Click on the albums button or link and you should see the module being lazily loaded. 
 

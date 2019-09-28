@@ -6,7 +6,7 @@
 
 ## Steps
 
-1. Copy the sale icon image form this folder to your projects assets folder
+1. Copy the sale icon image form this folder to your projects assets/img/ folder
 
 2. In your albumCard template, use ngIf to display the onsale image if onSale == true. Put this code into the footer before the button.
 

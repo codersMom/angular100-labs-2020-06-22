@@ -41,6 +41,10 @@
 
      Notice, you will also need to import **HttpClientModule**.
 
+     ```typescript
+     import { HttpClientModule } from '@angular/common/http'
+     ```
+
      Remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
 
 1. Modify the **album.service** to be dependency injected with HttpClient, and use this to request the albums from the given URL.

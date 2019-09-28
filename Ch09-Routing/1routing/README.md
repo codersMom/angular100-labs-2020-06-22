@@ -80,12 +80,13 @@
    ```html
       <app-navbar></app-navbar>     
       <router-outlet></router-outlet>
-  ```   
+      ```
+ 
   
-2. In **navbar.component.ts** create this title property
+1. In **navbar.component.ts** create this title property
 
     ```typescript
-    title: string = "My Albums Project";
+     title: string = "My Albums Project";
     ```
 
 3. Use this content for the new **navbar.component.html**. Note the use of **routerLink**

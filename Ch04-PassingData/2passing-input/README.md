@@ -10,7 +10,7 @@
 
 1. Open the integrated terminal. Create an **AlbumCardComponent** by using this Angular CLI command. Note that g is short for generate, c is for component.
 
-   ```bat
+   ```bat 
    ng g c albums/album-card
    ```
 
@@ -64,7 +64,7 @@
     }
     ```
 
-1. Add these rules to contain the body of the card if there's too much content and to implement a scroll bar if it does.
+1. Add these rules to contain the body of the card. If the body of the card has too much content to be contained within the card, a scroll bar will be enabled with the following rules.
 
     ```css
     .card-text {
@@ -77,7 +77,7 @@
     }
     ```
 
-    To apply this functionality, in the **album-card.component.html** file, wrap a div around the card details within the card-body except for the card-title with the class **scrollable** as shown below
+    Wrap a <div> with the class **scrollable** around the card details within the cardbody to implement the CSS scrollable functionality we added in the step above. It should then look like the following:
 
     ```html
     <div class="card-body">
@@ -90,7 +90,7 @@
     </div>
     ```
 
-    We will see an example of this in future labs, but if you'd like to test it you can fill the body of the card with a long piece of text.
+    We will see an example of this in future labs. You can test that scroll bar will appear by filling the body of the card with a lot of text. 
 
 1. Add a rule to create a shadow behind the card and another rule to darken the card when it's moused over.
 
@@ -142,7 +142,7 @@
         <img
     ```
 
-    Test the effect on the browser and make sure it's working.
+    Test the effect on the browser by mousing over the album images.
 
 1. In the browser you should see the 3 different albums.
 

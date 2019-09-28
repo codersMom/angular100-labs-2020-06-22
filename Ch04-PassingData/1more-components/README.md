@@ -17,17 +17,17 @@
 
    Here we are specifying to create album-list inside of a directory called albums. Notice that a sub-directory is also created called album-list. If you wish to not have a subdirectory created you can use --flat.
 
-3. Examine the updates made to the **app.module** class decorator. You can see the changes easily if you click on the Y shaped Source Control icon in VSCode and click the changed **app.module.ts** file.
+3. Examine the updates made to the **app.module.ts** class decorator. You can see the changes easily if you click on the Y shaped Source Control icon in VSCode and click the changed **app.module.ts** file.
 
-4. From the **app.component.html** file, move the entire element that starts with `<div class="container">` to the new **album-list.component.html** file.
+4. From the **app.component.html** file, move the entire element that starts with `<div class="container-fluid">` to the new **album-list.component.html** file.
 
 5. The template is expecting there to be a property called **albumsArray** in the **album-list.component.ts** file. If you have extensions enabled, you should get an error about this in the template. 
   
-  In the **album-list.component.ts** file, include the declaration of the property in the class, immediately after the export class line:
+    In the **album-list.component.ts** file, include the declaration of the property in the class, immediately after the export class line:
 
-   ```typescript
-   albumsArray: Album[];
-   ```
+    ```typescript
+    albumsArray: Album[];
+    ```
 
 6. To make this compile you must import Album into the AlbumListComponent file.
 
@@ -58,17 +58,17 @@
 
 10. Update **app.component.html** so that it only has this code:
 
-   ```html
-   <div style="text-align:center;">
-     <h1 class="jumbotron my-5 mx-5">Welcome to {{ title }}!</h1>
-   </div>
+    ```html
+    <div style="text-align:center;">
+      <h1 class="jumbotron my-5 mx-5">Welcome to {{ title }}!</h1>
+    </div>
 
-   <app-album-list></app-album-list>
+    <app-album-list></app-album-list>
 
-   <router-outlet></router-outlet>
-   ```
+    <router-outlet></router-outlet>
+    ```
 
-   Note the reference to the selector of AlbumListComponent.
+    Note the reference to the selector of AlbumListComponent.
 
 11. You should now see the albums in the browser, now being shown via the lst component.
 
