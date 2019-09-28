@@ -5,6 +5,10 @@
 - Use Routing in your application
 - Add the use of the bootstrap javascript file for navbar functionality
 
+## Overview
+
+You will create two new components: Welcome and About. You will setup routing so that both of these views are reachable. If anyone goes to the main page they will be routed to Welcome. Finally you will update the nav bar so that clicking on the links will load up the correct "pages"
+
 ## Steps
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
@@ -27,13 +31,13 @@
 
 4. Because **angular.json** was updated you need to restart the server for changes to be picked up. Do that now by stopping and restarting the server.
 
-5. Let's create an **About** "page" for our application. Make the component have an inline template and inline styling.
+5. Let's create the **Welcome** "page" for our application. Make the component have an inline template and inline styling.
 
    ```console
-    $ ng g c about -it -is
+    $ ng g c welcome -it -is
    ```
 
-6. Modify the **about.component.ts** template to display the following:
+6. Modify the **welcome.component.ts** template to display the following:
 
    ```html
    <div style="text-align:center;">
@@ -43,31 +47,33 @@
    </div>
    ```
 
-7. Create the title property within **about.component.ts** and set it equal to **My Angular Albums**. We cannot reach this component yet.
+7. Create the title property within **welcome.component.ts** and set it equal to **My Angular Albums**. 
+   
+8. We cannot reach these components yet.
 
-8. Update **app.component.html** to simply be:
+9.  Update **app.component.html** to simply be:
 
    ```html
        <router-outlet></router-outlet>
    ```
 
-9. Now we will add paths to be loaded beneath the `<router-outlet>` element.
+11. Now we will add paths to be loaded beneath the `<router-outlet>` element.
 
    Add 3 object elements to the Routes array in **app-routing.module.ts**:
 
    ```typescript
    const routes: Routes = [
-     { path: "", redirectTo: "/about", pathMatch: "full" },
-     { path: "about", component: AboutComponent },
+     { path: "", redirectTo: "/welcome", pathMatch: "full" },
+     { path: "welcome", component: WelcomeComponent },
      { path: "albums", component: AlbumListComponent }
    ];
    ```
 
-10. Import the **AboutComponent** and **AlbumListComponent**.
+11. Import the **WelcomeComponent** and **AlbumListComponent**.
 
    Remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
 
-11. Open the browser for testing. If you load the URL of **http://localhost:xxxx/** you should see the about page. If you manually change the URL and add **http://localhost:xxxx/albums**, you should see the albums. If not fix your errors.
+11. Open the browser for testing. If you load the URL of **http://localhost:xxxx/** you should see the Welcome page. If you manually change the URL and add **http://localhost:xxxx/albums**, you should see the albums. If not fix your errors.
 
 12. Let's create a navbar component to click links to change page views.
 
