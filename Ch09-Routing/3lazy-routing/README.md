@@ -1,4 +1,4 @@
-# Chapter 9 Routing: Lazy Loading Modules
+# Chapter 9 Routing: Lab 3 Lazy Loading Modules
 
 ## Objectives
 

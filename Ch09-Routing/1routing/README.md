@@ -1,4 +1,4 @@
-# Chapter 9 Routing: Work with Routing
+# Chapter 9 Routing: Lab 1 Add Routing to your application
 
 ## Objectives
 
@@ -9,13 +9,13 @@
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
 
-1. We are going to use Bootstrap to style the navbar and make it be responsive, which requires **bootstrap.min.js**, **jquery** and **popper**. We have already installed Bootstrap, so **bootstrap.min.js** is available, but we need to install jquery and popper. 
+2. We are going to use Bootstrap to style the navbar and make it be responsive, which requires **bootstrap.min.js**, **jquery** and **popper**. We have already installed Bootstrap, so **bootstrap.min.js** is available, but we need to install jquery and popper. 
 
    ```console
    $ npm i popper.js jquery -S
    ```
 
-1. Update **angular.json** in order to refer to the .js files. Find the **scripts** property and add these items to the array:
+3. Update **angular.json** in order to refer to the .js files. Find the **scripts** property and add these items to the array:
 
    ```javascript
     "scripts": [
@@ -25,15 +25,15 @@
       ]
    ```
 
-1. Because **angular.json** was updated you need to restart the server for changes to be picked up. Do that now by stopping and restarting the server.
+4. Because **angular.json** was updated you need to restart the server for changes to be picked up. Do that now by stopping and restarting the server.
 
-1. Let's create an **About** "page" for our application. Make the component have an inline template and inline styling.
+5. Let's create an **About** "page" for our application. Make the component have an inline template and inline styling.
 
    ```console
     $ ng g c about -it -is
    ```
 
-1. Modify the **about.component.ts** template to display the following:
+6. Modify the **about.component.ts** template to display the following:
 
    ```html
    <div style="text-align:center;">
@@ -43,15 +43,15 @@
    </div>
    ```
 
-1. Create the title property within **about.component.ts** and set it equal to **My Angular Albums**. We cannot reach this component yet.
+7. Create the title property within **about.component.ts** and set it equal to **My Angular Albums**. We cannot reach this component yet.
 
-1. Update **app.component.html** to simply be:
+8. Update **app.component.html** to simply be:
 
    ```html
        <router-outlet></router-outlet>
    ```
 
-1. Now we will add paths to be loaded beneath the `<router-outlet>` element.
+9. Now we will add paths to be loaded beneath the `<router-outlet>` element.
 
    Add 3 object elements to the Routes array in **app-routing.module.ts**:
 
@@ -63,19 +63,19 @@
    ];
    ```
 
-1. Import the **AboutComponent** and **AlbumListComponent**.
+10. Import the **AboutComponent** and **AlbumListComponent**.
 
    Remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
 
-1. Open the browser for testing. If you load the URL of **http://localhost:xxxx/** you should see the about page. If you manually change the URL and add **http://localhost:xxxx/albums**, you should see the albums. If not fix your errors.
+11. Open the browser for testing. If you load the URL of **http://localhost:xxxx/** you should see the about page. If you manually change the URL and add **http://localhost:xxxx/albums**, you should see the albums. If not fix your errors.
 
-1. Let's create a navbar component to click links to change page views.
+12. Let's create a navbar component to click links to change page views.
 
     ```console
     $ ng g c navbar -is
     ```
  
-1. Update **app.component.html** to simply be:
+13. Update **app.component.html** to simply be:
 
    ```html
       <app-navbar></app-navbar>     
