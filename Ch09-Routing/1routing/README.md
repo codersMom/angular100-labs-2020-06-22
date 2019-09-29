@@ -91,11 +91,11 @@ You will create two new components: Welcome and About. You will setup routing so
  
 13. Update **app.component.html** to simply be:
 
-   ```html
-      <app-navbar></app-navbar>     
-      <router-outlet></router-outlet>
-      ```
- 
+     ```html
+        <app-navbar></app-navbar>     
+        <router-outlet></router-outlet>
+     ```
+
   
 1. In **navbar.component.ts** create this title property
 
@@ -107,11 +107,14 @@ You will create two new components: Welcome and About. You will setup routing so
 
     ```html
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
       <a class="navbar-brand" href="#">Angular100-Demos</a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav">
           <li class="nav-item">
@@ -162,12 +165,12 @@ You will create two new components: Welcome and About. You will setup routing so
 10. Update routes to add a wildcard path with asterix. This must go at the end of your path objects. It will be the match if no other url matches.
 
     ```typescript
-    const routes: Routes = [
-      { path: "", redirectTo: "/about", pathMatch: "full" },
-      { path: "about", component: AboutComponent },
-      { path: "albums", component: AlbumListComponent },
-      { path: "**", component: NotfoundComponent, pathMatch: "full" }
-    ];
+      const routes: Routes = [
+        { path: "", redirectTo: "/about", pathMatch: "full" },
+        { path: "about", component: AboutComponent },
+        { path: "albums", component: AlbumListComponent },
+        { path: "**", component: NotfoundComponent, pathMatch: "full" }
+      ];
     ```
 
     Make sure to import **NotfoundComponent**
