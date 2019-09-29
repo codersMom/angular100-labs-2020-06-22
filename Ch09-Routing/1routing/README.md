@@ -13,13 +13,13 @@ You will create two new components: Welcome and About. You will setup routing so
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
 
-2. We are going to use Bootstrap to style the navbar and make it be responsive, which requires **bootstrap.min.js**, **jquery** and **popper**. We have already installed Bootstrap, so **bootstrap.min.js** is available, but we need to install jquery and popper. 
+1. We are going to use Bootstrap to style the navbar and make it be responsive, which requires **bootstrap.min.js**, **jquery** and **popper**. We have already installed Bootstrap, so **bootstrap.min.js** is available, but we need to install jquery and popper.
 
-   ```console
-   $ npm i popper.js jquery -S
+   ```bat
+    npm i popper.js jquery -S
    ```
 
-3. Update **angular.json** in order to refer to the .js files. Find the **scripts** property and add these items to the array:
+1. Update **angular.json** in order to refer to the .js files. Find the **scripts** property and add these items to the array:
 
    ```javascript
     "scripts": [
@@ -29,15 +29,15 @@ You will create two new components: Welcome and About. You will setup routing so
       ]
    ```
 
-4. Because **angular.json** was updated you need to restart the server for changes to be picked up. Do that now by stopping and restarting the server.
+1. Because **angular.json** was updated you need to restart the server for changes to be picked up. Do that now by stopping and restarting the server.
 
-5. Let's create the **Welcome** "page" for our application. Use the -is flag to make the component have inline styling. (altenratively you could use --inline-style)
+1. Let's create the **Welcome** "page" for our application. Use the -is flag to make the component have inline styling. (alternatively you could use --inline-style)
 
-   ```console
-    $ ng g c welcome -is
+   ```bat
+   ng g c welcome -is
    ```
 
-6. Modify the **welcome.component.html** template to display the following:
+1. Modify the **welcome.component.html** template to display the following:
 
    ```html
       <div class="container">
@@ -55,17 +55,17 @@ You will create two new components: Welcome and About. You will setup routing so
       </div>
    ```
 
-7. Create the title property within **welcome.component.ts** and set it equal to **My Angular Albums**. 
-   
-8. We cannot reach this component yet.
+1. Create the title property within **welcome.component.ts** and set it equal to **My Angular Albums**.
 
-9.  Update **app.component.html** to simply be:
+1. We cannot reach this component yet.
+
+1. Update **app.component.html** to simply be:
 
    ```html
        <router-outlet></router-outlet>
    ```
 
-11. Now we will add paths to be loaded beneath the `<router-outlet>` element.
+1. Now we will add paths to be loaded beneath the `<router-outlet>` element.
 
    Add 3 object elements to the Routes array in **app-routing.module.ts**:
 
@@ -77,33 +77,38 @@ You will create two new components: Welcome and About. You will setup routing so
    ];
    ```
 
-11. Import the **WelcomeComponent** and **AlbumListComponent**.
+1. Import the **WelcomeComponent** and **AlbumListComponent**.
 
    Remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
 
-11. Open the browser for testing. If you load the URL of **http://localhost:xxxx/** you should see the Welcome page. If you manually change the URL and add **http://localhost:xxxx/albums**, you should see the albums. If not fix your errors.
+1. Open the browser for testing. Load the following URL and you should see the Welcome page.
 
-12. Let's create a navbar component to click links to change page views.
+    ```http://localhost:3333/```
+  
+1. Manually type in the following URL and you should see the albums. If not fix your errors.
 
-    ```console
-    $ ng g c navbar -is
+    ```http://localhost:3333/albums```
+
+1. Let's create a navbar component to click links to change page views.
+
+    ```bat
+    ng g c navbar -is
     ```
- 
-13. Update **app.component.html** to simply be:
+
+1. Update **app.component.html** to simply be:
 
      ```html
-        <app-navbar></app-navbar>     
+        <app-navbar></app-navbar>
         <router-outlet></router-outlet>
      ```
 
-  
 1. In **navbar.component.ts** create this title property
 
     ```typescript
      title: string = "My Albums Project";
     ```
 
-3. Use this content for the new **navbar.component.html**. Note the use of **routerLink**
+1. Use this content for the new **navbar.component.html**. Note the use of **routerLink**
 
     ```html
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -114,7 +119,7 @@ You will create two new components: Welcome and About. You will setup routing so
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav">
           <li class="nav-item">
@@ -128,11 +133,11 @@ You will create two new components: Welcome and About. You will setup routing so
     </nav>
     ```
 
-4. Copy the image **album.gif** from this README's folder into your projects assets folder for its use in the navbar.
+1. Copy the image **album.gif** from this README.md folder into your projects assets folder for its use in the navbar.
 
-5. Test your changes in the browser and ensure you have no errors. You should see the navbar with image. If you click the links they should work. Clicking the nav brand "My Albums Project" should bring back the album page.
+1. Test your changes in the browser and ensure you have no errors. You should see the navbar with image. If you click the links they should work. Clicking the nav brand "My Albums Project" should bring back the album page.
 
-6. Modify the **About** template to use a button to routerLink to albums.
+4. Modify the **About** template to use a button to routerLink to albums.
 
     ```html
     <div class="jumbotron text-center">
@@ -147,22 +152,24 @@ You will create two new components: Welcome and About. You will setup routing so
     </div>
     ```
 
-7. Try adding a non-existing URL in the browser bar such as **http://localhost:xxxx/abc**. View the console to see the error generated.
+5. Try adding a non-existing URL in the browser bar such as the following and view the browser devtools console to see the error generated.
 
-8. Generate a new component to be used for any bad urls.
+    ```http://localhost:3333/abc```
 
-    ```console
+6. Generate a new component to be used for any bad urls.
+
+    ```bat
     ng g c Notfound -it -is
     ```
 
-9. Update the **Notfound** template to have this content
+7. Update the **Notfound** template to have this content
 
     ```html
     <h1>Error 404</h1>
     <p>Page not found</p>
     ```
 
-10. Update routes to add a wildcard path with asterix. This must go at the end of your path objects. It will be the match if no other url matches.
+8. Update routes to add a wildcard path with asterix. This must go at the end of your path objects. It will be the match if no other url matches.
 
     ```typescript
       const routes: Routes = [
@@ -175,8 +182,10 @@ You will create two new components: Welcome and About. You will setup routing so
 
     Make sure to import **NotfoundComponent**
 
-11. Try adding a non-existing URL in the browser bar such as **http://localhost:xxxx/abc**.
+9. Try adding a non-existing URL in the browser bar such as:
 
-12. This should now load the 404 Error page and still include the nav bar.
+    ```http://localhost:xxxx/abc```
 
-13. Mark your work as complete. 
+10. This should now load the 404 Error page and still include the nav bar.
+
+11. Mark your work as complete.
