@@ -7,7 +7,7 @@
 
 ## Part 1 - start project and view output
 
-1. Open your **my-angular-albums** project in VSCode. If you already had the project open and running, view the terminal and stop the server.
+1. Open your **my-angular-albums** project in VS Code. If you already had the project open and running, view the terminal and stop the server.
 
 2. Open the file \src\index.html. Notice it is quite empty.
 
@@ -17,7 +17,7 @@
 
 5. What does **npm start** do?
 
-6. Open the VSCode terminal with control ` or View | Terminal and start the project using **npm start**
+6. Open the VS Code terminal with control ` or View | Terminal and start the project using **npm start**
 
 7. Notice the output in the terminal and look for:
 
@@ -41,7 +41,7 @@
    ng serve --port 4777 --prod=true -o
    ```
 
-2. Examine the output in VSCode as the server loads. Compare to the other running server. You can switch back and forth by using the VSCode terminal dropdown and choosing the desired one.
+2. Examine the output in VS Code as the server loads. Compare to the other running server. You can switch back and forth by using the VS Code terminal dropdown and choosing the desired one.
 
 3. Notice the way the files are similar but named differently.
 

@@ -1,4 +1,4 @@
-## Starting VSCode
+## Starting VS Code
 * Open from prompt:  `code .`
 
 hello class!

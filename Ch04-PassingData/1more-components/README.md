@@ -17,7 +17,7 @@
 
    Here we are specifying to create album-list inside of a directory called albums. Notice that a sub-directory is also created called album-list. If you wish to not have a subdirectory created you can use --flat.
 
-3. Examine the updates made to the **app.module.ts** class decorator. You can see the changes easily if you click on the Y shaped Source Control icon in VSCode and click the changed **app.module.ts** file.
+3. Examine the updates made to the **app.module.ts** class decorator. You can see the changes easily if you click on the Y shaped Source Control icon in VS Code and click the changed **app.module.ts** file.
 
 4. From the **app.component.html** file, move the entire element that starts with `<div class="container-fluid">` to the new **album-list.component.html** file.
 

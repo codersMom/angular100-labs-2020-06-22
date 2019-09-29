@@ -3,7 +3,7 @@
 ## Objectives
 
 * Practice with markdown files
-* Practice with VSCode
+* Practice with VS Code
 * Install VS Code extensions
 * Create new local repository used during class
 * Commit changes
@@ -20,15 +20,15 @@
 
 [Part 2 - The Course Files](#part-2---the-course-files)
 
-[Part 3 - Tracking changes with Git in VSCode](#part-3---source-control-tracking)
+[Part 3 - Tracking changes with Git in VS Code](#part-3---source-control-tracking)
 
-[Part 4 - Install VSCode extensions](#part-4-install-vs-code-extensions)
+[Part 4 - Install VS Code extensions](#part-4-install-vs-code-extensions)
 
 [Part 5 - Create Local Git Repo](#part-5---create-new-mywebcourse-local-repository)
 
-[Part 6 - Opening Multiple Instances of VScode](#part-6---opening-multiple-instances-of-vscode)
+[Part 6 - Opening Multiple Instances of VS Code](#part-6---opening-multiple-instances-of-VS Code)
 
-[Part 7 - Using VSCode to commit changes](#part-7---using-vscode-to-commit-changes)
+[Part 7 - Using VS Code to commit changes](#part-7---using-VS Code-to-commit-changes)
 
 [Part 8 - Use .gitignore to not track changes](#part-8---using-gitignore-to-ignore-changes)
 
@@ -36,7 +36,7 @@
 
 [Part 10 - View GitLens extension](#part-10---view-gitlens)
 
-[Bonus - Explore VSCode](#bonus)
+[Bonus - Explore VS Code](#bonus)
 
 ### **Part 1 - Markdown .md files in Edit & Preview Mode**
 
@@ -44,14 +44,14 @@
     
     On repository sites such as GitHub and Bitbucket a README.md in the root directory describes repositories and how to build and run dynamic projects. If you like to use Reddit you can use markdown to style your posts.
     
-    The default mode of VS Code opens `.md` files in EDIT MODE where you see the special characters for formatting. VSCode also offers a PREVIEW MODE so you can more easily read the styled text.
+    The default mode of VS Code opens `.md` files in EDIT MODE where you see the special characters for formatting. VS Code also offers a PREVIEW MODE so you can more easily read the styled text.
 
-    We will look at multiple ways to open markdown files in PREVIEW MODE in VSCode. You will use these methods for lab exercises and some demos. 
+    We will look at multiple ways to open markdown files in PREVIEW MODE in VS Code. You will use these methods for lab exercises and some demos. 
 
 
 **Shortcut CTRL-SHIFT-V**
 
-1. With this README.md in focus (click this text in the VSCode editor if the document has lost focus) you can open a new tab in PREVIEW MODE by hitting control-shift-V. This will open the preview in a new tab. You can then switch back and forth using the tabs. 
+1. With this README.md in focus (click this text in the VS Code editor if the document has lost focus) you can open a new tab in PREVIEW MODE by hitting control-shift-V. This will open the preview in a new tab. You can then switch back and forth using the tabs. 
    
     **OPEN SPLIT SCREEN**
 
@@ -81,7 +81,7 @@
 
     **MARKDOWN FORMATTING**
 
-3. Make sure you can see both the Edit Mode in VSCode and the Preview Mode in VSCode or GitHub while you review the following:
+3. Make sure you can see both the Edit Mode in VS Code and the Preview Mode in VS Code or GitHub while you review the following:
 
     * Hash marks (#), are used for formatting headings.
         * A single # is heading "level 1" which is biggest, ## is "level 2", slightly smaller, and so on.
@@ -100,13 +100,13 @@
 5. When a markdown file is the active file, there is a button that automatically opens Preview in the split pane.
 ![Preview button](screenshots/preview-button.png)
 
-        Most everything in VSCode has a hover effect. If you forget what anything does, just hover over it.
+        Most everything in VS Code has a hover effect. If you forget what anything does, just hover over it.
 
     **OPENING FROM EXPLORER**
-1. In VSCode, from the Explorer Pane, you can find the markdown file of interest, right click and choose **Open Preview**. Try this now with this README.md as shown.
+1. In VS Code, from the Explorer Pane, you can find the markdown file of interest, right click and choose **Open Preview**. Try this now with this README.md as shown.
 ![Open In Preview](screenshots/open-preview.png)
 
-1. In VSCode, while viewing in Preview mode, if you double-click an area of the file, you will be taken back to the EDIT VIEW or "source" markdown file for editing.
+1. In VS Code, while viewing in Preview mode, if you double-click an area of the file, you will be taken back to the EDIT VIEW or "source" markdown file for editing.
 
     Notice that if you double click the  image shown above - it takes you to the edit mode version where the image is linked.
 
@@ -121,7 +121,7 @@
     * The `/Labs` directory will be used for instructions and some libraries for the hands-on exercises you will be doing in class. 
 
         * It is safe to modify these files, because the Demos and Labs folders are tracked by Git. 
-        * If you make and save changes to any of these files, the VSCode source control icon (The Y looking icon in the vertical menu strip) will display a number for each file changed. 
+        * If you make and save changes to any of these files, the VS Code source control icon (The Y looking icon in the vertical menu strip) will display a number for each file changed. 
         * You can always revert to the original files by clicking this source control icon, and discarding the changes from one or all files. 
     * Practice Bonus problems are available for CSS and JS.
     * The z_cheatsheets has shortcuts and links for what we will be discussing in class.
@@ -165,15 +165,15 @@
     ![extensions](screenshots/extensions.png)
 
 
-2. Type into the Extensions Marketplace search field to find `VSCode Great Icons` by Emmanual Beziat. If you do not have it already installed click the install button.
+2. Type into the Extensions Marketplace search field to find `VS Code Great Icons` by Emmanual Beziat. If you do not have it already installed click the install button.
    
    ![](screenshots/extensions-icons-search.png)
 
-    This extension gives us different icons we can use in VSCode. 
+    This extension gives us different icons we can use in VS Code. 
     
 3. When you've found the extension, install it by pressing the green `Install` button. Wait for the install to complete. 
 
-    Sometimes that is all you do - install. For some extensions there are additional options In this case, update the icons used by VSCode. 
+    Sometimes that is all you do - install. For some extensions there are additional options In this case, update the icons used by VS Code. 
     
     ![](screenshots/extensions-install-menu.png)
 
@@ -207,22 +207,22 @@ Git supercharged
    
 ![GitInit](screenshots/git-init.png)
 
-### **Part 6 - Opening Multiple Instances of VScode**
+### **Part 6 - Opening Multiple Instances of VS Code**
 
-    Quite often you will need to have multiple instances of VSCode open. For example, you may be referring to a sample project and comparing to your own project. In this class, you may wish to have open the Labs and your project.
+    Quite often you will need to have multiple instances of VS Code open. For example, you may be referring to a sample project and comparing to your own project. In this class, you may wish to have open the Labs and your project.
 
     There are multiple options to do this including:
-       * Running multiple instances of VSCode 
-       * Putting projects in the same folder and opening that folder in VSCode
+       * Running multiple instances of VS Code 
+       * Putting projects in the same folder and opening that folder in VS Code
        * Creating a workspace 
 
     Whichever method you use, You can use control+c and control+v to copy and paste files and directories between projects.  
 
 
 #### Multiple Instances, switch using Windows Task Bar
-   ![](screenshots/vscode-multiple-instances.png)
+   ![](screenshots/VS Code-multiple-instances.png)
 
-1. From the Command Prompt within `MyWebCourse` directory execute the command `code .` to open the project in VS Code. You should now have two instances of VSCode running.
+1. From the Command Prompt within `MyWebCourse` directory execute the command `code .` to open the project in VS Code. You should now have two instances of VS Code running.
    
 2. In the modern web project find the file license-agreement.txt from the same  directory as this README.md. Highlight the license-agreement.txt file and hit Control-C or right-click to choose copy.
    
@@ -230,13 +230,13 @@ Git supercharged
 
    Here you can see more than one instance open. You can use the windows status bar to switch between projects by clicking the icon and choosing the one you want. If you are not using a virtual machine you can use Alt+tab to switch.
 
-### **Part 7 - Using VScode to Commit Changes**
+### **Part 7 - Using VS Code to Commit Changes**
 
     By copying a file into your project, you might have noticed the source control icon now has a number on it. Here we will practice with change tracking in projects.
    
 1.  Delete the file license-agreement.txt. This will decrease the count of files being tracked as having changed.
    
-2.  If not already open in VSCode, open this chapters README.md file in Edit Mode.
+2.  If not already open in VS Code, open this chapters README.md file in Edit Mode.
 
 3.  Edit the README.md file to include your name
 
@@ -258,8 +258,8 @@ Git supercharged
 
 1. Add a file called `.gitignore` - notice there is an intentional period (.) proceeding the name of the file.
 
-    You can add a new file in VSCode by using the Explorer pane add button.
-    ![](screenshots/vscode-new-file.png)
+    You can add a new file in VS Code by using the Explorer pane add button.
+    ![](screenshots/VS Code-new-file.png)
 
 1. Open the .gitignore file and add this on the first line: untracked.text
   ![](screenshots/source-control-ignore.png) 
@@ -283,6 +283,6 @@ Git supercharged
 
 ## Bonus
 
-1. Open the directory z_cheatsheets and look over the VSCode markdown.
+1. Open the directory z_cheatsheets and look over the VS Code markdown.
    
-2. Open the Interactive Playground from the VSCode Help menu and explore what is possible.
+2. Open the Interactive Playground from the VS Code Help menu and explore what is possible.

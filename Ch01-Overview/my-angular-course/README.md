@@ -3,7 +3,7 @@
 ## Objectives
 
 * Practice with markdown files
-* Practice with VSCode
+* Practice with VS Code
 * Install VS Code extensions
 * Create new local repository used during class
 * Commit changes
@@ -17,19 +17,17 @@
 
 ## Links to content below
 
-[Part 1 - Markdown .md files in Edit & Preview Mode](#part-1---markdown-md-files-in-edit--preview-mode)
+[Part 1 - Markdown .md files in Edit & Preview Mode](#part-1---opening-markdown-md-files-in-edit--preview-mode)
 
 [Part 2 - The Course Files](#part-2---the-course-files)
 
-[Part 3 - Tracking changes with Git in VSCode](#part-3---source-control-tracking)
+[Part 3 - More on Install VS Code extensions](#part-3-install-vs-code-extensions)
 
-[Part 4 - Install VSCode extensions](#part-4-install-vs-code-extensions)
+[Part 4 - Create Your Own Local Git Repo](#part-4-create-your-own-repository-for-your-coursework)
 
-[Part 5 - Create Local Git Repo](#part-5---create-new-mywebcourse-local-repository)
+[Part 6 - Opening Multiple Instances of VS Code](#part-6---opening-multiple-instances-of-VS Code)
 
-[Part 6 - Opening Multiple Instances of VScode](#part-6---opening-multiple-instances-of-vscode)
-
-[Part 7 - Using VSCode to commit changes](#part-7---using-vscode-to-commit-changes)
+[Part 7 - Using VS Code to commit changes](#part-7---using-VS Code-to-commit-changes)
 
 [Part 8 - Use .gitignore to not track changes](#part-8---using-gitignore-to-ignore-changes)
 
@@ -37,22 +35,22 @@
 
 [Part 10 - View GitLens extension](#part-10---view-gitlens)
 
-[Bonus - Explore VSCode](#bonus)
+[Bonus - Explore VS Code](#bonus)
 
-### **Part 1 - Markdown .md files in Edit & Preview Mode**
+### **Part 1 - Opening Markdown .md files in Edit & Preview Mode**
 
     We use markdown files in this class as they are used extensively in the industry with modern web projects.  They are plain text files that end in the extension `.md` and use special characters to indicate the meaning of text and how to display it when used on websites.
     
     On repository sites such as GitHub and Bitbucket a README.md in the root directory describes repositories and how to build and run dynamic projects. If you like to use Reddit you can use markdown to style your posts.
     
-    The default mode of VS Code opens `.md` files in EDIT MODE where you see the special characters for formatting. VSCode also offers a PREVIEW MODE so you can more easily read the styled text.
+    The default mode of VS Code opens `.md` files in EDIT MODE where you see the special characters for formatting. VS Code also offers a PREVIEW MODE so you can more easily read the styled text.
 
-    We will look at multiple ways to open markdown files in PREVIEW MODE in VSCode. You will use these methods for lab exercises and some demos. 
+    We will look at multiple ways to open markdown files in PREVIEW MODE in VS Code. You will use these methods for lab exercises and some demos. 
 
     
 **Shortcut CTRL-SHIFT-V**
 
-1. With this README.md in focus (click this text in the VSCode editor if the document has lost focus) you can open a new tab in PREVIEW MODE by hitting control-shift-V. This will open the preview in a new tab. You can then switch back and forth using the tabs. 
+1. With this README.md in focus (click this text in the VS Code editor if the document has lost focus) you can open a new tab in PREVIEW MODE by hitting control-shift-V. This will open the preview in a new tab. You can then switch back and forth using the tabs. 
    
     **OPEN SPLIT SCREEN**
 
@@ -74,15 +72,15 @@
 
      **USING GITHUB**
 
-2. If you have been given a link to an online repository for this class, such as GitHub, you can use that link to navigate to the folder \Labs\Ch00-Intro in a browser. Try this now and see if you can find/see the formatted markdown.
+2. If you have been given a link to an online repository for this class, such as GitHub, https://github.com/JudyLipinski/angular100-labs you can use that link to navigate to this readme.md in a browser. Try this now and see if you can find/see the formatted markdown.
 
    ![GitHub](screenshots/github.png)
 
-    This is a good option if you have more than one monitor to use during class. If this is an option,you may want to open this now on your other monitor as you move forward in the directions.
+    This is a good option if you are using a virtual machine for class and have more than one monitor. If this your situation, you may want to open this now on your other monitor as you move forward in the directions.
 
     **MARKDOWN FORMATTING**
 
-3. Make sure you can see both the Edit Mode in VSCode and the Preview Mode in VSCode or GitHub while you review the following:
+3. Make sure you can see both the Edit Mode in VS Code and the Preview Mode in VS Code or GitHub while you review the following:
 
     * Hash marks (#), are used for formatting headings.
         * A single # is heading "level 1" which is biggest, ## is "level 2", slightly smaller, and so on.
@@ -101,13 +99,13 @@
 5. When a markdown file is the active file, there is a button that automatically opens Preview in the split pane.
 ![Preview button](screenshots/preview-button.png)
 
-        Most everything in VSCode has a hover effect. If you forget what anything does, just hover over it.
+        Most everything in VS Code has a hover effect. If you forget what anything does, just hover over it.
 
     **OPENING FROM EXPLORER**
-1. In VSCode, from the Explorer Pane, you can find the markdown file of interest, right click and choose **Open Preview**. Try this now with this README.md as shown.
+1. In VS Code, from the Explorer Pane, you can find the markdown file of interest, right click and choose **Open Preview**. Try this now with this README.md as shown.
 ![Open In Preview](screenshots/open-preview.png)
 
-1. In VSCode, while viewing in Preview mode, if you double-click an area of the file, you will be taken back to the EDIT VIEW or "source" markdown file for editing.
+1. In VS Code, while viewing in Preview mode, if you double-click an area of the file, you will be taken back to the EDIT VIEW or "source" markdown file for editing.
 
     Notice that if you double click the  image shown above - it takes you to the edit mode version where the image is linked.
 
@@ -115,17 +113,65 @@
 
 ### **Part 2 - The Course Files**
 
-1. Ensure the Explorer view is visible, listing the files/directories. Recall to click the icon if the view is hidden. 
+1. Make sure you have VS Code open and can see the Angular100-Labs repository. Ensure the Explorer pane is visible, listing the files/directories. Recall to click the icon if the view is hidden. 
+
+![](screenshots/3-angular100-labs-layout.png)
+
+
 
 2. Understanding the Angular100-Labs repository
     * This repository contains the markdown files which re the instructions for the labs in this course. It is organized by chapter.  
-    * There is a z-cheatsheets folder which contains help for VSCode, HTML, CSS      * If you make and save changes to any of these files, the VSCode source control icon (The Y looking icon in the vertical menu strip) will display a number for each file changed. 
-        * You can always revert to the original files by clicking this source control icon, and discarding the changes from one or all files. 
-    * Practice Bonus problems are available for CSS and JS.
-    * The z_cheatsheets has shortcuts and links for what we will be discussing in class.
+    * There is a z-cheatsheets folder which contains help for VS Code, HTML, CSS       
+    * Practice Bonus problems are available if you complete the regular exercises before others
+
+1. If you make and save changes to any of these files, the VS Code source control icon (The Y looking icon in the vertical menu strip) will display a number for each file changed. 
+
+    You can always revert to the original files by clicking this source control icon, hovering over the CHANGES menu and discarding all of the changes.
+
+    ![](screenshots/discard-changes-ng.png)
+
+    
 
 
-## Steps
+
+
+### **Part 3: Install VS Code extensions**
+
+    The extensions pane allows you to search for, install, disable and remove extensions easily.
+
+1. Look on the left side bar menu of VS Code and click on the `Extensions` icon or use the shortcut (Ctrl + Shift + X). 
+
+    ![extensions](screenshots/extensions.png)
+
+
+2. Type into the Extensions Marketplace search field to find `Peacock` by John Papa. If you do not have it already installed click the install button.
+   
+   ![](screenshots/extensions-install-menu.png)
+
+    This extension lets us provide a color to each instance of VS Code we open. 
+    
+    In the real world this is helpful as you may have reference projects open as well as your own work.
+
+    In this course it will be helpful as we will have different VS Code instances for 
+    
+    * Angular100-labs repo
+    * Angular100-solutions
+    * Angular100-demos
+    * MyAngularCourse (you will soon create) 
+    
+3. When you've found the extension, install it by pressing the green `Install` button. Wait for the install to complete. 
+
+    Sometimes that is all you do - install. For some extensions there are additional options In this case, update the icons used by VS Code. 
+    
+    ![](screenshots/extensions-install-menu.png)
+
+4. Follow a similar workflow as above to download these VS Code Extensions. Read their pages to see what they do. 
+
+* GitLens -Eric Amodio
+Git supercharged
+* Bracket Pair Colorizer 2 - CoenraadS
+
+### **Part 4: Create your own repository for your coursework**
 
 1. We will be using Git in class as it is a helpful tool while working with Angular. Using the Angular CLI tool - we will create and modify many files at once. Sometimes, this may have been done mistakenly, and can be a mess to clean up! To make the process easier, and be able to UNDO - we will use a local Git repo to track our files.
    
@@ -157,42 +203,105 @@
 
 8. You will be using this directory to create an Angular project from scratch. If you wish to continue, the steps that follow will help you to setup a GitHub repository and link it to this local directory. You will need a valid GitHub account that you can login to. So if you have a phone, or other way to check your email you can set this up. Some students have created temporary emails using Google, Yahoo, etc and have used this to setup GitHub. You can always change the email on your account later when you have access to your email.
 
+### **Part 5 - Create new MyWebCourse local repository**
 
-## Setting up GitHub so that you have a remote repository
+    You will be creating a local repository in which to do your work in a folder called MyWebCourse. It will be tracked by GIT so that if you accidentally delete or change files you can recover them easily. 
 
-1. Log into your Github account, click the + in the upper right and choose New repo
+    Additionally, and optionally, you will be able to connect your local repository to a remote GitHub repository. 
 
-2.  Call it **my-angular-course**. Do not initialize - do not check any boxes. When it creates it will display some setup code which includes **…or create a new repository on the command line**
+1.  Open a command prompt to c:\
 
-3.  Copy the multiple commands given by GitHub into your command prompt within the **my-angular-course** directory. It will look similar to the following: 
+    When you commit locally, you need to have global configuration set to assign commit messages to your **name** and **email**.
 
-    (**DO NOT EXECUTE THESE COMMANDS - GET THE ONES FROM GITHUB**)
+    The name and email values do not need to match to real information. It is a good practice to match to the info you would use on a remote repository, such as  GitHub, but it is not required.
 
-    ```bash
-    echo "# test1234" >> README.md
-    git init
-    git add README.md
-    git commit -m "first commit"
-    git remote add origin https://github.com/SOME-URL
-    git push -u origin master
+2. Execute these two commands, substituting your name and your email in the quotes. They are global commands and can be executed anywhere. 
+
+    ```bat
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
     ```
 
-4.  From the prompt, open in VSCode with code .
+3. Execute these commands as follows. This will create a new folder called MyWebCourse and place it under local source control. You may or may not see the warnings as pictured.
+   
+![GitInit](screenshots/git-init.png)
 
-5.  Update the README with your name and the date. Save the file.
+### **Part 6 - Opening Multiple Instances of VS Code**
 
-6.  In VSCode commit, your changes by clicking the third icon down which looks like a Y. In the source control: git menu, type in the message box - Added name and email. Click the checkmark to commit. This commits it to your local repository.
+    Quite often you will need to have multiple instances of VS Code open. For example, you may be referring to a sample project and comparing to your own project. In this class, you may wish to have open the Labs and your project.
 
-7.  In VSCode, look at the bottom left where it says "master" to the right of this notice the circular arrows. Click this icon, which will pull any code from the remote repo, and then push any changes to be committed.
+    There are multiple options to do this including:
+       * Running multiple instances of VS Code 
+       * Putting projects in the same folder and opening that folder in VS Code
+       * Creating a workspace 
 
-8.  You will be prompted to input your username and password for Github.
+    Whichever method you use, You can use control+c and control+v to copy and paste files and directories between projects.  
 
-9.  Once logged in successfully you should be able to check Github and see your changes.
 
-10. Install windows git credential helper:
+#### Multiple Instances, switch using Windows Task Bar
+   ![](screenshots/VS Code-multiple-instances.png)
 
-   git config --global credential.helper wincred
+1. From the Command Prompt within `MyWebCourse` directory execute the command `code .` to open the project in VS Code. You should now have two instances of VS Code running.
+   
+2. In the modern web project find the file license-agreement.txt from the same  directory as this README.md. Highlight the license-agreement.txt file and hit Control-C or right-click to choose copy.
+   
+3. In your MyWebCourse project paste the file using Control-V or right-click and choosing paste.
+
+   Here you can see more than one instance open. You can use the windows status bar to switch between projects by clicking the icon and choosing the one you want. If you are not using a virtual machine you can use Alt+tab to switch.
+
+### **Part 7 - Using VS Code to Commit Changes**
+
+    By copying a file into your project, you might have noticed the source control icon now has a number on it. Here we will practice with change tracking in projects.
+   
+1.  Delete the file license-agreement.txt. This will decrease the count of files being tracked as having changed.
+   
+2.  If not already open in VS Code, open this chapters README.md file in Edit Mode.
+
+3.  Edit the README.md file to include your name
+
+4.  Save the file, and notice the `Source Control` button on the left hand toolbar. It should now have a blue circle on it containing the number 1. This number indicates the number of files that have been changed locally.
+
+5.  Click on the Source Control button to open the panel `Source Control`. In this panel, mouse over the README.md file; press the `+` button that appeared to stage the change. You can also stage the change by right clicking on the README.md and clicking `Stage Changes`. You should now see that `README.md` was added to `Staged Changes`
+
+    ![](screenshots/source-control-stage-changes.png)
+
+6.  Above `Staged Changes` you should see a text input field with the text `Message (press Ctrl+Enter to commit)`. Within this field enter a good commit message which describes the changes we staged in the previous step.
+
+7.  Click the check mark above the text message field to commit the changes made to README.md
+
+### **Part 8 - Using .gitignore to ignore Changes**
+
+    Sometimes, you do not want Git to track certain files or directories. Git looks for a settings file called `.gitignore`. Any files or directories included in this file will not be tracked.
+    
+    In Modern Web projects for example, we end up with node_modules directories which should not be tracked.
+
+1. Add a file called `.gitignore` - notice there is an intentional period (.) proceeding the name of the file.
+
+    You can add a new file in VS Code by using the Explorer pane add button.
+    ![](screenshots/VS Code-new-file.png)
+
+1. Open the .gitignore file and add this on the first line: untracked.text
+  ![](screenshots/source-control-ignore.png) 
+  
+1. Now create a new file called `untracked.text` and inside add the text "This is a local file."
+    * Save the file - and you should not see it being tracked by Git.
+
+1.  Please mark your work as complete. With your name tent card if in a classroom or by using method for online training. (spreadsheet, status symbol, etc.) Then you can move on to the OPTIONAL part or Bonus below.
+
+### **Part 9 OPTIONAL- Setup GitHub remote repository**
+
+1. If you have access to GitHub you can follow the directions in this folder's file [optional-github.md](./optional-github.md)  file. If others are done with this exercise already you can return to do this on a break or at a later time. It can be completed at any time before the end of class. 
+
+### **Part 10 - View GitLens** 
+1.  On VS Code's left hand toolbar, click on the `GitLens` extension you installed earlier. This extension contains additional features.
+
+    ![](screenshots/gitlens.png)
+
+1.  Familiarize yourself with `GitLens'` panel. Notice how you can use it to access different repositories and their branches, remote, your stashes, etc. Also notice how you can navigate through it to see history of a file, a line, or compare files between different branches or between local and remote.
+
+
+
 
 ## Bonus
 
-1. If done before others, check out the VSCode Interactive Playground
+1. If done before others, check out the VS Code Interactive Playground
