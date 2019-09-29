@@ -130,10 +130,6 @@
 
     ![](screenshots/discard-changes-ng.png)
 
-    
-
-
-
 
 ### **Part 3: Install VS Code extensions**
 
@@ -148,81 +144,43 @@
    
    ![](screenshots/extensions-install-menu.png)
 
-    This extension lets us provide a color to each instance of VS Code we open. 
+    This extension lets us provide a color to the top and left sidebars of each instance of VS Code we open. 
     
-    In the real world this is helpful as you may have reference projects open as well as your own work.
+    In the real world this is helpful as you may have reference implementation projects open as well as your own work.
 
     In this course it will be helpful as we will have different VS Code instances for 
     
     * Angular100-labs repo
     * Angular100-solutions
     * Angular100-demos
-    * MyAngularCourse (you will soon create) 
+    * MyAngularCourse (you will create in next Part) 
     
-3. When you've found the extension, install it by pressing the green `Install` button. Wait for the install to complete. 
-
-    Sometimes that is all you do - install. For some extensions there are additional options In this case, update the icons used by VS Code. 
-    
-    ![](screenshots/extensions-install-menu.png)
-
-4. Follow a similar workflow as above to download these VS Code Extensions. Read their pages to see what they do. 
-
-* GitLens -Eric Amodio
-Git supercharged
-* Bracket Pair Colorizer 2 - CoenraadS
 
 ### **Part 4: Create your own repository for your coursework**
 
-1. We will be using Git in class as it is a helpful tool while working with Angular. Using the Angular CLI tool - we will create and modify many files at once. Sometimes, this may have been done mistakenly, and can be a mess to clean up! To make the process easier, and be able to UNDO - we will use a local Git repo to track our files.
+You will create a repository called my-angular-albums. It will be tracked by Git so that if you accidentally delete or change files you can recover them easily. 
+
+Additionally, and optionally, you will be able to connect your local repository to a remote GitHub repository. 
+
+Git is an especially helpful tool while working with Angular. One reason for this is we will be using the Angular CLI tool to create and modify many files at once. 
+    
+Sometimes, you may accidentally run a command and modify a lot of files you did not mean to. It can be time consuming to clean this up! To make the process easier, and be able to UNDO - we will use a local Git repo to track our files.
    
-2. Depending on your lab setup, the global config for git may or may have not been setup. You can verify this by typing this command into the command prompt.  
+1. Depending on your lab setup, the global config for git may or may have not been setup. You can verify this by typing these commands into a command prompt.  These are global settings so you can be in any directory.
 
-    ```bat
-    git config --global user.name
-    git config --global user.email
-    ```
+    ![config global](screenshots/git-config-global-check.png)
 
-3. If there are values present, that is all you need for a local Git repo to be able to commit and discard your changes.  If you would like to hook up your work to a Remote Git repo - such as with GitHub, you can set your own personal identifiers.
-   
-   The actual values to not need to match anything such as your work or GitHub email. These are just idetifiers for when the code is pushed to a remote branch. These are not used for authentication.
-   
-4. To set up your personal git username and email idenitifers, locally using these commands - replacing **John Doe** in inside the quotes with your name and **johndoe@example.com** with your email.
+2. If there are values present, that is all you need for a local Git repo to be able to commit (and more easily discard) your changes.  
 
-   1. git config --global user.name "John Doe"
-   2. git config --global user.email johndoe@example.com
+    To set these values you can use the following commands using your information. 
+    
+    It is a good practice to match to the info you would use on a remote repository, such as  GitHub, but it is not required.
 
-5. Open a command prompt in windows and navigate to c:\
+3. To set up your personal git username and email idenitifers, use these commands - replacing **John Doe** inside the quotes with your name and **johndoe@example.com** with your email. Again, these are global settings so you can be in any directory.
 
-6. Navigate to C:\repos and issue this command
+    ![config global](screenshots/git-config-global.png)
 
-   ```bat
-   mkdir my-angular-course
-   ```
-
-7. Change into this directory using `cd my-angular-course`
-
-8. You will be using this directory to create an Angular project from scratch. If you wish to continue, the steps that follow will help you to setup a GitHub repository and link it to this local directory. You will need a valid GitHub account that you can login to. So if you have a phone, or other way to check your email you can set this up. Some students have created temporary emails using Google, Yahoo, etc and have used this to setup GitHub. You can always change the email on your account later when you have access to your email.
-
-### **Part 5 - Create new MyWebCourse local repository**
-
-    You will be creating a local repository in which to do your work in a folder called MyWebCourse. It will be tracked by GIT so that if you accidentally delete or change files you can recover them easily. 
-
-    Additionally, and optionally, you will be able to connect your local repository to a remote GitHub repository. 
-
-1.  Open a command prompt to c:\
-
-    When you commit locally, you need to have global configuration set to assign commit messages to your **name** and **email**.
-
-    The name and email values do not need to match to real information. It is a good practice to match to the info you would use on a remote repository, such as  GitHub, but it is not required.
-
-2. Execute these two commands, substituting your name and your email in the quotes. They are global commands and can be executed anywhere. 
-
-    ```bat
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
-    ```
-
-3. Execute these commands as follows. This will create a new folder called MyWebCourse and place it under local source control. You may or may not see the warnings as pictured.
+4. Execute the following commands. These steps will create a new folder called MyWebCourse and place it under local source control. You may or may not see the warnings as pictured.
    
 ![GitInit](screenshots/git-init.png)
 
@@ -239,7 +197,7 @@ Git supercharged
 
 
 #### Multiple Instances, switch using Windows Task Bar
-   ![](screenshots/VS Code-multiple-instances.png)
+   ![](screenshots/VSCode-multiple-instances.png)
 
 1. From the Command Prompt within `MyWebCourse` directory execute the command `code .` to open the project in VS Code. You should now have two instances of VS Code running.
    
@@ -305,3 +263,5 @@ Git supercharged
 ## Bonus
 
 1. If done before others, check out the VS Code Interactive Playground
+2. 
+You will be using this directory inthe next chapter to create an Angular project from scratch. If you wish to continue, the steps that follow will help you to setup a GitHub repository and link it to this local directory. You will need a valid GitHub account that you can login to. So if you have a phone, or other way to check your email you can set this up. Some students have created temporary emails using Google, Yahoo, etc and have used this to setup GitHub. You can always change the email on your account later when you have access to your email.
