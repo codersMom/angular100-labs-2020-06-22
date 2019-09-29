@@ -118,11 +118,8 @@
 1. Ensure the Explorer view is visible, listing the files/directories. Recall to click the icon if the view is hidden. 
 
 2. Understanding the Angular100-Labs repository
-    * The `/Demos` directory will be used for running demos.
-    * The `/Labs` directory will be used for instructions and some libraries for the hands-on exercises you will be doing in class. 
-
-        * It is safe to modify these files, because the Demos and Labs folders are tracked by Git. 
-        * If you make and save changes to any of these files, the VSCode source control icon (The Y looking icon in the vertical menu strip) will display a number for each file changed. 
+    * This repository contains the markdown files which re the instructions for the labs in this course. It is organized by chapter.  
+    * There is a z-cheatsheets folder which contains help for VSCode, HTML, CSS      * If you make and save changes to any of these files, the VSCode source control icon (The Y looking icon in the vertical menu strip) will display a number for each file changed. 
         * You can always revert to the original files by clicking this source control icon, and discarding the changes from one or all files. 
     * Practice Bonus problems are available for CSS and JS.
     * The z_cheatsheets has shortcuts and links for what we will be discussing in class.
