@@ -31,25 +31,33 @@ You will create two new components: Welcome and About. You will setup routing so
 
 4. Because **angular.json** was updated you need to restart the server for changes to be picked up. Do that now by stopping and restarting the server.
 
-5. Let's create the **Welcome** "page" for our application. Make the component have an inline template and inline styling.
+5. Let's create the **Welcome** "page" for our application. Use the -is flag to make the component have inline styling. (altenratively you could use --inline-style)
 
    ```console
-    $ ng g c welcome -it -is
+    $ ng g c welcome -is
    ```
 
-6. Modify the **welcome.component.ts** template to display the following:
+6. Modify the **welcome.component.html** template to display the following:
 
    ```html
-   <div style="text-align:center;">
-     <h1 class="jumbotron my-5 mx-5">
-       Welcome to {{ title }}!
-     </h1>
-   </div>
+      <div class="container">
+        <div class="jumbotron my-5 mx-5 ">
+          <h1 class="display-4">Welcome to {{ title }}!</h1>
+          <p class="lead">The course project to practice Angular</p>
+          <button
+              type="button"
+              routerLink="/albums"
+              class="btn btn-primary text-center mt-3 mx-auto"
+            >
+              View Albums
+            </button>
+        </div>
+      </div>
    ```
 
 7. Create the title property within **welcome.component.ts** and set it equal to **My Angular Albums**. 
    
-8. We cannot reach these components yet.
+8. We cannot reach this component yet.
 
 9.  Update **app.component.html** to simply be:
 
@@ -98,50 +106,26 @@ You will create two new components: Welcome and About. You will setup routing so
 3. Use this content for the new **navbar.component.html**. Note the use of **routerLink**
 
     ```html
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" routerLink="/">
-        <img
-          src="assets/album.gif"
-          width="30"
-          height="30"
-          class="d-inline-block align-top"
-          alt=""
-        />
-        {{ title }}
-      </a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Angular100-Demos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav">
-          <a 
-            class="nav-item nav-link" 
-            routerLink="/about" 
-            routerLinkActive="active"
-            >Home</a
-          >
-          <a
-            class="nav-item nav-link"
-            routerLink="/albums"
-            routerLinkActive="active"
-            >View Albums</a
-          >
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/welcome']" routerLinkActive="router-link-active">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/albums']" routerLinkActive="router-link-active">View Albums</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/about']"
+            routerLinkActive="router-link-active">About</a></li>
         </div>
       </div>
     </nav>
     ```
 
-4. Copy the image **album.gif** from this README's folder into your projects assets folder.
+4. Copy the image **album.gif** from this README's folder into your projects assets folder for its use in the navbar.
 
 5. Test your changes in the browser and ensure you have no errors. You should see the navbar with image. If you click the links they should work. Clicking the nav brand "My Albums Project" should bring back the album page.
 
