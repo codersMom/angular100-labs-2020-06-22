@@ -17,13 +17,14 @@
 
 ## Links to content below
 
-[Part 1 - Opening files in VS Code and changing default settings](#part-1---opening-files-in-vs-code-and-changing-default-settings)
+[Part 1 - Navigating the course on Github](#part-1---navigating-the-course-on-github)
 
-[Part 2 - Markdown .md files in Edit & Preview Mode](#part-2---opening-markdown-md-files-in-edit--preview-mode)
 
-[Part 3 - The Angular100-Labs project](#part-3---the-angular100-labs-project)
+[Part 2 - Opening files in VS Code and changing default settings](#part-2---opening-files-in-vs-code-and-changing-default-settings)
 
-[Part 4 - More on Install VS Code extensions](#part-4-install-vs-code-extensions)
+[Part 3 - Markdown .md files in Edit & Preview Mode](#part-3---opening-markdown-md-files-in-edit--preview-mode)
+
+[Part 4 - The Angular100-Labs project](#part-4---the-angular100-labs-project)
 
 [Part 5 - Create Your Own Local Git Repo](#part-5-create-your-own-repository-for-your-coursework)
 
@@ -33,14 +34,15 @@
 
 [Part 8 - Use .gitignore to not track changes](#part-8---using-gitignore-to-ignore-changes)
 
-[Part 9 - Optionally create GitHub remote repo](#part-9-optional--setup-github-remote-repository)
-
 [Part 10 - View GitLens extension](#part-10---view-gitlens)
+
+[Part 11 - Optionally create GitHub remote repo](#part-11-optional--setup-github-remote-repository)
+
 
 [Bonus - Explore VS Code](#bonus)
 
    
-### Part 1 - Navigating the course on Github
+### **Part 1 - Navigating the course on Github**
 
 1. Throughout the course you can use the browser to navigate to the course Git repository Angular100-Labs (specific for your class). https://github.com/JudyLipinski/angular100-labs
 
@@ -56,7 +58,43 @@
    ![Bookmark bar in chrome](screenshots/1-bookmarks-bar.png)
 
 
-### **Part 1 - Opening files in VS Code and changing default settings**
+### **Part 2 - Opening files in VS Code and changing default settings**  
+[back to top](#links-to-content-below)
+
+
+
+**Install and use VS Code Peacock extension**
+[back to top](#links-to-content-below)
+
+    The extensions pane allows you to search for, install, disable and remove extensions easily.
+
+1. Look on the left side bar menu of VS Code and click on the `Extensions` icon or use the shortcut (Ctrl + Shift + X). 
+
+    ![extensions](screenshots/extensions.png)
+
+
+2. Type into the Extensions Marketplace search field to find `Peacock` by John Papa. If you do not have it already installed click the install button.
+   
+   ![](screenshots/extensions-install-menu.png)
+
+    This extension lets us provide a color to the top and left sidebars of each instance of VS Code we open. 
+    
+    In the real world this is helpful as you may have reference implementation projects open as well as your own work.
+
+    In this course it will be helpful as we will have different VS Code instances for 
+    
+    * Angular100-labs 
+    * Angular100-solutions
+    * Angular100-demos
+    * MyAngularCourse (you will create in next Part) 
+    
+1. To use the extension, hit control+shift+p to bring up the command pallette and start typing Peacock.
+   
+   ![](screenshots/peacock-search.png)
+   
+2. You should see a list of options, choose Vue green to identify the VS Code instance for your labs.
+
+   ![](screenshots/peacock-favorites.png)
 
 
 **OPENING FILES IN VS CODE**
@@ -99,11 +137,13 @@
    
    ![wrap text](screenshots/1-wrap-contents.png)
 
-### **Part 2 - Opening Markdown .md files in Edit & Preview Mode**
+### **Part 3 - Opening Markdown .md files in Edit & Preview Mode**
+[back to top](#links-to-content-below)
+
 
     We use markdown files in this class for lab directions as they are used extensively in the industry with modern web projects.  
     
-    These plain text files end in the extension `.md` and are used to describe Angular projects.
+    These plain text files end in the extension .md and are used to describe Angular projects.
     
     Special characters are used to indicate the meaning of text and how to display it when used on websites.
     
@@ -114,7 +154,7 @@
     We will look at multiple ways to open markdown files in PREVIEW MODE in VS Code. You will use these methods for lab exercises and some demos. 
 
 
-**USING CTRL-SHIFT-V**
+**OPENING PREVIEW USING CTRL-SHIFT-V**
 
 1. If it isnt already, open this README.md in VS Code and make sure that it has focus. (click this text in the VS Code editor if the document has lost focus).
    
@@ -123,7 +163,7 @@
    ![](screenshots/2-control-shift-v.png)
    
 
-   **OPEN SPLIT SCREEN**
+   **OPENING A SPLIT SCREEN**
 
 3. Open a Split screen in order to view both at the same time by clicking on this icon 
     ![Open Split Screen](screenshots/open-split-screen.png)
@@ -155,10 +195,9 @@
     * Every item can be numbered as 1 in Edit Mode. When the markdown file is rendered: in preview mode or in browsers - the numbers will increment correctly.
         * This makes it easy to insert new items or re-order items, without needing to take the time to renumber.
 
-
     **OPEN PREVIEW TO SIDE**
 
-8. Close all tabs so only the README.md is open in Edit Mode.
+8. Close all tabs in VS Code so that only the README.md is open in Edit Mode.
    
 9.  When a markdown file is the active file, there is a button that automatically opens Preview in the split pane.
 ![Preview button](screenshots/preview-button.png)
@@ -175,7 +214,8 @@
 
 2.  For the rest of this lab exercise, view this file in Preview mode or on GitHub. 
 
-### **Part 3 - The Angular100-Labs project**
+### **Part 4 - The Angular100-Labs project**
+[back to top](#links-to-content-below)
 
 1. Make sure you have VS Code open and can see the Angular100-Labs repository. Ensure the Explorer pane is visible, listing the files/directories. Recall to click the icon if the view is hidden. 
 
@@ -184,43 +224,23 @@
 
 
 2. Understanding the Angular100-Labs repository
-    * This repository contains the markdown files which re the instructions for the labs in this course. It is organized by chapter.  
+    * This repository contains the markdown files which are the instructions for the labs in this course. It is organized by chapter.  
     * There is a z-cheatsheets folder which contains help for VS Code, HTML, CSS       
     * Practice Bonus problems are available if you complete the regular exercises before others
 
-1. If you make and save changes to any of these files, the VS Code source control icon (The Y looking icon in the vertical menu strip) will display a number for each file changed. 
+1. There is no reason to make changes to these files. If you do make and save changes to any of these files, the VS Code source control icon (The Y looking icon in the vertical menu strip) will display a number for each file changed. 
+   
+    This prevents you from pulling additional bonus materials that may be added during the course.
 
-    You can always revert to the original files by clicking this source control icon, hovering over the CHANGES menu and discarding all of the changes.
+    You can revert back to the original files by clicking this source control icon, hovering over the CHANGES menu and discarding all of the changes.
 
     ![](screenshots/discard-changes-ng.png)
 
 
-### **Part 3: Install VS Code extensions**
 
-    The extensions pane allows you to search for, install, disable and remove extensions easily.
-
-1. Look on the left side bar menu of VS Code and click on the `Extensions` icon or use the shortcut (Ctrl + Shift + X). 
-
-    ![extensions](screenshots/extensions.png)
-
-
-2. Type into the Extensions Marketplace search field to find `Peacock` by John Papa. If you do not have it already installed click the install button.
-   
-   ![](screenshots/extensions-install-menu.png)
-
-    This extension lets us provide a color to the top and left sidebars of each instance of VS Code we open. 
-    
-    In the real world this is helpful as you may have reference implementation projects open as well as your own work.
-
-    In this course it will be helpful as we will have different VS Code instances for 
-    
-    * Angular100-labs repo
-    * Angular100-solutions
-    * Angular100-demos
-    * MyAngularCourse (you will create in next Part) 
-    
 
 ### **Part 5: Create your own repository for your coursework**
+[back to top](#links-to-content-below)
 
 You will create a repository called my-angular-albums. It will be tracked by Git so that if you accidentally delete or change files you can recover them easily. 
 
@@ -249,6 +269,7 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
 ![GitInit](screenshots/git-init.png)
 
 ### **Part 6 - Opening Multiple Instances of VS Code**
+[back to top](#links-to-content-below)
 
     Quite often you will need to have multiple instances of VS Code open. For example, you may be referring to a sample project and comparing to your own project. In this class, you may wish to have open the Labs and your project.
 
@@ -272,6 +293,7 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
    Here you can see more than one instance open. You can use the windows status bar to switch between projects by clicking the icon and choosing the one you want. If you are not using a virtual machine you can use Alt+tab to switch.
 
 ### **Part 7 - Using VS Code to Commit Changes**
+[back to top](#links-to-content-below)
 
     By copying a file into your project, you might have noticed the source control icon now has a number on it. Here we will practice with change tracking in projects.
    
@@ -292,6 +314,7 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
 7.  Click the check mark above the text message field to commit the changes made to README.md
 
 ### **Part 8 - Using .gitignore to ignore Changes**
+[back to top](#links-to-content-below)
 
     Sometimes, you do not want Git to track certain files or directories. Git looks for a settings file called `.gitignore`. Any files or directories included in this file will not be tracked.
     
@@ -310,22 +333,27 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
 
 1.  Please mark your work as complete. With your name tent card if in a classroom or by using method for online training. (spreadsheet, status symbol, etc.) Then you can move on to the OPTIONAL part or Bonus below.
 
-### **Part 9 OPTIONAL- Setup GitHub remote repository**
-
-1. If you have access to GitHub you can follow the directions in this folder's file [optional-github.md](./optional-github.md)  file. If others are done with this exercise already you can return to do this on a break or at a later time. It can be completed at any time before the end of class. 
 
 ### **Part 10 - View GitLens** 
+[back to top](#links-to-content-below)
+
 1.  On VS Code's left hand toolbar, click on the `GitLens` extension you installed earlier. This extension contains additional features.
 
     ![](screenshots/gitlens.png)
 
 1.  Familiarize yourself with `GitLens'` panel. Notice how you can use it to access different repositories and their branches, remote, your stashes, etc. Also notice how you can navigate through it to see history of a file, a line, or compare files between different branches or between local and remote.
 
+### **Part 11 OPTIONAL- Setup GitHub remote repository**
+[back to top](#links-to-content-below)
+
+1. If you have access to GitHub you can follow the directions in this folder's file [optional-github.md](./optional-github.md)  file. If others are done with this exercise already you can return to do this on a break or at a later time. It can be completed at any time before the end of class. 
 
 
 
 ## Bonus
+[back to top](#links-to-content-below)
 
-1. If done before others, check out the VS Code Interactive Playground
-2. 
-You will be using this directory inthe next chapter to create an Angular project from scratch. If you wish to continue, the steps that follow will help you to setup a GitHub repository and link it to this local directory. You will need a valid GitHub account that you can login to. So if you have a phone, or other way to check your email you can set this up. Some students have created temporary emails using Google, Yahoo, etc and have used this to setup GitHub. You can always change the email on your account later when you have access to your email.
+1. If done before others, explore the VS Code Interactive Playground
+   
+![](screenshots/interactive-playground.png)
+

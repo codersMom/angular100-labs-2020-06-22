@@ -4,19 +4,27 @@ These instructions will help you to setup a remote repository in GitHub that you
 
 1. Navigate to https://GitHub.com/ and sign into an existing account of yours or sign up for a new account.
 
-2. After logging into GitHub, create a new GitHub repository called `MyWebCourse` by clicking Repositories in the menu and the green new button.
+2. After logging into GitHub, open your lst of repositories if it is not currently shown using the drop down in the right top corner.
+   ![New Repo](screenshots/repos-menu.png)
+   
+3. Open a dialog by the green new button. 
 
     ![New Repo](screenshots/repositories-new.png)
 
 
-3. In the menu that appears, choose private and skip the steps to initialize with a readme.
+4. In the menu that appears: 
+* name your new GitHub repository `MyAngularCourse`
+* choose private 
+*  Leave the checkbox for **Initialize this repository with a README** unchecked
     ![New Repo Wizard](screenshots/new-repo-wizard.png)
 
-    Leave the checkbox for `Initialize this repository with a README` unchecked and click the green button to `Create Repository`
+    and click the green button to `Create Repository`
 
-4. You will be given instructions for the remote repo. You only need the last two lines. Yours will be slightly different than what is shown because it will be for your repo. Copy these lines and paste them into the command prompt in your MyWebCourse directory.
+1. GitHub will generate instructions for the remote repo. You only need the last two lines. Yours will be slightly different than what is shown because it will be for your repo. Highlight and copy the last two lines shown to you. 
 ![](screenshots/git-add-origin.png)
 
+
+1.  and paste them into the command prompt in your my-angular-course directory.
 ![](screenshots/git-add-remote.png)
 
 ### **Part 2 PUSHING CHANGES TO GITHUB**
