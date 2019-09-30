@@ -53,11 +53,18 @@
 
 1. If you are viewing these instructions on Github now, make sure you also go to VS Code and have open the ANGULAR100-LABS project.
    
-    When you single click files in the Explorer pane they open in a preview mode. This is indicated by italics. If you single click open this README.md file in VS Code. When you click on a VS Code file to open 
+    By default, in VS Code when you single click files in the Explorer pane they open in a preview mode. This is indicated by italics in the tab. If you single click another file it replaces the previous file. Try single clicking the license 
+   
+    double click a file it opens and open this README.md file in VS Code it appears in italics. If you double click files they are not in italics. If you double click files you open more thane on etab.
+    
+    ![single click](screenshots/1-single-click.png)
+    
+    
+      When you click on a VS Code file to open 
 
 1. To control stop this, you can change VS Code settings. First click the gearicon to open the settings menu.
 
-    ![Change Enable Preview](screenshots/1-enable-preview.png)
+    ![Change Enable Preview](screenshots/1-gear-icon.png)
 
 
 2. Then
