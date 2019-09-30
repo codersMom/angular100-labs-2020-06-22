@@ -39,7 +39,7 @@
 
 ### **Part 1 - Opening Markdown .md files in Edit & Preview Mode**
 
-    We use markdown files in this class as they are used extensively in the industry with modern web projects.  They are plain text files that end in the extension `.md` and use special characters to indicate the meaning of text and how to display it when used on websites.
+    We use markdown files in this class as they are used extensively in the industry with modern web projects.  These plain text files end in the extension `.md` and are used to describe your Angular project. They use special characters to indicate the meaning of text and how to display it when used on websites.
     
     On repository sites such as GitHub and Bitbucket a README.md in the root directory describes repositories and how to build and run dynamic projects. If you like to use Reddit you can use markdown to style your posts.
     
@@ -47,18 +47,34 @@
 
     We will look at multiple ways to open markdown files in PREVIEW MODE in VS Code. You will use these methods for lab exercises and some demos. 
 
-    
-**Shortcut CTRL-SHIFT-V**
+#### Steps
 
-1. With this README.md in focus (click this text in the VS Code editor if the document has lost focus) you can open a new tab in PREVIEW MODE by hitting control-shift-V. This will open the preview in a new tab. You can then switch back and forth using the tabs. 
+**OPENING FILES IN VS CODE**
+
+1. If you are viewing these instructions on Github now, make sure you also go to VS Code and have open the ANGULAR100-LABS project.
+   
+    When you single click files in the Explorer pane they open in a preview mode. This is indicated by italics. If you single click open this README.md file in VS Code. When you click on a VS Code file to open 
+
+1. To control stop this, you can change VS Code settings. First click the gearicon to open the settings menu.
+
+    ![Change Enable Preview](screenshots/1-enable-preview.png)
+
+
+2. Then
+
+    ![Change Enable Preview](screenshots/1-enable-preview.png)
+
+    **USING CTRL-SHIFT-V**
+
+3. With this README.md in focus (click this text in the VS Code editor if the document has lost focus) you can open a new tab in PREVIEW MODE by hitting control-shift-V. This will open the preview in a new tab. You can then switch back and forth using the tabs. 
    
     **OPEN SPLIT SCREEN**
 
-2. Open a Split screen in order to view both at the same time by clicking on this icon 
-![Open Split Screen](screenshots/open-split-screen.png)
+4. Open a Split screen in order to view both at the same time by clicking on this icon 
+    ![Open Split Screen](screenshots/open-split-screen.png)
 
 1. Drag the tab to the other window.
-![Open In Preview](screenshots/dragtabs.png)
+    ![Open In Preview](screenshots/dragtabs.png)
 
         You should now see the two files at the same time. With both Edit mode and Preview mode open in split panes, notice that if you scroll in one, the other scrolls as well.
 
