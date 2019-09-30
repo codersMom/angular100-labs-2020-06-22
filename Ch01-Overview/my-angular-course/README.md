@@ -1,9 +1,9 @@
-# Chapter 1: Create a repository for your course work
+# Chapter 1: Using VS Code and creating a repository for your course work
 
 ## Objectives
 
-* Practice with markdown files
 * Practice with VS Code
+* Practice with markdown files
 * Install VS Code extensions
 * Create new local repository used during class
 * Commit changes
@@ -17,17 +17,19 @@
 
 ## Links to content below
 
-[Part 1 - Markdown .md files in Edit & Preview Mode](#part-1---opening-markdown-md-files-in-edit--preview-mode)
+[Part 1 - Opening files in VS Code and changing default settings](#part-1---opening-files-in-vs-code-and-changing-default-settings)
 
-[Part 2 - The Course Files](#part-2---the-course-files)
+[Part 2 - Markdown .md files in Edit & Preview Mode](#part-2---opening-markdown-md-files-in-edit--preview-mode)
 
-[Part 3 - More on Install VS Code extensions](#part-3-install-vs-code-extensions)
+[Part 3 - The Angular100-Labs project](#part-3---the-angular100-labs-project)
 
-[Part 4 - Create Your Own Local Git Repo](#part-4-create-your-own-repository-for-your-coursework)
+[Part 4 - More on Install VS Code extensions](#part-4-install-vs-code-extensions)
 
-[Part 6 - Opening Multiple Instances of VS Code](#part-6---opening-multiple-instances-of-VS Code)
+[Part 5 - Create Your Own Local Git Repo](#part-5-create-your-own-repository-for-your-coursework)
 
-[Part 7 - Using VS Code to commit changes](#part-7---using-VS Code-to-commit-changes)
+[Part 6 - Opening Multiple Instances of VS Code](#part-6---opening-multiple-instances-of-vs-code)
+
+[Part 7 - Using VS Code to commit changes](#part-7---using-vs-code-to-commit-changes)
 
 [Part 8 - Use .gitignore to not track changes](#part-8---using-gitignore-to-ignore-changes)
 
@@ -37,73 +39,112 @@
 
 [Bonus - Explore VS Code](#bonus)
 
-### **Part 1 - Opening Markdown .md files in Edit & Preview Mode**
+   
+### Part 1 - Navigating the course on Github
 
-    We use markdown files in this class as they are used extensively in the industry with modern web projects.  These plain text files end in the extension `.md` and are used to describe your Angular project. They use special characters to indicate the meaning of text and how to display it when used on websites.
-    
-    On repository sites such as GitHub and Bitbucket a README.md in the root directory describes repositories and how to build and run dynamic projects. If you like to use Reddit you can use markdown to style your posts.
-    
-    The default mode of VS Code opens `.md` files in EDIT MODE where you see the special characters for formatting. VS Code also offers a PREVIEW MODE so you can more easily read the styled text.
+1. Throughout the course you can use the browser to navigate to the course Git repository Angular100-Labs (specific for your class). https://github.com/JudyLipinski/angular100-labs
 
-    We will look at multiple ways to open markdown files in PREVIEW MODE in VS Code. You will use these methods for lab exercises and some demos. 
 
-#### Steps
+    ![GitHub](screenshots/github.png)
+
+    This is a good option if you are using a virtual machine for class and have more than one monitor. If this your situation, you may want to open this now on your other monitor as you move forward in the directions.
+
+2. Bookmark this page for easier access later.  In Chrome can hit the star in the upper right hand side and choose Bookmarks bar. 
+   ![Bookmark star in chrome](screenshots/1bookmarks-star.png)
+   
+3. If you do not see the bookmarks bar, hit control+shift+B to make it appear.
+   ![Bookmark bar in chrome](screenshots/1-bookmarks-bar.png)
+
+
+### **Part 1 - Opening files in VS Code and changing default settings**
+
 
 **OPENING FILES IN VS CODE**
 
-1. If you are viewing these instructions on Github now, make sure you also go to VS Code and have open the ANGULAR100-LABS project.
-   
-    By default, in VS Code when you single click files in the Explorer pane they open in a preview mode. This is indicated by italics in the tab. If you single click another file it replaces the previous file. Try single clicking the license 
-   
-    double click a file it opens and open this README.md file in VS Code it appears in italics. If you double click files they are not in italics. If you double click files you open more thane on etab.
-    
-    ![single click](screenshots/1-single-click.png)
-    
-    
-      When you click on a VS Code file to open 
+1. If you are viewing these instructions on Github now, make sure you also have VS Code open to the ANGULAR100-LABS project. One way of opening this is to navigate in 
 
-1. To control stop this, you can change VS Code settings. First click the gearicon to open the settings menu.
+![](2-win-explorer-context-vscode.png)
+   
+2. By default, in VS Code when you single click files in the Explorer pane they open in a preview mode. This is indicated by italics in the tab. If you open another file it replaces the previous file. Try single clicking the file **license-agreement.txt**.
+
+    ![italics](screenshots/1-italics.png)
+
+3.   Now single click the file **optional-github.md** and it will replace the **license-agreement.txt** file. 
+    
+        ![optional](screenshots/1-optional-italics.png)
+       
+4.   If you double click on the tab it will become solid and opening another file will not replace its contents.
+
+        ![](screenshots/1-optional-solid.png)
+
+5. To make single clicking not open in preview mode, you can change VS Code settings. First click the gear icon to open the settings menu.
 
     ![Change Enable Preview](screenshots/1-gear-icon.png)
 
 
-2. Then
+6. Then in the search field start typing open. Click the editor manager under Workbench, and deselect the checkbox for Enable Preview.
 
     ![Change Enable Preview](screenshots/1-enable-preview.png)
 
-    **USING CTRL-SHIFT-V**
-
-3. With this README.md in focus (click this text in the VS Code editor if the document has lost focus) you can open a new tab in PREVIEW MODE by hitting control-shift-V. This will open the preview in a new tab. You can then switch back and forth using the tabs. 
+7. Now single click the file **really-long-file.txt** and it should open in its own tab and not be in italics.
    
-    **OPEN SPLIT SCREEN**
+   ![wrap text](screenshots/1-long-file.png)
+   
+   **Toggle text wrapping**
+8. If VSCode is not wrapping, you will just see one line of text and need to scroll to the right to see the contents. Use the View menu or shortcut of Alt-Z to toggle the word wrap.
 
-4. Open a Split screen in order to view both at the same time by clicking on this icon 
+    ![wrap text](screenshots/1-alt-z.png)
+
+9.  Notice the line number isn't incrementing it is still just one line - but easier to read.
+   
+   ![wrap text](screenshots/1-wrap-contents.png)
+
+### **Part 2 - Opening Markdown .md files in Edit & Preview Mode**
+
+    We use markdown files in this class for lab directions as they are used extensively in the industry with modern web projects.  
+    
+    These plain text files end in the extension `.md` and are used to describe Angular projects.
+    
+    Special characters are used to indicate the meaning of text and how to display it when used on websites.
+    
+    On repository sites such as GitHub and Bitbucket a README.md in the root directory describes repositories and how to build and run dynamic projects. If you like to use Reddit you can use markdown to style your posts.
+    
+    The default mode of VS Code opens .md files in EDIT MODE where you see the special characters for formatting. VS Code also offers a PREVIEW MODE so you can more easily read the styled text.
+
+    We will look at multiple ways to open markdown files in PREVIEW MODE in VS Code. You will use these methods for lab exercises and some demos. 
+
+
+**USING CTRL-SHIFT-V**
+
+1. If it isnt already, open this README.md in VS Code and make sure that it has focus. (click this text in the VS Code editor if the document has lost focus).
+   
+2.  You can open a new tab in PREVIEW MODE by hitting control-shift-V. This will open the preview in a new tab. You can then switch back and forth using the tabs. 
+   
+   ![](screenshots/2-control-shift-v.png)
+   
+
+   **OPEN SPLIT SCREEN**
+
+3. Open a Split screen in order to view both at the same time by clicking on this icon 
     ![Open Split Screen](screenshots/open-split-screen.png)
 
-1. Drag the tab to the other window.
+4. Drag the tab to the other window.
     ![Open In Preview](screenshots/dragtabs.png)
 
-        You should now see the two files at the same time. With both Edit mode and Preview mode open in split panes, notice that if you scroll in one, the other scrolls as well.
+    You should now see the two files at the same time. With both Edit mode and Preview mode open in split panes, notice that if you scroll in one, the other scrolls as well.
 
-        Remember this process to split the panes, it will be helpful when you want to see two files at the same time - such as lab instructions and the file you are editing.
+    Remember this process to split the panes, it will be helpful when you want to see two files at the same time - such as lab instructions and the file you are editing.
 
     **VERTICAL MENU BUTTONS TOGGLE**
 
-1. Give yourself more room to view code by hiding the leftmost pane. It should currently be the Explorer pane. Clicking the Explorer pane icon - pictured here with a blue circle and 1 will toggle this view. All of the icons in this vertical menu can be toggled to give you more room to work. Practice clicking to show and hide the menus.
+5. Give yourself more room to view code by hiding the leftmost pane. It should currently be the Explorer pane. Clicking the Explorer pane icon - pictured here with a blue circle and 1 will toggle this view. All of the icons in this vertical menu can be toggled to give you more room to work. Practice clicking to show and hide the menus.
 
     ![Vertical Pane](screenshots/vertical-pane.png)
 
-     **USING GITHUB**
-
-2. If you have been given a link to an online repository for this class, such as GitHub, https://github.com/JudyLipinski/angular100-labs you can use that link to navigate to this readme.md in a browser. Try this now and see if you can find/see the formatted markdown.
-
-   ![GitHub](screenshots/github.png)
-
-    This is a good option if you are using a virtual machine for class and have more than one monitor. If this your situation, you may want to open this now on your other monitor as you move forward in the directions.
 
     **MARKDOWN FORMATTING**
 
-3. Make sure you can see both the Edit Mode in VS Code and the Preview Mode in VS Code or GitHub while you review the following:
+7. Make sure you can see both the Edit Mode in VS Code and the Preview Mode in VS Code or GitHub while you review the following:
 
     * Hash marks (#), are used for formatting headings.
         * A single # is heading "level 1" which is biggest, ## is "level 2", slightly smaller, and so on.
@@ -117,9 +158,9 @@
 
     **OPEN PREVIEW TO SIDE**
 
-4. Close all tabs so only the README.md is open in Edit Mode.
+8. Close all tabs so only the README.md is open in Edit Mode.
    
-5. When a markdown file is the active file, there is a button that automatically opens Preview in the split pane.
+9.  When a markdown file is the active file, there is a button that automatically opens Preview in the split pane.
 ![Preview button](screenshots/preview-button.png)
 
         Most everything in VS Code has a hover effect. If you forget what anything does, just hover over it.
@@ -134,7 +175,7 @@
 
 2.  For the rest of this lab exercise, view this file in Preview mode or on GitHub. 
 
-### **Part 2 - The Course Files**
+### **Part 3 - The Angular100-Labs project**
 
 1. Make sure you have VS Code open and can see the Angular100-Labs repository. Ensure the Explorer pane is visible, listing the files/directories. Recall to click the icon if the view is hidden. 
 
@@ -179,7 +220,7 @@
     * MyAngularCourse (you will create in next Part) 
     
 
-### **Part 4: Create your own repository for your coursework**
+### **Part 5: Create your own repository for your coursework**
 
 You will create a repository called my-angular-albums. It will be tracked by Git so that if you accidentally delete or change files you can recover them easily. 
 
