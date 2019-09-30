@@ -14,6 +14,7 @@
 * Please pay attention to detail. Follow each step carefully.
 * Throughout the course the terms folder and directory are used interchangeable.
 * You may see references to Enter key and Return key. These are the same intention, Enter is usually found on Windows and Return on Macs.
+* You must save changes to your files to see the effects take place. Control+S is the FASTEST. You can also use File | Save but this wastes seconds - adding up to minutes, etc...
 
 ## Links to content below
 
@@ -34,9 +35,9 @@
 
 [Part 8 - Use .gitignore to not track changes](#part-8---using-gitignore-to-ignore-changes)
 
-[Part 10 - View GitLens extension](#part-10---view-gitlens)
+[Part 9 - View GitLens extension](#part-9---view-gitlens)
 
-[Part 11 - Optionally create GitHub remote repo](#part-11-optional--setup-github-remote-repository)
+[Part 10 - Optionally create GitHub remote repo](#part-10-optional--setup-github-remote-repository)
 
 
 [Bonus - Explore VS Code](#bonus)
@@ -255,8 +256,6 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
     ![config global](screenshots/git-config-global-check.png)
 
 2. If there are values present, that is all you need for a local Git repo to be able to commit (and more easily discard) your changes.  
-
-    To set these values you can use the following commands using your information. 
     
     It is a good practice to match to the info you would use on a remote repository, such as  GitHub, but it is not required.
 
@@ -264,68 +263,88 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
 
     ![config global](screenshots/git-config-global.png)
 
-4. Execute the following commands. These steps will create a new folder called MyWebCourse and place it under local source control. You may or may not see the warnings as pictured.
+4. Execute the following commands to create a new folder for your work and to initialize a local Git repo. You may or may not see the warnings. Wherever you start using cd \ takes you to c:\
    
-![GitInit](screenshots/git-init.png)
+    ![GitInit](screenshots/git-init.png)
+
+1. Test that you can add to your local repo and commit by executing the following commands. If you cannot commit, check that you set your global setting for user.name and user.email.
+
+    ![add readme](screenshots/git-cli-add-readme.png)
 
 ### **Part 6 - Opening Multiple Instances of VS Code**
 [back to top](#links-to-content-below)
 
-    Quite often you will need to have multiple instances of VS Code open. For example, you may be referring to a sample project and comparing to your own project. In this class, you may wish to have open the Labs and your project.
+Quite often you will need to have multiple instances of VS Code open.
+    
+For example, you may be referring to a sample project and comparing to your own project. 
 
-    There are multiple options to do this including:
-       * Running multiple instances of VS Code 
-       * Putting projects in the same folder and opening that folder in VS Code
-       * Creating a workspace 
+VS Code allows use of control+c and control+v to copy and paste files and directories between projects.  
 
-    Whichever method you use, You can use control+c and control+v to copy and paste files and directories between projects.  
+1. From the Command Prompt within your **my-angular-course** directory execute the command **code .** to open the project in VS Code. 
+
+    ![add readme](screenshots/code-space-dot.png)
 
 
-#### Multiple Instances, switch using Windows Task Bar
-   ![](screenshots/VSCode-multiple-instances.png)
+2. You should now have two instances of VS Code running. In your my-angular-course use Peacock to change the color to C# purple. 
 
-1. From the Command Prompt within `MyWebCourse` directory execute the command `code .` to open the project in VS Code. You should now have two instances of VS Code running.
+   1. Control+shift+p for command palette
+   2. start typing peacock 
+   3. choose C# purple
    
-2. In the modern web project find the file license-agreement.txt from the same  directory as this README.md. Highlight the license-agreement.txt file and hit Control-C or right-click to choose copy.
+   ![add readme](screenshots/my-course-purple.png)
+
+
+#### Switch between instances using Windows Task Bar
+
+1. Move your cursor to the VS Code icon in  the windows status bar.
    
-3. In your MyWebCourse project paste the file using Control-V or right-click and choosing paste.
+2. You should see your two VS Code instances with their colors. Peacock makes switching easier.
 
-   Here you can see more than one instance open. You can use the windows status bar to switch between projects by clicking the icon and choosing the one you want. If you are not using a virtual machine you can use Alt+tab to switch.
+ ![](screenshots/VSCode-multiple-instances.png)
 
+3. Click the **Angular100-Labs** project (green). If you are not using a virtual machine you can use Alt+tab to switch.
+
+4. In **Angular100-Labs** find the file license-agreement.txt from the same  directory as this README.md. Click to highlight the license-agreement.txt file and hit Control-C or right-click to choose copy.
+   
+5. Switch back to your **my-angular-course** project and paste the file by right-clicking below your files and choosing paste.
+
+ ![](screenshots/right-click-paste.png)
+
+
+  
 ### **Part 7 - Using VS Code to Commit Changes**
 [back to top](#links-to-content-below)
 
-    By copying a file into your project, you might have noticed the source control icon now has a number on it. Here we will practice with change tracking in projects.
+By adjusting the color and copying a file into your project, you might have noticed the source control icon now has a number on it. Here we will practice with change tracking in projects.
+
+1.  In your README.md file add your name.
+
+    ![](screenshots/readme-add-name.png)
+
+
+2.  Click on the Source Control button to open the panel `Source Control`. In this panel, mouse over the README.md file; press the `+` button that appeared to stage the change. You can also stage the change by right clicking on the README.md and clicking `Stage Changes`. You should now see that `README.md` was added to `Staged Changes`
+
+    ![](screenshots/git-vscode-stage-readme.png)
+
+3.  Above `Staged Changes` you should see a text input field with the text **Message (press Ctrl+Enter to commit)**. Within this field enter a good commit message which describes the changes we staged in the previous step.
+
+    ![](screenshots/vscode-commit.png)
+
+
+4.  Click the check mark above the text message field to commit the changes made to README.md
    
-1.  Delete the file license-agreement.txt. This will decrease the count of files being tracked as having changed.
-   
-2.  If not already open in VS Code, open this chapters README.md file in Edit Mode.
-
-3.  Edit the README.md file to include your name
-
-4.  Save the file, and notice the `Source Control` button on the left hand toolbar. It should now have a blue circle on it containing the number 1. This number indicates the number of files that have been changed locally.
-
-5.  Click on the Source Control button to open the panel `Source Control`. In this panel, mouse over the README.md file; press the `+` button that appeared to stage the change. You can also stage the change by right clicking on the README.md and clicking `Stage Changes`. You should now see that `README.md` was added to `Staged Changes`
-
-    ![](screenshots/source-control-stage-changes.png)
-
-6.  Above `Staged Changes` you should see a text input field with the text `Message (press Ctrl+Enter to commit)`. Within this field enter a good commit message which describes the changes we staged in the previous step.
-
-7.  Click the check mark above the text message field to commit the changes made to README.md
-
 ### **Part 8 - Using .gitignore to ignore Changes**
 [back to top](#links-to-content-below)
 
-    Sometimes, you do not want Git to track certain files or directories. Git looks for a settings file called `.gitignore`. Any files or directories included in this file will not be tracked.
-    
-    In Modern Web projects for example, we end up with node_modules directories which should not be tracked.
+Sometimes, you do not want Git to track certain files or directories. Git looks for a settings file called `.gitignore`. Any files or directories included in this file will not be tracked.
 
-1. Add a file called `.gitignore` - notice there is an intentional period (.) proceeding the name of the file.
+1. Create a file called `.gitignore` by viewing the explorer pane and hovering over the name of the project to reveal a menu. Choose the icon to create a new file and name it .gitignore.
+   
+   Notice there is an intentional period (.) proceeding the name of the file.
 
-    You can add a new file in VS Code by using the Explorer pane add button.
-    ![](screenshots/VS Code-new-file.png)
+    ![](screenshots/vs_code_explorer_hover.png)
 
-1. Open the .gitignore file and add this on the first line: untracked.text
+2. Open the .gitignore file and add this on the first line: .vscode
   ![](screenshots/source-control-ignore.png) 
   
 1. Now create a new file called `untracked.text` and inside add the text "This is a local file."
@@ -334,7 +353,7 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
 1.  Please mark your work as complete. With your name tent card if in a classroom or by using method for online training. (spreadsheet, status symbol, etc.) Then you can move on to the OPTIONAL part or Bonus below.
 
 
-### **Part 10 - View GitLens** 
+### **Part 9 - View GitLens** 
 [back to top](#links-to-content-below)
 
 1.  On VS Code's left hand toolbar, click on the `GitLens` extension you installed earlier. This extension contains additional features.
@@ -343,7 +362,7 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
 
 1.  Familiarize yourself with `GitLens'` panel. Notice how you can use it to access different repositories and their branches, remote, your stashes, etc. Also notice how you can navigate through it to see history of a file, a line, or compare files between different branches or between local and remote.
 
-### **Part 11 OPTIONAL- Setup GitHub remote repository**
+### **Part 10 OPTIONAL- Setup GitHub remote repository**
 [back to top](#links-to-content-below)
 
 1. If you have access to GitHub you can follow the directions in this folder's file [optional-github.md](./optional-github.md)  file. If others are done with this exercise already you can return to do this on a break or at a later time. It can be completed at any time before the end of class. 
