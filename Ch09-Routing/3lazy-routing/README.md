@@ -6,9 +6,39 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
+## **Part 1 - Lazy Load About page**
 
-2. Create an albums-routing.module.ts to be referenced within the albums module. Because the albums folder and module already exist - you can use this CLI command to create the module, and to update the albums.module.ts to include it.
+
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
+   
+2. Add a module and routing.module for **About** so that we can lazy load it. There is no About module yet - we can create both the module and the routing at the same time using this command.
+
+    ![](../screenshots/3-about-cli-routing.png)
+
+1. This will generate two files.
+    ![](../screenshots/3-about-cli-routing-output.png)
+
+1. Move the declaration of AboutComponent out of the root app routing module and into the new About routing module.
+   ![](../screenshots/3-about-component-into-module.png)
+   
+2. Now in the root app routing module change the route for "about" to not point to a component, but to the AboutModule feature module itself. 
+    ![](../screenshots/3-about-in-app-routing.png)
+   
+
+3. Update the AboutRoutingModule to have an entry that points to the AboutComponent. Note that empty string is used, because we are reaching this route from the app-routing.module.ts for "/about" already. Make sure to import the component.
+    
+    ![](../screenshots/3-about-routing-mod.png)
+
+
+4. Now test that your app works by loading it in the browser. Open the dev tools network traffic tab and refresh the welcome page. As before you should see requests.
+   
+5. Now, click on About while viewing the Network tab. An entry should appear at the bottom showing that the AboutModule was loaded and the count of requests should increase.
+
+    ![](../screenshots/3-about-network-loaded-13.png)
+
+## **Part 2 - Lazy Load Albums page**
+
+1. Create an **albums-routing.module.ts** to be referenced within the albums module. Because the albums folder and module already exist - you can use this CLI command to create the module, and to update the **albums.module.ts** to include it.
 
     ```console
     ng g module albums/albums-routing --module albums --flat
@@ -18,7 +48,7 @@
      ![](../screenshots/feature-routing.png)
 
 
-3. In the AppRoutingModule file, modify the path for /albums to point to the feature module, rather than a component. 
+1. In the AppRoutingModule file, modify the path for /albums to point to the feature module, rather than a component. 
 
     ```javascript
     {
@@ -32,7 +62,7 @@
     ```
 
 
-4. Add a route in the newly created **albums-routing.module.ts** that points to the **AlbumsListComponent** - make sure the AlbumListComponent file is imported.
+8. Add a route in the newly created **albums-routing.module.ts** that points to the **AlbumsListComponent** - make sure the AlbumListComponent file is imported.
 
     ```javascript
     const routes: Routes = [
@@ -40,22 +70,10 @@
     ];
     ```
 
-5. In this same file, now register the routes in the @NgModule decorator in the imports property using forChild() - and indicate to export the RouterModule. Make sure the necessary classes are imported.  
+9.  Check that your app works as expected. 
 
-    ```javascript
-    @NgModule({
-        imports: [RouterModule.forChild(routes)],
-        exports: [RouterModule]
-    })
-    ```
+10. Mark your work as complete. 
 
-6. Now do the same thing for About.
-   
-7. Now test that your app works by loading it in the browser. Open the dev tools network traffic tab. 
+## Bonus
 
-8. Click on the albums button or link and you should see the module being lazily loaded. 
-
-     ![](../screenshots/3-lazy-load-initial.png)
-
-
-9.  Mark your work as complete. 
+1. Continue with the Bonus started earlier in this chapter. Modify your project to use feature modules and lazy loading for Friends, Family and Hobbies.
