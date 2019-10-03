@@ -14,27 +14,40 @@
       ng g component albums/add-album
    ```
 
-1. Create a link in the nav bar template to add an album. Add this code before the login/logout functionality:
+1. Create a link in the nav bar template to add an album. Add this code before the li for the login/logout functionality:
     ```html 
       <li class="nav-item">
-            <a class="nav-item nav-link" routerLink="/add-album" routerLinkActive="active">Add Album</a></li>
+        <a class="nav-item nav-link" routerLink="/add-album" routerLinkActive="active">Add Album</a>
+      </li>
     ```
 
-1. Add a route to Routes in **app-routing.module.ts** ensuring import is added correctly.
+1. Add a route to Routes in **app-routing.module.ts** ensuring import is added correctly. Place this near the top of your routes, before the ** wildcard. Use the AuthGuard created previously.
 
+    ![](../screenshots/1-add-album-route-with-guard.png)
+   Copy the following:
    ```typescript
-     { path: "add-album", component: AddAlbumComponent }
+     { path: "add-album", component: AddAlbumComponent,
+     canActivate: [AuthGuard] }
    ```
 
-8. Test that the page loads from the navbar stating that it works.
+1. Test that the page loads from the navbar with the default template that it works.
 
-9. In **app.module.ts** in the @NgModule decorator import **FormsModule** to be able to create a template driven form. Make sure to import the module.
+2.  In **app.module.ts** at the top of the file add the ES6 import:
 
-10. In the same folder as this file, open the file **add-album.component.html** and copy its content over the content in your project's **add-album.component.html**. Do the same with **add-album.component.ts**
+    ![](../screenshots/1-import-forms-module.png)
+  
+3.  Below in the @NgModule decorator import **FormsModule** to be able to create a template driven form. 
 
-11. Notice how the use of [ngModel] sets up two way data binding
+    ![](../screenshots/1-import-forms-module.png)
 
-12. Update **album.service.ts** to include a method to add an album.
+1-appmodule-imports-formsmodule.png
+
+
+5.  In the same folder as this file, open the file **add-album.component.html** and copy its content over the content in your project's **add-album.component.html**. Do the same with **add-album.component.ts**
+
+6.  Notice how the use of [ngModel] sets up two way data binding
+
+7.  Update **album.service.ts** to include a method to add an album.
 
   ```typescript
     addAlbum(album: Album): Observable<Album> {
