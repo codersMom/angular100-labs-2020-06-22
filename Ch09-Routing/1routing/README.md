@@ -202,9 +202,15 @@
     ```
 30. Update the routes to include an entry for about pointing to the AboutComponent.
    
-  ![](../screenshots/1-about-route.png)
+    ![](../screenshots/1-about-route.png)
 
-2.  Mark your work as complete.
+1. Test that the route is reachable in the browser now.
+   
+2. You can add some styling for this component in the generated about.component.css file.
+
+    ![](../screenshots/1-about-css.png)
+
+3.  Mark your work as complete.
 
 ## Bonus
 
