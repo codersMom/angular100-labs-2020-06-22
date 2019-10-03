@@ -64,6 +64,36 @@ XXXXXX screenshot of all of them
 
     ![](../screenshots/6-navbar-use-of-service.png)
 
+1. Test your work. Clicking on the Login button should now cause the NavBar to display logout.
 
+### **Part 3: Use RouteGuard to stop navigation to page**
 
-2.  Mark your work as complete.
+1. Generate a route guard and choose CanActivate in the CLI menu by using the space bar - then hit Enter.
+
+    ![](../screenshots/6-ng-g-guard-auth.png)
+
+    ![](../screenshots/6-cli-canactivate.png)
+
+1. Notice the generated code for canActivate simply returns true. Change this to false.
+   
+1. Now modify the **AppRoutingModule** to use the guard to protect the View Albums page. 
+
+    ![](../screenshots/6-auth-guard-albums.png)
+
+1. Now try to navigate to the View Albums page and you should be routed to the Login page.
+   
+2. Update the AuthGuard class, to use dependency injection in the constructor to give access to the AuthenticationService and the Router.
+
+    ![](../screenshots/6-dependency-inject.png)
+
+1. Now modify the canActivate method of the AuthGuard to use logic to determine if user can route to the page using teh authService.
+   
+    ![](../screenshots/6-add-logic-auth-guard.png)
+
+2. Test your app. While not logged in you should not be able to route to Albums. If you click Login in navbar - you should be able to get to albums. 
+   
+3.  Mark your work as complete.
+
+## Bonus
+
+1. Continue working on the bonus project.
