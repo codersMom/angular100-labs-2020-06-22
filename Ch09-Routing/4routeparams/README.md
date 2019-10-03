@@ -15,9 +15,9 @@
 
   ![](../screenshots/4-ng-g-c-details.png)
 
-3. Update the AppRoutingModule routes array to add an entry that will reach the placeholder details page saying it works. Use **albums/:id** which accepts an id parameter. Ensure the Component is imported.
+3. Update the AlbumsRoutingModule routes  to add an entry that will reach the placeholder details page saying it works. Use **:id** which accepts an id parameter. Ensure the Component is imported.
    
-  ![](../screenshots/4-route-albums-id-param.png)
+    ![](../screenshots/4-route-albums-id-param.png)
 
 1. Test your app. 
    1. Click on albums, they should still be reachable. 
@@ -122,4 +122,4 @@
 
 ## Bonus
 
-1. Continue working on your bonus app. If you havent already use JSON server to supply the data for friends, family and hobbies. Create a json file with details about friends, family, hobbies. You can make all data have a description field and display that when one is selected passing the route parameter. Similar the exercise, have services that return all data, and only one by id. 
+1. Continue working on your bonus app. If you haven't already use JSON server to supply the data for friends, family and hobbies. Create a json file with details about friends, family, hobbies. You can make all data have a description field and display that when one is selected passing the route parameter. Similar the exercise, have services that return all data, and only one by id. 
