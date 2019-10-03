@@ -69,39 +69,39 @@
 7.  Update the **album-details.component.html** to display album details on the page using the following code
 
     ```html
-    <div class="container">
-    <div class="row my-3">
-      <img *ngIf="album" class="float-right img-fluid img-thumbnail"style=" max-width: 30%" src="assets/img/{{ album.id }}.jpg" alt="{{ album?.albumName }}" />
+        <div class="container">
+          <div class="row my-3">
+          <img *ngIf="album" class="float-right img-fluid img-thumbnail"style=" max-width: 30%" src="assets/img/{{ album.id }}.jpg" alt="{{ album?.albumName }}" />
 
-      <ul style="list-style: none;">
-        <li>
-          <h2>{{ album?.albumName }}</h2>
-        </li>
-        <li>{{ album?.artist }}</li>
-        <li>Year Released: {{ album?.year }}</li>
-      </ul>
-    </div>
-    <div class="row">
-      <h4>Tracks</h4>
-      <table class="table">
-        <thead class="thead-light">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Title</th>
-            <th scope="col">Duration</th>
-          </tr>
-        </thead>
-        <tbody *ngIf="album">
-          <tr *ngFor="let track of album.tracks">
-            <th scope="row">{{ track.trackNumber }}</th>
-            <td>{{ track.title }}</td>
-            <td>{{ track.length }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
+          <ul style="list-style: none;">
+            <li>
+              <h2>{{ album?.albumName }}</h2>
+            </li>
+            <li>{{ album?.artist }}</li>
+            <li>Year Released: {{ album?.year }}</li>
+          </ul>
+        </div>
+        <div class="row">
+          <h4>Tracks</h4>
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Duration</th>
+              </tr>
+            </thead>
+            <tbody *ngIf="album">
+              <tr *ngFor="let track of album.tracks">
+                <th scope="row">{{ track.trackNumber }}</th>
+                <td>{{ track.title }}</td>
+                <td>{{ track.length }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </div>
     ```
 
 8.  Ensure your code is working in the browser by clicking through to the details page.
