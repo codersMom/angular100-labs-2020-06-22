@@ -32,7 +32,7 @@
       ]
    ```
 
-4. Because **angular.json** was updated you need to restart the server for changes to be picked up. Ifit is running stop the server using control-c. Restart the server.
+4. Because **angular.json** was updated you need to restart the server for changes to be picked up. If it is running stop the server using control-c. Restart the server.
 
 5. Let's create the **Welcome** "page" for our application. Use the -is flag to make the component have inline styling. (alternatively you could use --inline-style)
 
@@ -60,17 +60,19 @@
 
 7. Create the title property within **welcome.component.ts** and set it equal to **My Angular Albums**.
 
-8. We cannot reach this component yet.
 
-9. Update **app.component.html** to simply be:
+3. We cannot reach this component yet.
+
+4. Update **app.component.html** to simply be:
 
    ```html
        <router-outlet></router-outlet>
    ```
 
-10. Now we will add paths to be loaded beneath the `<router-outlet>` element.
 
-   Add 3 object elements to the Routes array in **app-routing.module.ts**:
+5.  Now we will add paths to be loaded beneath the `<router-outlet>` element.
+
+   Add object elements to the Routes array in **app-routing.module.ts**:
 
    ```typescript
    const routes: Routes = [
@@ -139,9 +141,10 @@
 
 ![](../screenshots/1-album-assets.png)
 
-19. Test your changes in the browser and ensure you have no errors. You should see the navbar with image. If you click the links they should work. Clicking the nav brand "My Albums Project" should bring back the album page.
+19. Test your changes in the browser and ensure you have no errors. You should see the navbar with image. If you click the Home and Albums links they should work. Clicking the nav brand "My Albums Project" should bring back the album page.
+    
 
-20. Modify the **Welcome** template to use a button to routerLink to albums.
+21. Modify the **Welcome** template to use a button to routerLink to albums.
 
     ```html
     <div class="jumbotron text-center">
@@ -156,24 +159,24 @@
     </div>
     ```
 
-21. Try adding a non-existing URL in the browser bar such as the following and view the browser devtools console to see the error generated.
+22. Try adding a non-existing URL in the browser bar such as the following and view the browser devtools console to see the error generated.
 
     ```http://localhost:3333/abc```
 
-22. Generate a new component to be used for any bad urls.
+23. Generate a new component to be used for any bad urls.
 
     ```bat
     ng g c Notfound -it -is
     ```
 
-23. Update the **Notfound** template to have this content
+24. Update the **Notfound** template to have this content
 
     ```html
       <h1 class="mt-3 mx-auto w-50">Error 404</h1>
       <p class="mt-3 mx-auto w-50">Page not found</p>
     ```
 
-24. Update app-routing.module.ts routes to add a wildcard path with two asterisks. This must go at the end of your path objects. It will be the match if no other url matches.
+25. Update app-routing.module.ts routes to add a wildcard path with two asterisks. This must go at the end of your path objects. It will be the match if no other url matches.
 
   ![](../screenshots/1-all-routes.png)
 
@@ -184,8 +187,24 @@
      ```http://localhost:3333/abc```
 
 26. This should now load the 404 Error page and still include the nav bar.
+    
+27. You can also test by clicking the About tab in the navbar. We need to create this component as well.
+    
+28. Create the About Page using the CLI command: 
 
-27. Mark your work as complete.
+      ng g c about -it 
+  
+   
+29. In the template property for the generated about component add this code:
+
+    ```html
+    <div><p>This app is written in Angular and displays music albums</p></div>
+    ```
+30. Update the routes to include an entry for about pointing to the AboutComponent.
+   
+  ![](../screenshots/1-about-route.png)
+
+2.  Mark your work as complete.
 
 ## Bonus
 
