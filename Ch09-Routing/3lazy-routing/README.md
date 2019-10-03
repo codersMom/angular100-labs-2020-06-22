@@ -21,7 +21,7 @@
    ![](../screenshots/3-about-component-into-module.png)
    
 5. Now in the root app routing module change the route for "about" to not point to a component, but to the AboutModule feature module itself. 
-    ![](../screenshots/3-about-in-app-routing.png)
+    ![](../screenshots/3-about-lazy-load.png)
    
 
 6. Update the AboutRoutingModule to have an entry that points to the AboutComponent. Note that empty string is used, because we are reaching this route from the app-routing.module.ts for "/about" already. Make sure to import the component.
