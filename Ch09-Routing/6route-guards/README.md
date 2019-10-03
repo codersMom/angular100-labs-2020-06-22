@@ -45,24 +45,21 @@
     ![](../screenshots/6-ng-g-s-authentication.png)
    
   
-2. In the same folder as this README are files that you can copy their contents into your created files. 
+2. In the same folder as this README are files that you can copy their contents in to replace what is in your created files. Modify the LoginComponent and AuthenticationService by using these files to replace the contents of those files.
 
-XXXXXX screenshot of all of them
-   
     ![](../screenshots/6-copy-authentication-file.png)
 
-
-3. Modify the LoginComponent class by replacing its content with what is in this folder.
-
-4. It allows components to see the logged in status and be notified when it changes.
+1. Review the code of each. The AuthenticationService allows components to subscribe to get the logged in status and be notified when it changes.
    
-5. Update the login template to have a button call the login function. 
-
-    ![](../screenshots/6-fake-login-template.png)
 
 1. Now update the navbar to use the service, and subscribe to changes in the status of being logged in.
 
     ![](../screenshots/6-navbar-use-of-service.png)
+
+1. Update the login template to have a button call the login function. 
+
+    ![](../screenshots/6-fake-login-template.png)
+
 
 1. Test your work. Clicking on the Login button should now cause the NavBar to display logout.
 

@@ -4,9 +4,8 @@
 
 - Use Lazy Loading with Routing in your application
 
-## Steps
 
-## **Part 1 - Lazy Load About page**
+### **Part 1 - Lazy Load About page**
 
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
@@ -15,28 +14,28 @@
 
     ![](../screenshots/3-about-cli-routing.png)
 
-1. This will generate two files.
+3. This will generate two files.
     ![](../screenshots/3-about-cli-routing-output.png)
 
-1. Move the declaration of AboutComponent out of the root app routing module and into the new About routing module.
+4. Move the declaration of AboutComponent out of the root app routing module and into the new About routing module.
    ![](../screenshots/3-about-component-into-module.png)
    
-2. Now in the root app routing module change the route for "about" to not point to a component, but to the AboutModule feature module itself. 
+5. Now in the root app routing module change the route for "about" to not point to a component, but to the AboutModule feature module itself. 
     ![](../screenshots/3-about-in-app-routing.png)
    
 
-3. Update the AboutRoutingModule to have an entry that points to the AboutComponent. Note that empty string is used, because we are reaching this route from the app-routing.module.ts for "/about" already. Make sure to import the component.
+6. Update the AboutRoutingModule to have an entry that points to the AboutComponent. Note that empty string is used, because we are reaching this route from the app-routing.module.ts for "/about" already. Make sure to import the component.
     
     ![](../screenshots/3-about-routing-mod.png)
 
 
-4. Now test that your app works by loading it in the browser. Open the dev tools network traffic tab and refresh the welcome page. As before you should see requests.
+7. Now test that your app works by loading it in the browser. Open the dev tools network traffic tab and refresh the welcome page. As before you should see requests.
    
-5. Now, click on About while viewing the Network tab. An entry should appear at the bottom showing that the AboutModule was loaded and the count of requests should increase.
+8. Now, click on About while viewing the Network tab. An entry should appear at the bottom showing that the AboutModule was loaded and the count of requests should increase.
 
     ![](../screenshots/3-about-network-loaded-13.png)
 
-## **Part 2 - Lazy Load Albums page**
+### **Part 2 - Lazy Load Albums page**
 
 1. Create an **albums-routing.module.ts** to be referenced within the albums module. Because the albums folder and module already exist - you can use this CLI command to create the module, and to update the **albums.module.ts** to include it.
 
