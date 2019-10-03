@@ -45,8 +45,25 @@
     ![](../screenshots/6-ng-g-s-authentication.png)
    
   
-2. In the same folder as this README is an It allows components to see the logged in status and be notified when it changes.
-   
-3. This is not a complete 
+2. In the same folder as this README are files that you can copy their contents into your created files. 
 
-4.  Mark your work as complete.
+XXXXXX screenshot of all of them
+   
+    ![](../screenshots/6-copy-authentication-file.png)
+
+
+3. Modify the LoginComponent class by replacing its content with what is in this folder.
+
+4. It allows components to see the logged in status and be notified when it changes.
+   
+5. Update the login template to have a button call the login function. 
+
+    ![](../screenshots/6-fake-login-template.png)
+
+1. Now update the navbar to use the service, and subscribe to changes in the status of being logged in.
+
+    ![](../screenshots/6-navbar-use-of-service.png)
+
+
+
+2.  Mark your work as complete.
