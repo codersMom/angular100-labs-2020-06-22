@@ -8,7 +8,7 @@
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
 
-2. Create an app routing module to be referenced within the albums module.
+2. Create an albums-routing.module.ts to be referenced within the albums module. Because the albums folder and module already exist - you can use this CLI command to create the module, and to update the albums.module.ts to include it.
 
     ```console
     ng g module albums/albums-routing --module albums --flat
@@ -32,7 +32,7 @@
     ```
 
 
-4. Add a route in the newly created albums-routing.module.ts that points to the AlbumsListComponent - make sure the AlbumListComponent file is imported.
+4. Add a route in the newly created **albums-routing.module.ts** that points to the **AlbumsListComponent** - make sure the AlbumListComponent file is imported.
 
     ```javascript
     const routes: Routes = [
@@ -49,8 +49,13 @@
     })
     ```
 
-6. Now test that your app works by loading it in the browser. Open the dev tools network traffic tab. 
+6. Now do the same thing for About.
+   
+7. Now test that your app works by loading it in the browser. Open the dev tools network traffic tab. 
 
-1. Click on the albums button or link and you should see the module being lazily loaded. 
+8. Click on the albums button or link and you should see the module being lazily loaded. 
 
-2.  Mark your work as complete. 
+     ![](../screenshots/3-lazy-load-initial.png)
+
+
+9.  Mark your work as complete. 
