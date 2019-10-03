@@ -77,19 +77,19 @@
 
     ![](../screenshots/6-auth-guard-albums.png)
 
-1. Now try to navigate to the View Albums page and you should be routed to the Login page.
+2. If you try to navigate to the View Albums page you will be blocked. In the next steps you wil be forced to login.
    
-2. Update the AuthGuard class, to use dependency injection in the constructor to give access to the AuthenticationService and the Router.
+3. Update the AuthGuard class, to use dependency injection in the constructor to give access to the AuthenticationService and the Router.
 
     ![](../screenshots/6-dependency-inject.png)
 
-1. Now modify the canActivate method of the AuthGuard to use logic to determine if user can route to the page using teh authService.
+4. Now modify the canActivate method of the AuthGuard to use logic to determine if user can route to the page using teh authService.
    
     ![](../screenshots/6-add-logic-auth-guard.png)
 
-2. Test your app. While not logged in you should not be able to route to Albums. If you click Login in navbar - you should be able to get to albums. 
+5. Test your app. While not logged in you should not be able to route to Albums. If you click Login in navbar - you should be able to get to albums. 
    
-3.  Mark your work as complete.
+6.  Mark your work as complete.
 
 ## Bonus
 
