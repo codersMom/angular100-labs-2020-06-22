@@ -2,19 +2,38 @@
 
 ## Objectives
 
-- Start a server, use HttpClient and routing to dynamically create a page of details for each album
+- Add a Child Route to the detail page
+- add another routing-outlet to child
+
 
 ## Steps
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
 
-    ### Create Album Details Component
+2. Modify the album-details.component.html to include a button to edit the album info. Also create an router-outlet
 
-1. Create a component for album details
+ <button routerLink="edit" routerLinkActive="button-active" class="button">Edit Album Details</button>
+    <router-outlet></router-outlet>
 
-   ```console
-   $ ng g component albums/album-details
-   ```
+5-ng-g-c-album-edit.png
+
+do it first without children - see it replaces 
+
+dont want that - add children 
+
+
+{
+    path: "users/:id", component: UserDetailComponent,
+    children: [
+      { path: 'logindetails', component: UserLoginComponent },
+      { path: 'edit', component: UserEditComponent }
+    ]
+  },
+
+
+
+
+
 
 1. Update the **Route[]** to add an entry that will reach the placeholder details page saying it works. Use **albums/:id** which accepts an id parameter. Ensure the Component is imported.
 
@@ -24,9 +43,9 @@
 
    NOTE: Make sure to put this above the wildcard path.
 
-1. Test in the browser that if you use a URL similar to **localhost:xxxx/albums/2** that the page loads correctly
+2. Test in the browser that if you use a URL similar to **localhost:xxxx/albums/2** that the page loads correctly
 
-1. Update the button in **album-card.component.html** - instead of a (click) - use **routerLink** which builds the url using the id value from album.
+3. Update the button in **album-card.component.html** - instead of a (click) - use **routerLink** which builds the url using the id value from album.
 
    ```html
    <button
@@ -36,11 +55,11 @@
    </button>
    ```
 
-1. Test in the browser that clicking the album button loads the details page.
+4. Test in the browser that clicking the album button loads the details page.
 
    ### Add a new method to the service to get one album
 
-1. Let's create a function in **album.service.ts** which will get an album's details by adding the id value to the url.
+5. Let's create a function in **album.service.ts** which will get an album's details by adding the id value to the url.
 
    ```typescript
     getAlbumById(id: number): Observable<Album> {
@@ -50,7 +69,7 @@
 
    ### Update AlbumDetailsComponent to receive the parameter
 
-1. Update **album details component** to have a property **album** of type **Album**, and to be dependency injected wih ActivatedRoute and the AlbumService.
+6. Update **album details component** to have a property **album** of type **Album**, and to be dependency injected wih ActivatedRoute and the AlbumService.
 
    ```typescript
     album: Album;
@@ -63,7 +82,7 @@
 
    - Ensure the proper classes are imported. A quick way to do this is to mouse over one of the red wavy lines, click **Quick Fix**, and then hit **Add all missing imports**. Always ensure these shortcuts work as you intended and remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
 
-1. In **ngOnInit()** use the passed in route to get the album id, and call the new AlbumService method.
+7.  In **ngOnInit()** use the passed in route to get the album id, and call the new AlbumService method.
 
    ```typescript
     ngOnInit() {
@@ -79,7 +98,7 @@
 
    - Notice how the id is received using **route.snapshot.paramMap**
 
-1. Update the **album-details.component.html** to display album details on the page using the following code
+11. Update the **album-details.component.html** to display album details on the page using the following code
 
     ```html
     <div class="container">
@@ -122,12 +141,12 @@
     </div>
     ```
 
-1. Ensure your code is working in the browser.
+12. Ensure your code is working in the browser.
 
-1. Answer these questions by experimenting with changing the code.
+13. Answer these questions by experimenting with changing the code.
 
     - Why are the question marks needed, if you remove what errors do you get in the console.
 
     - What happens if you remove the *ngIf from around the *ngFor?
 
-1. Mark your work as complete.
+14. Mark your work as complete.
