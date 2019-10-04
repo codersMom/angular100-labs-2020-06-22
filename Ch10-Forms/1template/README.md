@@ -14,9 +14,13 @@
     Online folder of files:
     https://github.com/JudyLipinski/angular100-labs/tree/master/Ch10-Forms/1template
    
-3. Modify the AlbumService to include the use of HttpClient's put. We will use this to save the data changes. You can copy the content from **code-for-album-service.txt** - make sure you include the correct ES6 imports
+3. Modify the AlbumService to include the use of HttpClient's put. We will use this to save the data changes. You can copy the content from **code-for-album-service.txt** - make sure you include the correct ES6 imports.
 
     ![](../screenshots/1-new-album-servce-methods.png)
+
+---
+   If your extensions are not working you can manually add the import at the top     
+  ![](../screenshots/1-import-operators.png)
 
 4. Modify your **album-details.component.html** file so that you pass the album as a query parameter to the Edit component. This is possible through the following notation - passing an object with the property **albumToEdit** and the value is the object as a JSON string using the pipe operator.
 
