@@ -8,7 +8,8 @@
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the src directory from the solution files from the last exercise.
 
-2. Follow the steps, noting that you can copy the content from included files in the lab. Either by navigating to this folder on GitHub (right-click to open in new tab) and click on the file to get content, or from a local angular100-labs folder.
+
+2. Follow the steps, noting that you can copy the content from included files in the lab. Either by navigating to the files in this folder on GitHub (if viewing on github now, right-click the following link to open in new tab), or opening in VS Code via a local angular100-labs folder.
 
     Online folder of files:
     https://github.com/JudyLipinski/angular100-labs/tree/master/Ch10-Forms/1template
@@ -18,21 +19,22 @@
     ![](../screenshots/1-new-album-servce-methods.png)
 
 
-6. Modify your **album-details.component.html** file so that you pass the album as a query parameter to the Edit component. This is possible through the following notation - passing an object with the property **albumToEdit** and the value is the object as a JSON string using the pipe operator.
+
+4. Modify your **album-details.component.html** file so that you pass the album as a query parameter to the Edit component. This is possible through the following notation - passing an object with the property **albumToEdit** and the value is the object as a JSON string using the pipe operator.
 
      ![](../screenshots/1-pass-query-params.png)
 
 
-7. From the same directory as this README - copy the file content for album-edit component and html to replace yours.
+5. From the same directory as this README - copy the file content for album-edit component and html to replace yours.
    ![](../screenshots/1-copy-edit-files.png)
 
-8. In VS Code editor, view the contents of the **album-edit.component.ts** file - noting the following:
+6. In VS Code editor, view the contents of the **album-edit.component.ts** file - noting the following:
    *  What is dependency injected into the constructor, and why?
    *  note the use of queryParamMap in ngOnInit() to get access to the query param that was sent
    *  we only are sending one so we get that string and parse it to get back to the object
    *  editAlbum will be called passing the album object that is modified in the form
 
-9.  In VS Code editor, view the contents of the **album-edit.component.html** file - noting the following:
+7.  In VS Code editor, view the contents of the **album-edit.component.html** file - noting the following:
    * how is the template variable #form used to describe form state?
    * where is two way data binding being used?
    * what happens when the form is submitted? 
@@ -59,6 +61,5 @@
 
 ## Bonus
 
-1.  Create a button to add an album which calls a new service in album using http.put
-   
-2.  Create a remove button on the details page that when clicked calls a method you create which uses a service to delete the item.
+
+1.  Create a remove button on the details page that when clicked calls a method you create which uses a service to delete the item.
