@@ -14,11 +14,9 @@
     Online folder of files:
     https://github.com/JudyLipinski/angular100-labs/tree/master/Ch10-Forms/1template
    
-3. Modify the AlbumService to include the use of HttpClient's put. We will use this to save the data changes. You can copy the content from **code-for-album-service.txt**
+3. Modify the AlbumService to include the use of HttpClient's put. We will use this to save the data changes. You can copy the content from **code-for-album-service.txt** - make sure you include the correct ES6 imports
 
     ![](../screenshots/1-new-album-servce-methods.png)
-
-
 
 4. Modify your **album-details.component.html** file so that you pass the album as a query parameter to the Edit component. This is possible through the following notation - passing an object with the property **albumToEdit** and the value is the object as a JSON string using the pipe operator.
 
@@ -39,25 +37,25 @@
    * where is two way data binding being used?
    * what happens when the form is submitted? 
 
-10. Try to load the new content for the edit page. You should be able to click on the details page button, but get an error in the console. Can you make out what it means?
+8.  Try to test your app. You should get errors in the console. Can you make out what it means?
 
-11. You need to import the **FormsModule** into your Albums feature module just as you did the CommonModule to make the directives for forms available.
+9.  You need to import the **FormsModule** into your Albums feature module just as you did the CommonModule to make the directives for forms available.
    
    Note: Providers made available at root are available to features because of the way injectors work. Modules which give us access to directives such as FormsModule or CommonModule must be imported into the feature modules where you need them.
 
   ![](../screenshots/1-add-import-to-feature-import.png)
 
-12. Make sure you also import the FormsModule so that your code compiles. When changing modules, it can be good to start and restart your server as modules may have already been loaded into memory.
+12. Make sure you also do the ES6 import of the FormsModule so that your code compiles. When changing modules, it can be good to start and restart your server as modules may have already been loaded into memory.
    
-13. Now try reaching the Edit page. 
+13. Now try navigating to an album, click on its detals button, and then reach the Edit page. 
 
-14. Notice the state of the form as reflected in the pills. Remove the name of the artist and see the state change. Can you see which code is causing this?
+14. Notice the state of the form as reflected in the pill. Remove the name of the artist and see the state change. Can you see which code is causing this?
     
-16. Notice the button cannot be submitted until the form is valid.
+15. Notice the button cannot be submitted until the form is valid.
 
-15. Now change the name of the artist and hit submit.
+16. Now change the name of the artist and hit submit.
 
-16. You should be routed to the list of albums and see your changes as well as in the json file that json-server is using.
+17. You should be routed to the list of albums and see your changes as well as in the json file that json-server is using.
 
 ## Bonus
 
