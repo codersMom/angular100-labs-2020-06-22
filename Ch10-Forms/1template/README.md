@@ -6,42 +6,46 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the src directory from the solution files from the last exercise.
 
-1. From the same directry as this README - copy the contents of the edit
+2. You need to import the **FormsModule** into your Albums feature module just as you did the CommonModule to make the directives for forms available.
+   
+   Note: Providers made available at root are available to features because of the way injectors work. Modules which give us access to directives such as FormsModule or CommonModule must be imported into the feature modules where you need them.
 
-1. Create a link in the nav bar template to add an album. Add this code before the li for the login/logout functionality:
-    ```html 
-      <li class="nav-item">
-        <a class="nav-item nav-link" routerLink="/add-album" routerLinkActive="active">Add Album</a>
-      </li>
-    ```
+     ![](../screenshots/1-add-import-to-feature-import.png)
 
-1. Add a route to Routes in **app-routing.module.ts** ensuring import is added correctly. Place this near the top of your routes, before the ** wildcard. Use the AuthGuard created previously.
+3. Make sure you also import the FormsModule so that your code compiles. When changing modules, it can be good to start and restart your server as modules may have already been loaded into memory.
+   
+4. Modify your **album-details.component.html** file so that you pass the album as query parameters. This is possible through this notation.
 
-    ![](../screenshots/1-add-album-route-with-guard.png)
-   Can copy the following:
-   ```typescript
-     { path: "add-album", component: AddAlbumComponent,
-     canActivate: [AuthGuard] }
-   ```
+     ![](../screenshots/1-pass-query-params.png)
 
-1. Test that the page loads from the navbar with the default template stating that it works!
+5. From the same directory as this README - copy the file content for album-edit component and html to replace yours.
+   ![](../screenshots/1-copy-edit-files.png)
 
-2.  In **app.module.ts** at the top of the file add the ES6 import:
+6. Note how the data can be receved form the query parameters.
 
-    ![](../screenshots/1-import-forms-module.png)
-  
-3.  In the same file's @NgModule decorator import **FormsModule** to be able to create a template driven form. 
+
+
+7. In VS Code editor, view the contents of the **album-edit.component.html** file - noting the following:
+   * how is the template variable #form used to describe form state?
+   * where is two way data binding being used?
+   * what happens when the form is submitted? 
+     * Trace this through into the album-edit.component.ts file
+
+8. 
+
+
+9.  In the same file's @NgModule decorator import **FormsModule** to be able to create a template driven form. 
 
     ![](../screenshots/1-appmodule-imports-formsmodule.png)
 
 
-4.  In the same folder as this file, open the file **add-album.component.html** and copy its content over the content in your project's **add-album.component.html**. Do the same with **add-album.component.ts**
+10. In the same folder as this file, open the file **add-album.component.html** and copy its content over the content in your project's **add-album.component.html**. Do the same with **add-album.component.ts**
 
-5.  Notice how the use of [ngModel] sets up two way data binding
+11. Notice how the use of [ngModel] sets up two way data binding
 
-6.  Update **album.service.ts** to include a method to add an album.
+12. Update **album.service.ts** to include a method to add an album.
 
   ```typescript
     addAlbum(album: Album): Observable<Album> {
@@ -51,10 +55,6 @@
 
 7. Try to reach the page to Add Album. You should see errors in the console. Can you figure out what these are referring to?
 
-8. You need to import the FormsModule into your Albums feature module just as you did the CommonModule to make teh directives for forms available.
-   
-   Note: Providers made available at root are available to features because of the way injectors work. Modules which give us access to directives such as FormsModule or CommonModule must be imported into the feature modules where you need them.
-  
 9.  
 ==========================================
 
