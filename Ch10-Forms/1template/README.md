@@ -24,30 +24,28 @@
 1. Add a route to Routes in **app-routing.module.ts** ensuring import is added correctly. Place this near the top of your routes, before the ** wildcard. Use the AuthGuard created previously.
 
     ![](../screenshots/1-add-album-route-with-guard.png)
-   Copy the following:
+   Can copy the following:
    ```typescript
      { path: "add-album", component: AddAlbumComponent,
      canActivate: [AuthGuard] }
    ```
 
-1. Test that the page loads from the navbar with the default template that it works.
+1. Test that the page loads from the navbar with the default template stating that it works!
 
 2.  In **app.module.ts** at the top of the file add the ES6 import:
 
     ![](../screenshots/1-import-forms-module.png)
   
-3.  Below in the @NgModule decorator import **FormsModule** to be able to create a template driven form. 
+3.  In the same file's @NgModule decorator import **FormsModule** to be able to create a template driven form. 
 
-    ![](../screenshots/1-import-forms-module.png)
-
-1-appmodule-imports-formsmodule.png
+    ![](../screenshots/1-appmodule-imports-formsmodule.png)
 
 
-5.  In the same folder as this file, open the file **add-album.component.html** and copy its content over the content in your project's **add-album.component.html**. Do the same with **add-album.component.ts**
+4.  In the same folder as this file, open the file **add-album.component.html** and copy its content over the content in your project's **add-album.component.html**. Do the same with **add-album.component.ts**
 
-6.  Notice how the use of [ngModel] sets up two way data binding
+5.  Notice how the use of [ngModel] sets up two way data binding
 
-7.  Update **album.service.ts** to include a method to add an album.
+6.  Update **album.service.ts** to include a method to add an album.
 
   ```typescript
     addAlbum(album: Album): Observable<Album> {
