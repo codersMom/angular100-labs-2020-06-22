@@ -23,13 +23,19 @@
 
    ![](../screenshots/2-import-reactive.png)
 
-4. Copy the contents of the login directory in this README file folder over the contents in your login directory.
    
-5. View the new versions of files in the **/login** folder in the VS Code editor. 
-    1. In the **login.component.html** notice the use of formGroup and how the error messages, and submit are worked with conditionally.
-    2. In the **login.component.ts** file, notice the work with FormBuilder, and setting up of email and password along with Validators. Validators.required is built in, and ValidationService.emailValidator and ValidationService.passwordValidator are custom. 
+4. View the new versions of files in the **/login** folder in the VS Code editor. 
+    * In the **login.component.html** notice the use of formGroup and how the error messages, and submit are worked with conditionally.
+    *  In the **login.component.ts** file, notice the work with FormBuilder, and setting up of email and password along with Validators. Validators.required is built in.
+    *  The ValidationService.emailValidator and ValidationService.passwordValidator are custom. 
 
-6.  With these changes in place your code should now work. Clicking on login should bring up the login page. Supplying the username of user and the password of root should log you in. 
+5.  With these changes in place your code should now work. Clicking on login should bring up the login page. 
+    * Supplying an invalid email will give you feedback. Where is this defined in the code?
+    * suppying **test@test.com** and **abcd1234** should log you in
+    * How are these parameters being passed ot the service?
+    * logout and try an invalid - properly formatted email 
+
+1. Mark your work as complete. If you are done before others attempt the bonus.
 
 ## Bonus
 1.  Use Reactive form to add a new album. 
