@@ -1,18 +1,14 @@
-# Chapter 10 Forms: Template Driven - Add Album
+# Chapter 10 Forms: Template Driven - Edit Album
 
 ## Objectives
 
-- Use template form to add an album
+- Use template form to edit an album
 
 ## Steps
 
 1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
-1. Create a component for adding albums.
-
-   ```bat
-      ng g component albums/add-album
-   ```
+1. From the same directry as this README - copy the contents of the edit
 
 1. Create a link in the nav bar template to add an album. Add this code before the li for the login/logout functionality:
     ```html 
@@ -52,6 +48,17 @@
       return this.http.post<Album>(this.url, album);
     }
   ```
+
+7. Try to reach the page to Add Album. You should see errors in the console. Can you figure out what these are referring to?
+
+8. You need to import the FormsModule into your Albums feature module just as you did the CommonModule to make teh directives for forms available.
+   
+   Note: Providers made available at root are available to features because of the way injectors work. Modules which give us access to directives such as FormsModule or CommonModule must be imported into the feature modules where you need them.
+  
+9.  
+==========================================
+
+1. Mke it so that when album is submitted taken back to list of albums.
 
 10. Notice the button cannot be submitted until the form is valid.
 
