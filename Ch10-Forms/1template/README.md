@@ -57,6 +57,8 @@
 
 17. You should be routed to the list of albums and see your changes as well as in the json file that json-server is using.
 
+18. Discard your changes to the album-info.json file and mark your work as complete.
+
 ## Bonus
 
 
