@@ -33,8 +33,7 @@
 
 1. Throughout the course you can use the browser to navigate to the course Git repository Angular100-Labs (link has been given that is specific for your class). 
 
-
-    ![GitHub](screenshots/github.png)
+    ![GitHub](screenshots/1-github.png)
 
     This is a good option if you are using a virtual machine for class and have more than one monitor. If this your situation, you may want to open this now on your other monitor as you move forward in the directions.
 
