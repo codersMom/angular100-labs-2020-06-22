@@ -35,19 +35,18 @@
 
     ![GitHub](screenshots/1-github.png)
 
-    This is a good option if you are using a virtual machine for class and have more than one monitor. If this your situation, you may want to open this now on your other monitor as you move forward in the directions.
-
 2. Bookmark this page for easier access later.  In Chrome can hit the star in the upper right hand side and choose Bookmarks bar. 
    ![Bookmark star in chrome](screenshots/1bookmarks-star.png)
    
 3. If you do not see the bookmarks bar, hit control+shift+B to make it appear.
    ![Bookmark bar in chrome](screenshots/1-bookmarks-bar.png)
 
-   
-### **Part 1 - The Angular100-Labs project**
+   Using GitHub is a helpful option if you are using a virtual machine for class and have more than one monitor. If this is your situation, you may want to open the GitHub link now on the second monitor as you move forward in the directions.
+
+### **Part 2 - The Angular100-Labs project**
 [back to top](#links-to-content-below)
 
-1. Make sure you have VS Code open and can see the Angular100-Labs repository. Ensure the Explorer pane is visible, listing the files/directories. Recall to click the icon if the view is hidden. 
+1. Make sure you have VS Code open and can see the Angular100-Labs repository. Ensure the Explorer pane is visible, listing the files/directories. Recall to click the Explorer icon if the view is hidden. 
 
 ![](screenshots/3-angular100-labs-layout.png)
 
@@ -74,9 +73,9 @@
 
 **OPENING FILES IN VS CODE**
 
-1. If you are viewing these instructions on Github now, make sure you also have VS Code open to the ANGULAR100-LABS project. One way of opening this is to navigate in 
+1. If you are viewing these instructions on Github now, make sure you also have VS Code open to the ANGULAR100-LABS project. If setup during installation, the Windows Explorer context menu gives an option to open directories in VS Code as shown:
 
-![](2-win-explorer-context-vscode.png)
+    ![windows explorer image](screenshots/2-win-explorer-context-vscode.png)
    
 2. By default, in VS Code when you single click files in the Explorer pane they open in a preview mode. This is indicated by italics in the tab. If you open another file it replaces the previous file. Try single clicking the file **license-agreement.txt**.
 
@@ -131,16 +130,18 @@
 
 **OPENING PREVIEW USING CTRL-SHIFT-V**
 
-1. If it isn't already, open this README.md in VS Code and make sure that it has focus. (click this text in the VS Code editor if the document has lost focus).
+1. If you are reading the instructions in this README.md on GIthub you can continue to do so, but you also need to open this README.md file from within VS Code under the Angular100-Labs project.
    
-2.  You can open a new tab in PREVIEW MODE by hitting control-shift-V. This will open the preview in a new tab. You can then switch back and forth using the tabs. 
+2. Within VS Code, make sure that this README.md has focus. (click this text in the VS Code editor if the document has lost focus).
+   
+3.  Now, hit this key combination control-shift-V:  it launches a new tab showing this file in PREVIEW MODE. You can then navigate back and forth by clicking the tabs.  
    
    ![](screenshots/2-control-shift-v.png)
    
 
    **OPENING A SPLIT SCREEN**
 
-3. Open a Split screen in order to view both at the same time by clicking on this icon 
+4. Open a Split screen in order to view both at the same time by clicking on this icon 
     ![Open Split Screen](screenshots/open-split-screen.png)
 
 4. Drag the tab to the other window.
@@ -177,9 +178,9 @@
 9.  When a markdown file is the active file, there is a button that automatically opens Preview in the split pane.
 ![Preview button](screenshots/preview-button.png)
 
-        Most everything in VS Code has a hover effect. If you forget what anything does, just hover over it.
+        Most everything in VS Code has a hover effect. If you forget what anything does, try hovering as most items have tool tips.
 
-    **OPENING FROM EXPLORER**
+    **OPENING FROM EXPLORER PANE**
 1. In VS Code, from the Explorer Pane, you can find the markdown file of interest, right click and choose **Open Preview**. Try this now with this README.md as shown.
 ![Open In Preview](screenshots/open-preview.png)
 
@@ -192,19 +193,25 @@
 ### **Part 5 - Install and Use extensions**
 
 1. Install the extension VSCode Great Icons and change your font icons to use this extension. It will help greatly once we look at Angular projects.
+   ![screenshot of VS Code icons](screenshots/1-vs-code-great-icons.png)
+
+   ![screenshots of changing icons](screenshots/1-changing-icons.png)
+
+   ![screenshots of changing icons](screenshots/1-choose-icon-theme.png)
+
    
-1. Search and install if not present: 
-* Angular Essentials by John Papa
-* Angular 8 Snippets extension by the author Mikael Morlund
+   
+2. Search and install if not present: 
+* Angular Essentials extension by the author John Papa
+* Angular 8 Snippets by Mikael Morlund
 * Bracket Pair Colorizer extension by CoenraadS
 * TSLint extension by Microsoft
 * GitLens - Git supercharged by Eric Amodio
-
 
 ## Bonus
 [back to top](#links-to-content-below)
 
 1. If done before others, explore the VS Code Interactive Playground
    
-![](screenshots/interactive-playground.png)
+![screenshot playground](screenshots/interactive-playground.png)
 
