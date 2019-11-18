@@ -9,26 +9,26 @@
 
 ## Links to content below
 
-[Part 5 - Create Your Own Local Git Repo](#part-5-create-your-own-repository-for-your-coursework)
+[Part 1 - Create Your Own Local Git Repo](#part-1-create-your-own-repository-for-your-coursework)
 
-[Part 6 - Opening Multiple Instances of VS Code](#part-6---opening-multiple-instances-of-vs-code)
+[Part 2 - Opening Multiple Instances of VS Code](#part-2---opening-multiple-instances-of-vs-code)
 
-[Part 7 - Using VS Code to commit changes](#part-7---using-vs-code-to-commit-changes)
+[Part 3 - Using VS Code to commit changes](#part-3---using-vs-code-to-commit-changes)
 
-[Part 8 - Use .gitignore to not track changes](#part-8---using-gitignore-to-ignore-changes)
+[Part 4 - Use .gitignore to not track changes](#part-4---using-gitignore-to-ignore-changes)
 
-[Part 9 - View GitLens extension](#part-9---view-gitlens)
+[Part 5 - View GitLens extension](#part-5---view-gitlens)
 
-[Part 10 - Optionally create GitHub remote repo](#part-10-optional--setup-github-remote-repository)
+[Part 6 - Optionally create GitHub remote repo](#part-6-optional--setup-github-remote-repository)
 
 
 [Bonus - Explore VS Code](#bonus)
 
    
-### **Part 5: Create your own repository for your coursework**
+### **Part 1: Create your own repository for your coursework**
 [back to top](#links-to-content-below)
 
-You will create a repository called my-angular-albums. It will be tracked by Git so that if you accidentally delete or change files you can recover them easily. 
+You will create a repository called **my-angular-course**. It will be tracked by Git so that if you accidentally delete or change files you can recover them easily. (Later we will create a project inside called **my-angular-albums**.)
 
 Additionally, and optionally, you will be able to connect your local repository to a remote GitHub repository. 
 
@@ -48,15 +48,15 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
 
     ![config global](screenshots/git-config-global.png)
 
-4. Execute the following commands to create a new folder for your work and to initialize a local Git repo. You may or may not see the warnings. Wherever you start using cd \ takes you to c:\
+4. Execute the following commands to create a new folder for your work and to initialize a local Git repo. You may or may not see the warnings. Use cd \ to take you to c:\
    
     ![GitInit](screenshots/git-init.png)
 
-5. Test that you can add to your local repo and commit by executing the following commands. If you cannot commit, check that you set your global setting for user.name and user.email.
+5. Test that you can add to your local repo and commit by executing the following commands. If you cannot commit, check that you set your global setting correctly in the previous steps.
 
     ![add readme](screenshots/git-cli-add-readme.png)
 
-### **Part 6 - Opening Multiple Instances of VS Code**
+### **Part 2 - Opening Multiple Instances of VS Code**
 [back to top](#links-to-content-below)
 
 Quite often you will need to have multiple instances of VS Code open.
@@ -70,22 +70,11 @@ VS Code allows use of control+c and control+v and corresponding context menu opt
     ![add readme](screenshots/code-space-dot.png)
 
 
-
-**Install and use new extension**
-[back to top](#links-to-content-below)
-
-    The extensions pane allows you to search for, install, disable and remove extensions easily.
-
-1. Look on the left side bar menu of VS Code and click on the `Extensions` icon or use the shortcut (Ctrl + Shift + X). 
-
-    ![extensions](screenshots/extensions.png)
-
-
-2. Type into the Extensions Marketplace search field to find `Peacock` by John Papa. If you do not have it already installed click the install button.
+2. Search the Extensions Marketplace to find `Peacock` by John Papa. If you do not have it already installed click the install button.
    
    ![](screenshots/extensions-install-menu.png)
 
-    This extension lets us provide a color to the top and left sidebars of each instance of VS Code we open. 
+    This extension lets us easily provide a color to the top and left sidebars of each instance of VS Code we open. 
     
     In the real world this is helpful as you may have reference implementation projects open as well as your own work.
 
@@ -114,7 +103,7 @@ VS Code allows use of control+c and control+v and corresponding context menu opt
 
 
 
-2. You should now have two instances of VS Code running. In your my-angular-course use Peacock to change the color to C# purple. 
+5. You should now have two instances of VS Code running. In your my-angular-course use Peacock to change the color to C# purple. 
 
    1. Control+shift+p for command palette
    2. start typing peacock 
@@ -141,7 +130,7 @@ VS Code allows use of control+c and control+v and corresponding context menu opt
 
 
   
-### **Part 7 - Using VS Code to Commit Changes**
+### **Part 3 - Using VS Code to Commit Changes**
 [back to top](#links-to-content-below)
 
 By adjusting the color and copying a file into your project, you might have noticed the source control icon now has a number on it. Here we will practice with change tracking in projects.
@@ -162,7 +151,7 @@ By adjusting the color and copying a file into your project, you might have noti
 
 4.  Click the check mark above the text message field to commit the changes made to README.md
    
-### **Part 8 - Using .gitignore to ignore Changes**
+### **Part 4 - Using .gitignore to ignore Changes**
 [back to top](#links-to-content-below)
 
 Sometimes, you do not want Git to track certain files or directories. Git looks for a settings file called `.gitignore`. Any files or directories included in this file will not be tracked.
@@ -182,7 +171,7 @@ Sometimes, you do not want Git to track certain files or directories. Git looks 
 1.  Please mark your work as complete. With your name tent card if in a classroom or by using method for online training. (spreadsheet, status symbol, etc.) Then you can move on to the OPTIONAL part or Bonus below.
 
 
-### **Part 9 - View GitLens** 
+### **Part 5 - View GitLens** 
 [back to top](#links-to-content-below)
 
 1.  On VS Code's left hand toolbar, click on the `GitLens` extension you installed earlier. This extension contains additional features.
@@ -191,7 +180,7 @@ Sometimes, you do not want Git to track certain files or directories. Git looks 
 
 1.  Familiarize yourself with `GitLens'` panel. Notice how you can use it to access different repositories and their branches, remote, your stashes, etc. Also notice how you can navigate through it to see history of a file, a line, or compare files between different branches or between local and remote.
 
-### **Part 10 OPTIONAL- Setup GitHub remote repository**
+### **Part 6 OPTIONAL- Setup GitHub remote repository**
 [back to top](#links-to-content-below)
 
 1. If you have access to GitHub you can follow the directions in this folder's file [optional-github.md](./optional-github.md)  file. If others are done with this exercise already you can return to do this on a break or at a later time. It can be completed at any time before the end of class. 
