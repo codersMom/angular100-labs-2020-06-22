@@ -192,7 +192,14 @@
 
 ### **Part 5 - Install and Use extensions**
 
-1. Install the extension VSCode Great Icons and change your font icons to use this extension. It will help greatly once we look at Angular projects.
+    The extensions pane allows you to search for, install, disable and remove extensions easily.
+
+1. Look on the left side bar menu of VS Code and click on the `Extensions` icon or use the shortcut (Ctrl + Shift + X). 
+
+    ![extensions](screenshots/extensions.png)
+
+
+2. Search for the extension VSCode Great Icons and change your font icons to use this extension. It will help greatly once we look at Angular projects.
    ![screenshot of VS Code icons](screenshots/1-vs-code-great-icons.png)
 
    ![screenshots of changing icons](screenshots/1-changing-icons.png)
@@ -201,7 +208,7 @@
 
    
    
-2. Search and install if not present: 
+3. Search and install these extensions if not present: 
 * Angular Essentials extension by the author John Papa
 * Angular 8 Snippets by Mikael Morlund
 * Bracket Pair Colorizer extension by CoenraadS
