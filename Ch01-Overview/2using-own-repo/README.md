@@ -7,7 +7,7 @@
 * Optionally create GitHub repository
 
 
-## Links to content below
+## Table of Contents
 
 [Part 1 - Create Your Own Local Git Repo](#part-1-create-your-own-repository-for-your-coursework)
 
@@ -17,16 +17,15 @@
 
 [Part 4 - Use .gitignore to not track changes](#part-4---using-gitignore-to-ignore-changes)
 
-[Part 5 - View GitLens extension](#part-5---view-gitlens)
+[Part 5 - Optionally create GitHub remote repo](#part-5-optional--setup-github-remote-repository)
 
-[Part 6 - Optionally create GitHub remote repo](#part-6-optional--setup-github-remote-repository)
-
+[Part 6 - BONUS View GitLens extension](#part-6---BONUS-view-gitlens)
 
 [Bonus - Explore VS Code](#bonus)
 
    
 ### **Part 1: Create your own repository for your coursework**
-[back to top](#links-to-content-below)
+[back to top](#table-of-contents)
 
 You will create a repository called **my-angular-course**. It will be tracked by Git so that if you accidentally delete or change files you can recover them easily. (Later we will create a project inside called **my-angular-albums**.)
 
@@ -57,7 +56,7 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
     ![add readme](screenshots/git-cli-add-readme.png)
 
 ### **Part 2 - Opening Multiple Instances of VS Code**
-[back to top](#links-to-content-below)
+[back to top](#table-of-contents)
 
 Quite often you will need to have multiple instances of VS Code open.
     
@@ -131,7 +130,7 @@ VS Code allows use of control+c and control+v and corresponding context menu opt
 
   
 ### **Part 3 - Using VS Code to Commit Changes**
-[back to top](#links-to-content-below)
+[back to top](#table-of-contents)
 
 By adjusting the color and copying a file into your project, you might have noticed the source control icon now has a number on it. Here we will practice with change tracking in projects.
 
@@ -152,7 +151,7 @@ By adjusting the color and copying a file into your project, you might have noti
 4.  Click the check mark above the text message field to commit the changes made to README.md
    
 ### **Part 4 - Using .gitignore to ignore Changes**
-[back to top](#links-to-content-below)
+[back to top](#table-of-contents)
 
 Sometimes, you do not want Git to track certain files or directories. Git looks for a settings file called `.gitignore`. Any files or directories included in this file will not be tracked.
 
@@ -165,14 +164,20 @@ Sometimes, you do not want Git to track certain files or directories. Git looks 
 2. Open the .gitignore file and add this on the first line: .vscode
   ![](screenshots/source-control-ignore.png) 
   
-1. Now create a new file called `untracked.text` and inside add the text "This is a local file."
-    * Save the file - and you should not see it being tracked by Git.
+1. Now, inside the .vscode directory, create a new file called `untracked.text` and inside add the text "This is a local file."
+    * Save the file - and you should not see it being tracked by Git because the directory is in .gitignore
+
 
 1.  Please mark your work as complete. With your name tent card if in a classroom or by using method for online training. (spreadsheet, status symbol, etc.) Then you can move on to the OPTIONAL part or Bonus below.
 
 
-### **Part 5 - View GitLens** 
-[back to top](#links-to-content-below)
+### **Part 5 OPTIONAL- Setup GitHub remote repository**
+[back to top](#table-of-contents)
+
+1. If you have access to GitHub you can follow the directions in this folder's file [optional-github.md](./optional-github.md)  file. If others are done with this exercise already you can return to do this on a break or at a later time. It can be completed at any time before the end of class. 
+
+### **Part 6 - BONUS View GitLens** 
+[back to top](#table-of-contents)
 
 1.  On VS Code's left hand toolbar, click on the `GitLens` extension you installed earlier. This extension contains additional features.
 
@@ -180,15 +185,9 @@ Sometimes, you do not want Git to track certain files or directories. Git looks 
 
 1.  Familiarize yourself with `GitLens'` panel. Notice how you can use it to access different repositories and their branches, remote, your stashes, etc. Also notice how you can navigate through it to see history of a file, a line, or compare files between different branches or between local and remote.
 
-### **Part 6 OPTIONAL- Setup GitHub remote repository**
-[back to top](#links-to-content-below)
-
-1. If you have access to GitHub you can follow the directions in this folder's file [optional-github.md](./optional-github.md)  file. If others are done with this exercise already you can return to do this on a break or at a later time. It can be completed at any time before the end of class. 
-
-
 
 ## Bonus
-[back to top](#links-to-content-below)
+[back to top](#table-of-contents)
 
 1. If done before others, explore the VS Code Interactive Playground
    
