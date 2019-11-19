@@ -32,38 +32,38 @@
 
 
 
-        //     let smallNum = Number.MIN_VALUE;
-        //     let trySmaller = (smallNum * 200); console.log("Too Small? " +trySmaller);
-        //     console.groupEnd();
+            let smallNum = Number.MIN_VALUE;
+            let trySmaller = (smallNum * 200); console.log("Too Small? " +trySmaller);
+            console.groupEnd();
 
-        //     console.groupCollapsed('strings...');
+            console.groupCollapsed('strings...');
 
-        //     let dblQuoteString = "Isn't it nice that I can contain single quotes";
-        //     let singleQuoteString = 'Well, you may "think" that\'s cool...';
-        //     console.log(dblQuoteString);
-        //     console.log(singleQuoteString);
-        //     console.groupEnd();
+            let dblQuoteString = "Isn't it nice that I can contain single quotes";
+            let singleQuoteString = 'Well, you may "think" that\'s cool...';
+            console.log(dblQuoteString);
+            console.log(singleQuoteString);
+            console.groupEnd();
 
-        //     const lowerString = "abc";
-        //     const upperString = "ABC";
+            const lowerString = "abc";
+            const upperString = "ABC";
 
-        //     console.group('Strings');
-        //     console.log(lowerString == upperString);
+            console.group('Strings');
+            console.log(lowerString == upperString);
            
-        //     console.groupCollapsed('Template literals...');
-        //     let name="Remembrance O'Neal";
-        //     let myString = `        'Single' and "Double" quotes work
-        //         Backticks allow other variables to be referenced: name= ${name}
-        //         Line ${2+1}  Expressions can be evaluated
-        //     `;
-        //     console.log(myString);
-        //     console.log("See more at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals");
-        //     console.groupEnd();
+            console.groupCollapsed('Template literals...');
+            let name="Remembrance O'Neal";
+            let myString = `        'Single' and "Double" quotes work
+                Backticks allow other variables to be referenced: name= ${name}
+                Line ${2+1}  Expressions can be evaluated
+            `;
+            console.log(myString);
+            console.log("See more at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals");
+            console.groupEnd();
 
-        //   console.groupCollapsed('Booleans...');
-        // //truthy or falsy
-        // console.log('abc');
-        // console.log('is the true?' + Boolean('hello'));
-        // console.log('is the true?' + Boolean(''));
-        // console.groupEnd();
+          console.groupCollapsed('Booleans...');
+        //truthy or falsy
+        console.log('abc');
+        console.log('is the true?' + Boolean('hello'));
+        console.log('is the true?' + Boolean(''));
+        console.groupEnd();
         
