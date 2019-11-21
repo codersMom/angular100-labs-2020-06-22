@@ -8,7 +8,7 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution's src directory from **Ch06-Pipes\1pipes** over your src directory.
+1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can delete your src directory and copy the solution's src directory from **Ch06-Pipes\1pipes**.
 
 2. Use the integrated terminal to generate a service which returns an array of albums.
 
