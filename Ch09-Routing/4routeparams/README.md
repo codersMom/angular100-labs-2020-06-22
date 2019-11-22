@@ -3,7 +3,7 @@
 ## Objectives
 
 - Create a page of details for each album
-- Naivgate to the details page using route parameters
+- Navigate to the details page using route parameters
 
 ## Steps
 
@@ -15,7 +15,7 @@
 
   ![](../screenshots/4-ng-g-c-details.png)
 
-3. Update the AlbumsRoutingModule routes  to add an entry that will reach the placeholder details page saying it works. Use **:id** which accepts an id parameter. Ensure the Component is imported.
+3. Update the AlbumsRoutingModule routes to add an entry that will reach the placeholder details page saying it works. Use **:id** which accepts an id parameter. Ensure the Component is imported.
    
     ![](../screenshots/4-route-albums-id-param.png)
 
@@ -35,7 +35,7 @@
   ![](../screenshots/4-error-router-module-needed.png)
 
 
-4. You need to add RouterModule to imports of every @NgModule() where components use any component or directive from RouterModule (in this case routerLink).
+4. You need to add RouterModule to imports of every Feature @NgModule() where components use any component or directive from RouterModule (in this case routerLink).
 
    Modify the **albums.module.ts** file to import the RouterModule.
 
