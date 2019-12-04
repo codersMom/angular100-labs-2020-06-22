@@ -77,7 +77,7 @@
     }
     ```
 
-    Wrap a <div> with the class **scrollable** around the card details within the cardbody to implement the CSS scrollable functionality we added in the step above. It should then look like the following:
+    Wrap a `<div>` with the class **scrollable** around the card details within the cardbody to implement the CSS scrollable functionality we added in the step above. It should then look like the following:
 
     ```html
     <div class="card-body">
