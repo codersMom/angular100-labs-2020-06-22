@@ -47,11 +47,11 @@
 
    ```typescript
    ngOnInit(): void {
-    this.albumsArray = this.albumsArray = ALBUMS;
+    this.albumsArray = ALBUMS;
    }
    ```
 
-1. In **album-list.component.html**, modify the inclusion of the three cards, to be a single card reference that uses an \*ngFor:
+2. In **album-list.component.html**, modify the inclusion of the three cards, to be a single card reference that uses an \*ngFor:
 
    ```html
    <app-album-card
@@ -68,9 +68,9 @@
       <div class="card-deck">
     ```
 
-1. Now in the browser you should now see all of the albums. Now that we have more data - resize the browser to see the responsiveness from using Bootstrap. Can you point out what part of your code is has Bootstrap implement this functionality?
+3. Now in the browser you should now see all of the albums. Now that we have more data - resize the browser to see the responsiveness from using Bootstrap. Can you point out what part of your code is has Bootstrap implement this functionality?
 
-1. Once this is working, mark your work as complete.
+4. Once this is working, mark your work as complete.
 
 ## Bonus
 
