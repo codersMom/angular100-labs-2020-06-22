@@ -9,6 +9,7 @@
 
 ## NOTES for THROUGHOUT the course
 
+* When you open a README file such as this - follow all steps to the bottom of teh document
 * Please pay attention to detail. Follow each step carefully.
 * If you ever feel lost - ask your instructor or neighbor. Much is learned in helping each other.
 * Throughout the course the terms **folder** and **directory** are used interchangeable.
@@ -23,15 +24,16 @@
 
 [Part 3 - Opening files in VS Code and changing default settings](#part-3---opening-files-in-vs-code-and-changing-default-settings)
 
-[Part 4 - Markdown .md files in Edit & Preview Mode ](#part-4---opening-markdown-md-files-in-vs-code-in-preview-mode)
+[Part 4 - Markdown .md files in Edit & Preview Mode](#part-4---opening-markdown-md-files-in-vs-code-in-preview-mode)
 
-[Part 5 - Install and use extensions ](#part-5---install-and-use-extensions)
+[Part 5 - Install and use extensions]
+(#part-5---install-and-use-extensions)
 
 [Bonus - Explore VS Code](#bonus)
 
 ### **Part 1 - Navigating the course on Github**
 
-1. Throughout the course you can use the browser to navigate to the course Git repository Angular100-Labs (link has been given that is specific for your class). 
+1. Throughout the course you can use the browser to navigate to the course Git repository Angular100-Labs (a link has been given that is specific for your class). 
 
     ![GitHub](screenshots/1-github.png)
 
