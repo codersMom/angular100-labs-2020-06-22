@@ -91,7 +91,6 @@
           </table>
         </div>
         </div>
-      </div>
     ```
 
 8.  Ensure your code is working in the browser by clicking through to the details page.
