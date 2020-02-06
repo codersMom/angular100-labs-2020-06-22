@@ -30,18 +30,8 @@
 
   ![](../screenshots/4-card-button-routerlink.png)
 
-3. Test in the browser and look at the error in the devtools console. Can you tell what it is indicating?
-   
-  ![](../screenshots/4-error-router-module-needed.png)
 
-
-4. You need to add RouterModule to imports of every Feature @NgModule() where components use any component or directive from RouterModule (in this case routerLink).
-
-   Modify the **albums.module.ts** file to import the RouterModule.
-
-  ![](../screenshots/4-import-router-module.png)
-
-5.  Now test your app and verify that clicking the album button loads the details page.
+3.  Now test your app and verify that clicking the album button loads the details page.
 
 ### **Part 3 - Use a service to create the album details page**
 
