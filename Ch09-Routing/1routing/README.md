@@ -86,7 +86,7 @@
 
    Remember that the convention is to have all @angular imports first, then a blank line, then all of the files we create and modify.
 
-12. Open the browser for testing. Load the following URL and you should see the Welcome page.
+12. If not already open, open the browser to the following URL and you should see the Welcome page.
 
     ```http://localhost:3333/```
   
