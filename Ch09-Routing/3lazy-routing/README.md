@@ -17,7 +17,7 @@
 3. This will generate two files.
     ![](../screenshots/3-about-cli-routing-output.png)
 
-4. Move the declaration of AboutComponent out of the root app routing module and into the new About routing module.
+4. Move the declaration of AboutComponent out of the root AppModule and into the new AboutModule.
    ![](../screenshots/3-about-component-into-module.png)
    
 5. Now in the root app routing module change the route for "about" to not point to a component, but to the AboutModule feature module itself. 
