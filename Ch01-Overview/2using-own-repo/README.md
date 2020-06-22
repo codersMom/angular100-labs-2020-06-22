@@ -1,4 +1,4 @@
-# Chapter 1: Create repo and practice committing code
+# Chapter 1: Part 2 - Create branch for your work and practice committing code
 
 ## Objectives
 
@@ -24,12 +24,10 @@
 [Bonus - Explore VS Code](#bonus)
 
    
-### **Part 1: Create your own repository for your coursework**
+### **Part 1: Create your own branch for your coursework**
 [back to top](#table-of-contents)
 
-You will create a repository called **my-angular-course**. It will be tracked by Git so that if you accidentally delete or change files you can recover them easily. (Later we will create a project inside called **my-angular-albums**.)
-
-Additionally, and optionally, you will be able to connect your local repository to a remote GitHub repository. 
+You will create a branch with your name in this project. It will be tracked by Git so that if you accidentally delete or change files you can recover them easily. (Later we will create an Angular project in this new branch) 
 
 Git is an especially helpful tool while working with Angular. One reason for this is we will be using the Angular CLI tool to create and modify many files at once. 
     
