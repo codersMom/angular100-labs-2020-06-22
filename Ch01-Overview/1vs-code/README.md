@@ -32,7 +32,7 @@
 
 ### **Part 1 - Navigating the course on Github**
 
-1. Throughout the course you can use the browser to navigate to the course Git repository Angular100-Labs (a link has been given that is specific for your class). 
+1. If you havent already, please provide a GitHub id to your instructor. This will allow you to login to and use a browser to navigate this course's labs via the Git repository Angular100-Labs (with the date specific to your class).  You can return to this section once you have been added to the repository - and use these steps to viw the repo in the browser.
 
     ![GitHub](../screenshots/1-github.png)
 
@@ -42,12 +42,12 @@
 3. If you do not see the bookmarks bar, hit control+shift+B to make it appear.
    ![Bookmark bar in chrome](../screenshots/1-bookmarks-bar.png)
 
-   Using GitHub is a helpful option if you are using a virtual machine for class and have more than one monitor. If this is your situation, you may want to open the GitHub link now on the second monitor as you move forward in the directions.
+   Using GitHub is a helpful option if you are using a virtual machine for class and have more than one monitor. If this is your situation, you may want to open the GitHub link on the second monitor as you move forward in the directions.
 
 ### **Part 2 - The Angular100-Labs project**
 [back to top](#links-to-content-below)
 
-1. Make sure you have VS Code open and can see the Angular100-Labs repository. Ensure the Explorer pane is visible, listing the files/directories. Recall to click the Explorer icon if the view is hidden. 
+1. Make sure you have VS Code open to the Explorer pane, listing the files/directories. Recall to click the Explorer icon if the view is hidden. 
 
 ![](../screenshots/3-angular100-labs-layout.png)
 
@@ -74,7 +74,7 @@
 
 **OPENING FILES IN VS CODE**
 
-1. If you are viewing these instructions on Github now, make sure you also have VS Code open to the ANGULAR100-LABS project. If setup during installation, the Windows Explorer context menu gives an option to open directories in VS Code as shown:
+1. If setup during installation, the Windows Explorer context menu gives an option to open directories in VS Code as shown:
 
     ![windows explorer image](../screenshots/2-win-explorer-context-vscode.png)
    
