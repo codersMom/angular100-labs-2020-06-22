@@ -45,9 +45,14 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
 
     ![config global](../screenshots/git-config-global.png)
 
-4. Execute the following commands to create a new folder for your work and to initialize a local Git repo. You may or may not see the warnings. Use cd \ to take you to c:\
+4. Do the following to create a branch in which to do your work.
+    * Click the bottom left where it says Master 
    
-    ![GitInit](../screenshots/git-init.png)
+    ![GitInit](../screenshots/2-click-master.png)
+    * choose to create a new branch - use your name
+    * ![GitInit](../screenshots/2-create-branch-with-your-name.png)
+
+
 
 5. Test that you can add to your local repo and commit by executing the following commands. If you cannot commit, check that you set your global setting correctly in the previous steps.
 
