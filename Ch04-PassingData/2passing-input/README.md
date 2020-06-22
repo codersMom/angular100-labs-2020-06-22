@@ -6,7 +6,7 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
+1. Continue working in your angular100-labs project in your branch. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
 1. Open the integrated terminal. Create an **AlbumCardComponent** by using this Angular CLI command. Note that g is short for generate, c is for component.
 

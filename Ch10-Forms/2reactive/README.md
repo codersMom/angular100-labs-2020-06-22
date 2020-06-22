@@ -7,7 +7,7 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the src directory from the solution in the last exercise over yours.
+1. Continue working in your angular100-labs project in your branch. If you haven't completed previous exercises, you can copy the src directory from the solution in the last exercise over yours.
 
 1. In your project navigate to your app/shared folder and app/login folders and delete them.
 

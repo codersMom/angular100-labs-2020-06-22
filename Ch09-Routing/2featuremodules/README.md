@@ -8,7 +8,7 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory. You also would need to copy its package.json file over your package.json file to get necessary imports.
+1. Continue working in your angular100-labs project in your branch. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory. You also would need to copy its package.json file over your package.json file to get necessary imports.
 
 1. Examine your current AppModule file. How many components are in the declarations?
 

@@ -8,7 +8,7 @@
 
 ## Steps
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
+1. Continue working in your angular100-labs project in your branch. If you haven't completed previous exercises, you can copy the solution files from the last exercise.
 
 1. Ensure some of the data has currency of USD and if need be, set something to have currency of GBP
 

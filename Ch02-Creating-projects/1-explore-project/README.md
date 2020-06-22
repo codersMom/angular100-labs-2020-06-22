@@ -7,7 +7,7 @@
 
 ## Part 1 - start project and view output
 
-1. Open your **my-angular-albums** project in VS Code. If you already had the project open and running, view the terminal and stop the server.
+1. Open your angular100-labs project in your branch in VS Code. If you already had the project open and running, view the terminal and stop the server.
 
 2. Open the file \src\index.html. Notice it is quite empty.
 

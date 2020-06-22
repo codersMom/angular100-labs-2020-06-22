@@ -8,7 +8,7 @@
 ### **Part 1 - Lazy Load About page**
 
 
-1. Continue working in your **my-angular-albums** project. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
+1. Continue working in your angular100-labs project in your branch. If you haven't completed previous exercises, you can copy the last solution's src directory over your src directory.
    
 2. Add a module and routing.module for **About** so that we can lazy load it. There is no About module yet - we can create both the module and the routing at the same time using this command.
 
