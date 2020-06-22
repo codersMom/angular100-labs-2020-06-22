@@ -37,7 +37,7 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
    
 1. Depending on your lab setup, the global config for git may or may have not been setup. You can verify this by typing these commands into a command prompt.  These are global settings so you can be in any directory.
 
-    ![config global](screenshots/git-config-global-check.png)
+    ![config global](../screenshots/git-config-global-check.png)
 
 2. If there are values present, that is all you need for a local Git repo to be able to commit (and more easily discard) your changes.  
     
@@ -45,15 +45,15 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
 
 3. To set up your personal git username and email idenitifers, use these commands - replacing **John Doe** inside the quotes with your name and **johndoe@example.com** with your email. Again, these are global settings so you can be in any directory.
 
-    ![config global](screenshots/git-config-global.png)
+    ![config global](../screenshots/git-config-global.png)
 
 4. Execute the following commands to create a new folder for your work and to initialize a local Git repo. You may or may not see the warnings. Use cd \ to take you to c:\
    
-    ![GitInit](screenshots/git-init.png)
+    ![GitInit](../screenshots/git-init.png)
 
 5. Test that you can add to your local repo and commit by executing the following commands. If you cannot commit, check that you set your global setting correctly in the previous steps.
 
-    ![add readme](screenshots/git-cli-add-readme.png)
+    ![add readme](../screenshots/git-cli-add-readme.png)
 
 ### **Part 2 - Opening Multiple Instances of VS Code**
 [back to top](#table-of-contents)
@@ -66,12 +66,12 @@ VS Code allows use of control+c and control+v and corresponding context menu opt
 
 1. From the Command Prompt within your **my-angular-course** directory execute the command **code .** to open the project in VS Code. 
 
-    ![add readme](screenshots/code-space-dot.png)
+    ![add readme](../screenshots/code-space-dot.png)
 
 
 2. Search the Extensions Marketplace to find `Peacock` by John Papa. If you do not have it already installed click the install button.
    
-   ![](screenshots/extensions-install-menu.png)
+   ![](../screenshots/extensions-install-menu.png)
 
     This extension lets us easily provide a color to the top and left sidebars of each instance of VS Code we open. 
     
@@ -86,11 +86,11 @@ VS Code allows use of control+c and control+v and corresponding context menu opt
     
 3. To use the extension, hit control+shift+p to bring up the command pallette and start typing Peacock.
    
-   ![](screenshots/peacock-search.png)
+   ![](../screenshots/peacock-search.png)
    
 4. You should see a list of options, choose Vue green to identify the VS Code instance for your labs.
 
-   ![](screenshots/peacock-favorites.png)
+   ![](../screenshots/peacock-favorites.png)
 
 
 
@@ -108,7 +108,7 @@ VS Code allows use of control+c and control+v and corresponding context menu opt
    2. start typing peacock 
    3. choose C# purple
    
-   ![add readme](screenshots/my-course-purple.png)
+   ![add readme](../screenshots/my-course-purple.png)
 
 
 #### Switch between instances using Windows Task Bar
@@ -117,7 +117,7 @@ VS Code allows use of control+c and control+v and corresponding context menu opt
    
 2. You should see your two VS Code instances with their colors. Peacock makes switching easier.
 
- ![](screenshots/VSCode-multiple-instances.png)
+ ![](../screenshots/VSCode-multiple-instances.png)
 
 3. Click the **Angular100-Labs** project (green). If you are not using a virtual machine you can use Alt+tab to switch.
 
@@ -125,7 +125,7 @@ VS Code allows use of control+c and control+v and corresponding context menu opt
    
 5. Switch back to your **my-angular-course** project and paste the file by right-clicking below your files and choosing paste.
 
- ![](screenshots/right-click-paste.png)
+ ![](../screenshots/right-click-paste.png)
 
 
   
@@ -136,16 +136,16 @@ By adjusting the color and copying a file into your project, you might have noti
 
 1.  In your README.md file add your name.
 
-    ![](screenshots/readme-add-name.png)
+    ![](../screenshots/readme-add-name.png)
 
 
 2.  Click on the Source Control button to open the panel `Source Control`. In this panel, mouse over the README.md file; press the `+` button that appeared to stage the change. You can also stage the change by right clicking on the README.md and clicking `Stage Changes`. You should now see that `README.md` was added to `Staged Changes`
 
-    ![](screenshots/git-vscode-stage-readme.png)
+    ![](../screenshots/git-vscode-stage-readme.png)
 
 3.  Above `Staged Changes` you should see a text input field with the text **Message (press Ctrl+Enter to commit)**. Within this field enter a good commit message which describes the changes we staged in the previous step.
 
-    ![](screenshots/vscode-commit.png)
+    ![](../screenshots/vscode-commit.png)
 
 
 4.  Click the check mark above the text message field to commit the changes made to README.md
@@ -159,10 +159,10 @@ Sometimes, you do not want Git to track certain files or directories. Git looks 
    
    Notice there is an intentional period (.) proceeding the name of the file.
 
-    ![](screenshots/vs_code_explorer_hover.png)
+    ![](../screenshots/vs_code_explorer_hover.png)
 
 2. Open the .gitignore file and add this on the first line: .vscode
-  ![](screenshots/source-control-ignore.png) 
+  ![](../screenshots/source-control-ignore.png) 
   
 1. Now, inside the .vscode directory, create a new file called `untracked.text` and inside add the text "This is a local file."
     * Save the file - and you should not see it being tracked by Git because the directory is in .gitignore
@@ -181,7 +181,7 @@ Sometimes, you do not want Git to track certain files or directories. Git looks 
 
 1.  On VS Code's left hand toolbar, click on the `GitLens` extension you installed earlier. This extension contains additional features.
 
-    ![](screenshots/gitlens.png)
+    ![](../screenshots/gitlens.png)
 
 1.  Familiarize yourself with `GitLens'` panel. Notice how you can use it to access different repositories and their branches, remote, your stashes, etc. Also notice how you can navigate through it to see history of a file, a line, or compare files between different branches or between local and remote.
 
@@ -191,5 +191,5 @@ Sometimes, you do not want Git to track certain files or directories. Git looks 
 
 1. If done before others, explore the VS Code Interactive Playground
    
-![](screenshots/interactive-playground.png)
+![](../screenshots/interactive-playground.png)
 
