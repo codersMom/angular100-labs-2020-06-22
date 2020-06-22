@@ -34,13 +34,13 @@
 
 1. Throughout the course you can use the browser to navigate to the course Git repository Angular100-Labs (a link has been given that is specific for your class). 
 
-    ![GitHub](screenshots/1-github.png)
+    ![GitHub](../screenshots/1-github.png)
 
 2. Bookmark this page for easier access later.  In Chrome can hit the star in the upper right hand side and choose Bookmarks bar. 
-   ![Bookmark star in chrome](screenshots/1bookmarks-star.png)
+   ![Bookmark star in chrome](../screenshots/1bookmarks-star.png)
    
 3. If you do not see the bookmarks bar, hit control+shift+B to make it appear.
-   ![Bookmark bar in chrome](screenshots/1-bookmarks-bar.png)
+   ![Bookmark bar in chrome](../screenshots/1-bookmarks-bar.png)
 
    Using GitHub is a helpful option if you are using a virtual machine for class and have more than one monitor. If this is your situation, you may want to open the GitHub link now on the second monitor as you move forward in the directions.
 
@@ -49,7 +49,7 @@
 
 1. Make sure you have VS Code open and can see the Angular100-Labs repository. Ensure the Explorer pane is visible, listing the files/directories. Recall to click the Explorer icon if the view is hidden. 
 
-![](screenshots/3-angular100-labs-layout.png)
+![](../screenshots/3-angular100-labs-layout.png)
 
 2. Understanding the Angular100-Labs repository
     * This repository contains the markdown files which are the instructions for the labs in this course. It is organized by chapter.  
@@ -62,7 +62,7 @@
 
     You can revert back to the original files by clicking this source control icon, hovering over the CHANGES menu and discarding all of the changes.
 
-    ![](screenshots/discard-changes-ng.png)
+    ![](../screenshots/discard-changes-ng.png)
 
     You can try this now if you like by editing this line and reverting the changes.
 
@@ -76,41 +76,41 @@
 
 1. If you are viewing these instructions on Github now, make sure you also have VS Code open to the ANGULAR100-LABS project. If setup during installation, the Windows Explorer context menu gives an option to open directories in VS Code as shown:
 
-    ![windows explorer image](screenshots/2-win-explorer-context-vscode.png)
+    ![windows explorer image](../screenshots/2-win-explorer-context-vscode.png)
    
 2. By default, in VS Code when you single click files in the Explorer pane they open in a preview mode. This is indicated by italics in the tab. If you open another file it replaces the previous file. Try single clicking the file **license-agreement.txt**.
 
-    ![italics](screenshots/1-italics.png)
+    ![italics](../screenshots/1-italics.png)
 
 3.   Now single click the file **optional-github.md** and it will replace the **license-agreement.txt** file. 
     
-        ![optional](screenshots/1-optional-italics.png)
+        ![optional](../screenshots/1-optional-italics.png)
        
 4.   If you double click on the tab it will become solid and opening another file will not replace its contents.
 
-        ![](screenshots/1-optional-solid.png)
+        ![](../screenshots/1-optional-solid.png)
 
 5. To make single clicking not open in preview mode, you can change VS Code settings. First click the gear icon to open the settings menu.
 
-    ![Change Enable Preview](screenshots/1-gear-icon.png)
+    ![Change Enable Preview](../screenshots/1-gear-icon.png)
 
 
 6. Then in the search field start typing open. Click the editor manager under Workbench, and deselect the checkbox for Enable Preview.
 
-    ![Change Enable Preview](screenshots/1-enable-preview.png)
+    ![Change Enable Preview](../screenshots/1-enable-preview.png)
 
 7. Now single click the file **really-long-file.txt** and it should open in its own tab and not be in italics.
    
-   ![wrap text](screenshots/1-long-file.png)
+   ![wrap text](../screenshots/1-long-file.png)
    
    **Toggle text wrapping**
 8. If VSCode is not wrapping, you will just see one line of text and need to scroll to the right to see the contents. Use the View menu or shortcut of Alt-Z to toggle the word wrap.
 
-    ![wrap text](screenshots/1-alt-z.png)
+    ![wrap text](../screenshots/1-alt-z.png)
 
 9.  Notice the line number isn't incrementing it is still just one line - but easier to read.
    
-   ![wrap text](screenshots/1-wrap-contents.png)
+   ![wrap text](../screenshots/1-wrap-contents.png)
 
 ### **Part 4 - Opening Markdown .md files in VS Code in Preview Mode**
 [back to top](#links-to-content-below)
@@ -137,16 +137,16 @@
    
 3.  Now, hit this key combination control-shift-V:  it launches a new tab showing this file in PREVIEW MODE. You can then navigate back and forth by clicking the tabs.  
    
-   ![](screenshots/2-control-shift-v.png)
+   ![](../screenshots/2-control-shift-v.png)
    
 
    **OPENING A SPLIT SCREEN**
 
 4. Open a Split screen in order to view both at the same time by clicking on this icon 
-    ![Open Split Screen](screenshots/open-split-screen.png)
+    ![Open Split Screen](../screenshots/open-split-screen.png)
 
 4. Drag the tab to the other window.
-    ![Open In Preview](screenshots/dragtabs.png)
+    ![Open In Preview](../screenshots/dragtabs.png)
 
     You should now see the two files at the same time. With both Edit mode and Preview mode open in split panes, notice that if you scroll in one, the other scrolls as well.
 
@@ -156,7 +156,7 @@
 
 5. Give yourself more room to view code by hiding the leftmost pane. It should currently be the Explorer pane. Clicking the Explorer pane icon - pictured here with a blue circle and 1 will toggle this view. All of the icons in this vertical menu can be toggled to give you more room to work. Practice clicking to show and hide the menus.
 
-    ![Vertical Pane](screenshots/vertical-pane.png)
+    ![Vertical Pane](../screenshots/vertical-pane.png)
 
 
     **MARKDOWN FORMATTING**
@@ -177,13 +177,13 @@
 8. Close all tabs in VS Code so that only the README.md is open in Edit Mode.
    
 9.  When a markdown file is the active file, there is a button that automatically opens Preview in the split pane.
-![Preview button](screenshots/preview-button.png)
+![Preview button](../screenshots/preview-button.png)
 
         Most everything in VS Code has a hover effect. If you forget what anything does, try hovering as most items have tool tips.
 
     **OPENING FROM EXPLORER PANE**
 1. In VS Code, from the Explorer Pane, you can find the markdown file of interest, right click and choose **Open Preview**. Try this now with this README.md as shown.
-![Open In Preview](screenshots/open-preview.png)
+![Open In Preview](../screenshots/open-preview.png)
 
 1. In VS Code, while viewing in Preview mode, if you double-click an area of the file, you will be taken back to the EDIT VIEW or "source" markdown file for editing.
 
@@ -197,15 +197,15 @@
 
 1. Look on the left side bar menu of VS Code and click on the `Extensions` icon or use the shortcut (Ctrl + Shift + X). 
 
-    ![extensions](screenshots/extensions.png)
+    ![extensions](../screenshots/extensions.png)
 
 
 2. Search for the extension VSCode Great Icons and change your font icons to use this extension. It will help greatly once we look at Angular projects.
-   ![screenshot of VS Code icons](screenshots/1-vs-code-great-icons.png)
+   ![screenshot of VS Code icons](../screenshots/1-vs-code-great-icons.png)
 
-   ![screenshots of changing icons](screenshots/1-changing-icons.png)
+   ![screenshots of changing icons](../screenshots/1-changing-icons.png)
 
-   ![screenshots of changing icons](screenshots/1-choose-icon-theme.png)
+   ![screenshots of changing icons](../screenshots/1-choose-icon-theme.png)
 
    
    
@@ -221,5 +221,5 @@
 
 1. If done before others, explore the VS Code Interactive Playground
    
-![screenshot playground](screenshots/interactive-playground.png)
+![screenshot playground](../screenshots/interactive-playground.png)
 
