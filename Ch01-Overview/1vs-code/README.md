@@ -26,8 +26,7 @@
 
 [Part 4 - Markdown .md files in Edit & Preview Mode](#part-4---opening-markdown-md-files-in-vs-code-in-preview-mode)
 
-[Part 5 - Install and use extensions]
-(#part-5---install-and-use-extensions)
+[Part 5 - Install and use extensions](#part-5---install-and-use-extensions)
 
 [Bonus - Explore VS Code](#bonus)
 
