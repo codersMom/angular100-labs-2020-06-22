@@ -9,7 +9,7 @@
 
 ## Table of Contents
 
-[Part 1 - Create Your Own Local Git Repo](#part-1-create-your-own-repository-for-your-coursework)
+[Part 1 - Create your own branch for your coursework](#part-1-create-your-own-branch-for-your-coursework)
 
 [Part 2 - Opening Multiple Instances of VS Code](#part-2---opening-multiple-instances-of-vs-code)
 
@@ -17,9 +17,7 @@
 
 [Part 4 - Use .gitignore to not track changes](#part-4---using-gitignore-to-ignore-changes)
 
-[Part 5 - Optionally create GitHub remote repo](#part-5-optional--setup-github-remote-repository)
-
-[Part 6 - BONUS View GitLens extension](#part-6---BONUS-view-gitlens)
+[Part 5 - BONUS View GitLens extension](#part-5---BONUS-view-gitlens)
 
 [Bonus - Explore VS Code](#bonus)
 
@@ -31,7 +29,7 @@ You will create a branch with your name in this project. It will be tracked by G
 
 Git is an especially helpful tool while working with Angular. One reason for this is we will be using the Angular CLI tool to create and modify many files at once. 
     
-Sometimes, you may accidentally run a command and modify a lot of files you did not mean to. It can be time consuming to clean this up! To make the process easier, and be able to UNDO - we will use a local Git repo to track our files.
+Sometimes, you may accidentally run a command and modify a lot of files you did not mean to. It can be time consuming to clean this up! To make the process easier, and be able to UNDO - we will Git to track our files.
    
 1. Depending on your lab setup, the global config for git may or may have not been setup. You can verify this by typing these commands into a command prompt.  These are global settings so you can be in any directory.
 
@@ -51,12 +49,11 @@ Sometimes, you may accidentally run a command and modify a lot of files you did 
     ![GitInit](../screenshots/2-click-master.png)
     * choose to create a new branch - use your name
     * ![GitInit](../screenshots/2-create-branch-with-your-name.png)
+    * This will now be the branch listed in the lower left corner. Click the cloud icon to push your changes to GitHub.
+    ![config global](../screenshots/2-your-name-lower-left.png)
 
 
 
-5. Test that you can add to your local repo and commit by executing the following commands. If you cannot commit, check that you set your global setting correctly in the previous steps.
-
-    ![add readme](../screenshots/git-cli-add-readme.png)
 
 ### **Part 2 - Opening Multiple Instances of VS Code**
 [back to top](#table-of-contents)
@@ -67,9 +64,9 @@ For example, you may be referring to a sample project and comparing to your own 
 
 VS Code allows use of control+c and control+v and corresponding context menu options to copy and paste files and directories between projects.  
 
-1. From the Command Prompt within your **my-angular-course** directory execute the command **code .** to open the project in VS Code. 
+1. From a Command Prompt open the C:\repos\ directory in  Prompt and execute the command **code .** to open the project in VS Code. 
 
-    ![add readme](../screenshots/code-space-dot.png)
+    ![add readme](../screenshots/2-open-demos-from-prompt.png)
 
 
 2. Search the Extensions Marketplace to find `Peacock` by John Papa. If you do not have it already installed click the install button.
@@ -122,14 +119,6 @@ VS Code allows use of control+c and control+v and corresponding context menu opt
 
  ![](../screenshots/VSCode-multiple-instances.png)
 
-3. Click the **Angular100-Labs** project (green). If you are not using a virtual machine you can use Alt+tab to switch.
-
-4. In **Angular100-Labs** find the file license-agreement.txt from the same  directory as this README.md. Click to highlight the license-agreement.txt file and hit Control-C or right-click to choose copy.
-   
-5. Switch back to your **my-angular-course** project and paste the file by right-clicking below your files and choosing paste.
-
- ![](../screenshots/right-click-paste.png)
-
 
   
 ### **Part 3 - Using VS Code to Commit Changes**
@@ -137,9 +126,9 @@ VS Code allows use of control+c and control+v and corresponding context menu opt
 
 By adjusting the color and copying a file into your project, you might have noticed the source control icon now has a number on it. Here we will practice with change tracking in projects.
 
-1.  In your README.md file add your name.
+1.  In the README.md file add your name.
 
-    ![](../screenshots/readme-add-name.png)
+    ![](../screenshots/2-update-readme.png)
 
 
 2.  Click on the Source Control button to open the panel `Source Control`. In this panel, mouse over the README.md file; press the `+` button that appeared to stage the change. You can also stage the change by right clicking on the README.md and clicking `Stage Changes`. You should now see that `README.md` was added to `Staged Changes`
@@ -162,7 +151,7 @@ Sometimes, you do not want Git to track certain files or directories. Git looks 
    
    Notice there is an intentional period (.) proceeding the name of the file.
 
-    ![](../screenshots/vs_code_explorer_hover.png)
+    ![](../screenshots/2-explorer-hover-menu.png)
 
 2. Open the .gitignore file and add this on the first line: .vscode
   ![](../screenshots/source-control-ignore.png) 
@@ -174,12 +163,8 @@ Sometimes, you do not want Git to track certain files or directories. Git looks 
 1.  Please mark your work as complete. With your name tent card if in a classroom or by using method for online training. (spreadsheet, status symbol, etc.) Then you can move on to the OPTIONAL part or Bonus below.
 
 
-### **Part 5 OPTIONAL- Setup GitHub remote repository**
-[back to top](#table-of-contents)
 
-1. If you have access to GitHub you can follow the directions in this folder's file [optional-github.md](./optional-github.md)  file. If others are done with this exercise already you can return to do this on a break or at a later time. It can be completed at any time before the end of class. 
-
-### **Part 6 - BONUS View GitLens** 
+### **Part 5 - BONUS View GitLens** 
 [back to top](#table-of-contents)
 
 1.  On VS Code's left hand toolbar, click on the `GitLens` extension you installed earlier. This extension contains additional features.
